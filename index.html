@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>경주교촌마을</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- seo 적용 -->
+    <meta name="description" content="한옥과 함꼐하는 힐링의 공간 경주교촌마을" />
+    <meta name="keywords" content="경주여행, 경주, 경주가족여행, 경주필수코스, 경주체험, 경주여행코스, 경주먹거리투어, 경주원데이클래스, 외국인여행지추천, 경주한옥여행" />
+    <meta property="og:title" content="경주교촌마을" />
+    <meta property="og:description" content="경주여행, 경주, 경주가족여행, 경주필수코스, 경주체험, 경주여행코스, 경주먹거리투어, 경주원데이클래스, 외국인여행지추천, 경주한옥여행" />
+    <meta property="og:image" content="http://127.0.0.1:5500/html/index.html" />
+    <meta property="og:url" content="http://127.0.0.1:5500/html/index.html" />
+    <meta property="og:site_name" content="경주교촌마을" />
+    <meta property="og:type" content="website" />
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_package_v0.16 (1)/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_package_v0.16 (1)/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_package_v0.16 (1)/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css적용 -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- 작업하는 css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- js -->
+    <script src="../js/html5shiv.js"></script>
+    <!-- <script src="../js/prefixfree.min.js"></script> -->
+    <script src="../js/respond.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 작업하는 jsscriptt -->
+    <script src="../js/header.js"></script>
+  </head>
+  <body>
+    <!-- 모달창 -->
+    <div class="modal"></div>
+    <!-- 고정 메뉴 -->
+    <div class="fixed-category"></div>
+    <!-- 전체레이아웃 -->
+    <div class="wrap">
+      <!-- 고정 메뉴 -->
+
+      <!-- 헤더 -->
+      <!-- <header class="header">
+        <div class="header-wrap">
+          <div class="header-top">
+            <div class="header-logo">
+              <a href="#"><img src="../images/logo2.png" alt="로고" /></a>
+            </div>
+            <div class="header-rigth">
+              <div class="header-rigth-top">
+                <ul class="side-navi">
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li class="lang">
+                    <a href="#">Lang <img src="../images/button-black.png" class="lang-button" alt="언어버튼1" /></a>
+                    <ul class="lang-submenu">
+                      <a href="#"><li>ENG</li></a>
+                      <a href=""><li>KOR</li></a>
+                      <a href="#"><li>CHI</li></a>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="header-menu">
+                <li>
+                  <a href="#" class="header-menu-title"><h3>교촌마을</h3></a>
+                  <ul class="header-menu-submenu">
+                    <li>마을 유래</li>
+                    <li>오시는길</li>
+                    <li>최부자네</li>
+                    <li>문화유산</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="header-menu-title"><h3>행사안내</h3></a>
+                  <ul class="header-menu-submenu">
+                    <li>축제 안내</li>
+                    <li>이벤트</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="header-menu-title"><h3>공지사항</h3></a>
+                  <ul class="header-menu-submenu">
+                    <li>공지사항</li>
+                    <li>질문하기</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" header-menu-title class=""><h3>마을투어</h3></a>
+                  <ul class="header-menu-submenu">
+                    <li>맛집투어</li>
+                    <li>체험하기</li>
+                    <li>숙소안내</li>
+                    <li>여행코스추천</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-bottom"></div>
+        </div>
+      </header> -->
+      <!-- 비주얼(배너) -->
+      <section class="visual"></section>
+      <!-- 마을 소게 -->
+      <section class="introduction">
+        <div class="inner">
+          <div class="title">
+            <h2>교촌 마을 소개</h2>
+          </div>
+          <div class="introduction-button">
+            <div class="introBt-1">
+              <h3>마을유래</h3>
+              <img src="images/intro_2.jpg" alt="마을유래 img" />
+            </div>
+            <div class="introBt-2">
+              <h3>최부자네</h3>
+              <img src="images/intro_1.jpg" alt="최부자네 img" />
+            </div>
+            <div class="introBt-3">
+              <h3>문화유산</h3>
+              <img src="images/intro_3.jpg" alt="문화유산 img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 투어 가이드 -->
+      <section class="guide">
+        <div class="inner">
+          <div class="title">
+            <h2>경주 교촌 마을 투어 가이드</h2>
+            <p>Gyeongju Kyochon Village Tour Guide</p>
+          </div>
+          <div class="FOOD">
+            <img src="images/food.jpg" alt="음식" />
+            <h3>FOOD</h3>
+            <p>전통한식부터 퓨전한식까지 다양한 먹거리 가득한 먹방 투어</p>
+            <a href="#"><img src="images/button-white.png" alt="button" />맛집 찾기</a>
+          </div>
+          <div class="EXPERIENCE">
+            <img src="images/experience.JPG" alt="음식" />
+            <h3>FOOD</h3>
+            <p>원데이클래스 부터 최부자아카데미. 의상체험 등 다양한 즐걸거리!</p>
+            <a href="#"><img src="images/button-white.png" alt="button" />맛집 찾기</a>
+          </div>
+          <div class="HOTEL">
+            <img src="images/intro_2.jpg" alt="음식" />
+            <h3>FOOD</h3>
+            <p>힐링 가득 공간, 한옥에서 행복한 하루 보내기!</p>
+            <a href="#"><img src="images/button-white.png" alt="button" />맛집 찾기</a>
+          </div>
+        </div>
+      </section>
+      <!-- 이벤트 -->
+      <section class="event">
+        <div class="inner"></div>
+      </section>
+      <!-- 여행 추천 -->
+      <section class="tour-course">
+        <div class="inner"></div>
+      </section>
+      <!-- 갤러리 -->
+      <section class="gallery">
+        <div class="inner"></div>
+      </section>
+      <!-- map -->
+      <section class="map">
+        <div class="inner"></div>
+      </section>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="inner"></div>
+      </footer>
+    </div>
+  </body>
+</html>
