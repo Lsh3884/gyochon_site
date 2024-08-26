@@ -1,1 +1,16 @@
 @charset "utf-8";
+.guide .inner{
+    background: url(../images/tour_background_img.jpg)no-repeat;
+    width: 100%;
+    background-color: pink;
+}
+.guide .title{
+    /* margin-top: 50px; */
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+}
+.guide .title p{
+    font-size: 37px;
+    font-weight: 400;
+}
