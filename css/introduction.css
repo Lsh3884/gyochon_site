@@ -1,12 +1,16 @@
 @charset "utf-8";
+.introduction{
+    font-family: "Nanum Brush Script", cursive;
+}
 .introduction .inner {
   width: 100%;
-  background-color: antiquewhite;
+  background-color:white;
 }
 .introduction .title{
     text-align: center;
-    font-size: 60px;
+    font-size: 90px;
     font-weight: 600;
+    padding-bottom: 100px;
 }
 .introduction-button{
     margin-top: 50px;
@@ -18,6 +22,40 @@
     height: 300px;
     border-radius: 50%;
 }
+.introduction-button .introBt-1:hover{
+	filter: grayscale(100%);
+}
+.introduction-button .introBt-2:hover{
+	filter: grayscale(100%);
+}
+.introduction-button .introBt-3:hover{
+	filter: grayscale(100%);
+}
+/* ====================================== */
+.introduction-button .hover-txt{
+    display: none;
+    text-align: center;
+}
+/* ============================ */
+.introduction-button .introBt-1:hover h3{
+    display: none;
+}
+.introduction-button .introBt-1:hover .hover-txt{
+    display: block;
+}
+.introduction-button .introBt-2:hover h3{
+    display: none;
+}
+.introduction-button .introBt-2:hover .hover-txt{
+    display: block;
+}
+.introduction-button .introBt-3:hover h3{
+    display: none;
+}
+.introduction-button .introBt-3:hover .hover-txt{
+    display: block;
+}
+/* ========================== */
 .introduction-button .introBt-1, .introduction-button .introBt-2, .introduction-button .introBt-3{
    /* background-color: blueviolet; */
    position: relative;
@@ -27,8 +65,8 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50% , -50%);
-font-size: 35px;
+font-size: 50px;
 color: white;
-font-weight: 800;
+font-weight: 600;
 }
 
