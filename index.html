@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>경주교촌마을</title>
-    <!-- css -->
-    <link rel="stylesheet" href="style.css" />
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- seo 적용 -->
@@ -17,11 +15,14 @@
     <meta property="og:url" content="http://127.0.0.1:5500/html/index.html" />
     <meta property="og:site_name" content="경주교촌마을" />
     <meta property="og:type" content="website" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
     <!-- 파비콘 -->
     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon_package_v0.16 (1)/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon_package_v0.16 (1)/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon_package_v0.16 (1)/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- <link rel="manifest" href="assets/site.webmanifest"> -->
+
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -31,7 +32,6 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 작업하는 css -->
     <link rel="stylesheet" href="../css/main.css" />
@@ -45,11 +45,9 @@
     <!-- 작업하는 jsscriptt -->
     <script src="../js/header.js"></script>
     <!-- 폰트 -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet" />
-
   </head>
 
   <body>
@@ -134,17 +132,26 @@
           <div class="introduction-button">
             <div class="introBt-1">
               <h3>마을유래</h3>
-              <h3 class="hover-txt">마을유래 <br> ! click !</h3>
+              <h3 class="hover-txt">
+                마을유래 <br />
+                ! click !
+              </h3>
               <img src="images/intro_2.jpg" alt="마을유래 img" />
             </div>
             <div class="introBt-2">
               <h3>최부자네</h3>
-              <h3 class="hover-txt">최부자네 <br> ! click !</h3>
+              <h3 class="hover-txt">
+                최부자네 <br />
+                ! click !
+              </h3>
               <img src="images/intro_1.jpg" alt="최부자네 img" />
             </div>
             <div class="introBt-3">
               <h3>문화유산</h3>
-              <h3 class="hover-txt">문화유산 <br> ! click !</h3>
+              <h3 class="hover-txt">
+                문화유산 <br />
+                ! click !
+              </h3>
               <img src="images/intro_3.jpg" alt="문화유산 img" />
             </div>
           </div>
@@ -157,6 +164,8 @@
             <h2>경주 교촌 마을 투어 가이드</h2>
             <p>Gyeongju Kyochon Village Tour Guide</p>
           </div>
+
+          <!-- FOOD Section -->
           <div class="FOOD">
             <img src="images/food.jpg" alt="음식" class="guide-img" />
             <div class="text">
@@ -164,30 +173,36 @@
               <p>전통한식부터 퓨전한식까지 다양한 먹거리 가득한 먹방 투어 ~</p>
             </div>
             <div class="btn">
-              <a href="#"><img src="images/button-white.png" alt="버튼"></a>
+              <a href="#"><img src="images/button-white.png" alt="버튼" /></a>
               <p>맛집 찾기</p>
             </div>
           </div>
+
+          <!-- EXPERIENCE Section -->
           <div class="EXPERIENCE">
-            <img src="images/experience.JPG" alt="음식" class="guide-img"/>
+            <img src="images/experience.JPG" alt="음식" class="guide-img" />
             <div class="text">
               <h3>EXPERIENCE</h3>
               <p>원데이클래스 부터 최부자아카데미. 의상체험 등 다양한 즐걸거리 !</p>
             </div>
-              <div class="btn">
-                <a href="#"><img src="images/button-white.png" alt="버튼"></a>
-                <p>체험 둘러보기</p>
-              </div>
+            <div class="btn">
+              <a href="#"><img src="images/button-white.png" alt="버튼" /></a>
+              <p>체험 둘러보기</p>
+            </div>
+          </div>
+
+          <!-- HOTEL Section -->
           <div class="HOTEL">
-            <img src="images/intro_2.jpg" alt="음식" class="guide-img"/>
+            <img src="images/intro_2.jpg" alt="음식" class="guide-img" />
             <div class="text">
               <h3>HOTEL</h3>
               <p>힐링 가득 공간, 한옥에서 행복한 하루 보내기 !</p>
             </div>
-              <div class="btn">
-                <a href="#"><img src="images/button-white.png" alt="버튼"></a>
-                <p>숙소 알아보기</p>
-              </div>
+            <div class="btn">
+              <a href="#"><img src="images/button-white.png" alt="버튼" /></a>
+              <p>숙소 알아보기</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- 이벤트 -->
@@ -230,7 +245,7 @@
                   <div class="good-info">
                     <ul class="good-info-list">
                       <li>
-                        <b>최부자 아카데미 Choebuja Academy</b>
+                        <b>최부자 아카데미 <br />Choebuja Academy</b>
                       </li>
                       <li><p>전통 한옥 건물에서 숙박하며 한국의 정서를 느낄 수 있는 다양한 프로그램을 즐길 수 있는 교촌마을 투어코스</p></li>
                       <li><p>Kyochon Village tour course where you can stay in a traditional Hanok building and enjoy various programs that allow you to feel the Korean atmosphere.</p></li>
@@ -244,7 +259,7 @@
                   <div class="good-info">
                     <ul class="good-info-list">
                       <li>
-                        <b>도자기 체험 <br>pottery experience</b>
+                        <b>도자기 체험 <br />pottery experience</b>
                       </li>
                       <li><p>전통 한옥 건물에서 숙박하며 한국의 정서를 느낄 수 있는 다양한 프로그램을 즐길 수 있는 교촌마을 투어코스</p></li>
                       <li><p>Kyochon Village tour course where you can stay in a traditional Hanok building and enjoy various programs that allow you to feel the Korean atmosphere.</p></li>
@@ -258,7 +273,7 @@
                   <div class="good-info">
                     <ul class="good-info-list">
                       <li>
-                        <b>양궁 체험 <br>Archery Experience</b>
+                        <b>양궁 체험 <br />Archery Experience</b>
                       </li>
                       <li><p>옛 선조들의 필수아이템인 활쏘기 체험</p></li>
                       <li><p>Archery experience, a must-have item for our ancestors.Archery sets dozens of targets at first, like a shooting drill, and dozens of archers also shoot at their targets, awarding the best performers</p></li>
@@ -268,6 +283,10 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="plus-show">
+          <img src="images/button-white.png" alt="오른쪽화살표" class="plus-show-img" />
+          <p>행사더보기</p>
         </div>
       </section>
       <!-- 갤러리 -->
@@ -286,13 +305,14 @@
     <!-- 스와이퍼 버튼 -->
     <script>
       var swiper = new Swiper(".tourSwiper", {
-        slidesPerView: 2.3, // 한 슬라이드에 3개의 이미지 표시
-        spaceBetween: 30, // 슬라이드 간의 간격 (px)
+        slidesPerView: 2.3,
+        spaceBetween: 30,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        loop: true, // 무한 루프
+        loop: true,
+        loopFillGroupWithBlank: true,
       });
     </script>
   </body>

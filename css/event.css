@@ -63,10 +63,10 @@
   height: 30px;
 }
 .plus-show > p {
-  font-size: 20px;
-  margin-top: 5px;
+  font-size: 25px;
   margin-left: 10px;
   color: white;
+  font-family: "Nanum Brush Script", cursive;
 }
 .event .line {
   width: 450px;
