@@ -30,23 +30,28 @@
     <!-- css적용 -->
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
-    <!-- link Swiper's CSS -->
+    <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 작업하는 css -->
     <link rel="stylesheet" href="../css/main.css" />
     <!-- js -->
     <script src="../js/html5shiv.js"></script>
     <!-- <script src="../js/prefixfree.min.js"></script> -->
     <script src="../js/respond.min.js"></script>
-    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 작업하는 jsscriptt -->
     <script src="../js/header.js"></script>
     <!-- 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet" />
+
   </head>
+
   <body>
     <!-- 모달창 -->
     <div class="modal"></div>
@@ -187,11 +192,83 @@
       </section>
       <!-- 이벤트 -->
       <section class="event">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="event-title">
+            <h2>행사일정 및 이벤트</h2>
+          </div>
+          <div class="event-top">
+            <img src="images/event-sinraogi.jpg" alt="신라오기" />
+            <img src="images/event-busking.jpg" alt="버스킹" />
+          </div>
+          <div class="evetn-bottom">
+            <p class="event-sns">sns이벤트</p>
+            <p class="event-sale">타지역 할인</p>
+          </div>
+        </div>
+        <div class="plus-show">
+          <img src="images/button-white.png" alt="오른쪽화살표" class="plus-show-img" />
+          <p>행사더보기</p>
+        </div>
+        <p class="line"></p>
       </section>
       <!-- 여행 추천 -->
       <section class="tour-course">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="tour-title">
+            <h2>외국 여행객 추천!!</h2>
+            <p>Recommendation for foreign travelers!!</p>
+          </div>
+          <!-- navigation -->
+          <button class="swiper-button-next"></button>
+          <button class="swiper-button-prev"></button>
+          <!-- swiper -->
+          <div class="swiper tourSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="good">
+                  <img src="images/tour1.jpg" alt="최부자네" />
+                  <div class="good-info">
+                    <ul class="good-info-list">
+                      <li>
+                        <b>최부자 아카데미 Choebuja Academy</b>
+                      </li>
+                      <li><p>전통 한옥 건물에서 숙박하며 한국의 정서를 느낄 수 있는 다양한 프로그램을 즐길 수 있는 교촌마을 투어코스</p></li>
+                      <li><p>Kyochon Village tour course where you can stay in a traditional Hanok building and enjoy various programs that allow you to feel the Korean atmosphere.</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="good">
+                  <img src="images/tour2.jpg" alt="도자기체험" />
+                  <div class="good-info">
+                    <ul class="good-info-list">
+                      <li>
+                        <b>도자기 체험 <br>pottery experience</b>
+                      </li>
+                      <li><p>전통 한옥 건물에서 숙박하며 한국의 정서를 느낄 수 있는 다양한 프로그램을 즐길 수 있는 교촌마을 투어코스</p></li>
+                      <li><p>Kyochon Village tour course where you can stay in a traditional Hanok building and enjoy various programs that allow you to feel the Korean atmosphere.</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="good">
+                  <img src="images/tour3.jpg" alt="최부자네" />
+                  <div class="good-info">
+                    <ul class="good-info-list">
+                      <li>
+                        <b>양궁 체험 <br>Archery Experience</b>
+                      </li>
+                      <li><p>옛 선조들의 필수아이템인 활쏘기 체험</p></li>
+                      <li><p>Archery experience, a must-have item for our ancestors.Archery sets dozens of targets at first, like a shooting drill, and dozens of archers also shoot at their targets, awarding the best performers</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- 갤러리 -->
       <section class="gallery">
@@ -206,5 +283,17 @@
         <div class="inner"></div>
       </footer>
     </div>
+    <!-- 스와이퍼 버튼 -->
+    <script>
+      var swiper = new Swiper(".tourSwiper", {
+        slidesPerView: 2.3, // 한 슬라이드에 3개의 이미지 표시
+        spaceBetween: 30, // 슬라이드 간의 간격 (px)
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true, // 무한 루프
+      });
+    </script>
   </body>
 </html>
