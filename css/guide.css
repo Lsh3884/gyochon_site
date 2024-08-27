@@ -1,16 +1,176 @@
 @charset "utf-8";
-.guide .inner{
-    background: url(../images/tour_background_img.jpg)no-repeat;
-    width: 100%;
-    background-color: pink;
+.guide {
+  width: 100%;
+  margin-top: 200px;
+  font-family: "Nanum Brush Script", cursive;
 }
-.guide .title{
-    /* margin-top: 50px; */
-    text-align: center;
-    font-size: 60px;
-    font-weight: 600;
+.guide .inner {
+  background: url("../images/tour_background_img.jpg") no-repeat center;
+  width: 100%;
+  
+  background-size: cover;
+  background-color: pink;
 }
-.guide .title p{
-    font-size: 37px;
-    font-weight: 400;
+.guide .title {
+  /* margin-top: 50px; */
+  text-align: center;
+  font-size: 90px;
+  font-weight: 600;
 }
+.guide .title p {
+  font-size: 50px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+.guide .title h2 {
+  padding-top: 300px;
+}
+/* 맛집영역 */
+.FOOD {
+  padding-top: 200px;
+  /* display: flex; */
+  width: 80%;
+  margin: 0 auto;
+}
+.FOOD .text{
+ padding-top: 100px;
+ padding-left: 450px;
+}
+.FOOD .guide-img {
+  float: left;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.FOOD h3 {
+  /* margin-top: 100px; */
+  font-size: 80px;
+  font-weight: 800;
+}
+.FOOD  > .text > p {
+  text-align: left;
+  font-size: 50px;
+  margin-top: 20px;
+  line-height: 40px;
+}
+.FOOD .btn{
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 700px;
+    background-color: black;
+    border-radius: 50px;
+    width: 250px;
+    padding: 10px;
+    
+}
+.FOOD .btn a img{
+  
+  width: 40px;
+}
+.FOOD .btn p{
+    font-size: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: white;
+}
+/* 체험 영역 */
+.EXPERIENCE {
+  padding-top: 200px;
+  /* display: flex; */
+  width: 80%;
+  margin: 0 auto;
+}
+.EXPERIENCE .text{
+ padding-top: 100px;
+ padding-left: 450px;
+}
+.EXPERIENCE .guide-img {
+  float: left;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.EXPERIENCE h3 {
+  /* margin-top: 100px; */
+  font-size: 80px;
+  font-weight: 800;
+}
+.EXPERIENCE  > .text > p {
+  text-align: left;
+  font-size: 50px;
+  margin-top: 10px;
+  line-height: 40px;
+}
+.EXPERIENCE .btn{
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 700px;
+    background-color: black;
+    border-radius: 50px;
+    width: 300px;
+    padding: 10px;
+    
+}
+.EXPERIENCE .btn a img{
+  
+  width: 40px;
+}
+.EXPERIENCE .btn p{
+  font-size: 40px;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: white;
+}
+/* 호텔 영역 */
+.HOTEL {
+  padding-top: 200px;
+  padding-bottom: 300px;
+  /* display: flex; */
+  width: 100%;
+  margin: 0 auto;
+}
+.HOTEL .text{
+ padding-top: 100px;
+ padding-left: 450px;
+}
+.HOTEL .guide-img {
+  float: left;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.HOTEL h3 {
+  /* margin-top: 100px; */
+  font-size: 80px;
+  font-weight: 800;
+}
+.HOTEL  > .text > p {
+  text-align: left;
+  font-size: 50px;
+  margin-top: 10px;
+  line-height: 40px;
+}
+.HOTEL .btn{
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 700px;
+    background-color: black;
+    border-radius: 50px;
+    width: 300px;
+    padding: 10px;
+    
+}
+.HOTEL .btn a img{
+  
+  width: 40px;
+}
+.HOTEL .btn p{
+  font-size: 40px;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: white;
+}
+

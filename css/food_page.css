@@ -1,0 +1,119 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Nanum Brush Script", cursive;
+}
+.wrap {
+  width: 100%;
+}
+.inner {
+  max-width: 1200px;
+  margin: auto;
+}
+/* 메인이미지 */
+.main-img {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.main-img img {
+  width: 100%;
+}
+.main-img h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 170px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* 버튼 3개 */
+.btn {
+    display: flex;
+    margin-top: 50px;
+}
+.btn .inner > button{
+    float: left;
+    font-size: 60px;
+    color: white;
+    background-color: black;
+    padding: 5px 80px 5px 80px;
+    margin: 50px;
+  }
+/* 맛집 소개 영역 */
+/* 밥집-------------------------------------------------------------- */
+.intro-food{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.intro-food .inner{
+    width: 100%;
+    padding: 0 80px ;
+    margin-top: 80px;
+    /* background-color: blanchedalmond; */
+}
+.restaurant{
+    display: flex;
+    gap: 6%;
+    margin-bottom: 80px;
+}
+.shop{
+   /* float: left; */
+   display: none;
+   width: calc(100% / 3);
+   /* padding: 0 10px 0 10px; */
+  
+
+}
+.shop img{
+    width: 100%;
+    /* margin: 30px; */
+    margin-bottom: 15px;
+}
+.shop h3 , li{
+    text-align: left;
+    }
+.shop h3{
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+.shop li{
+    font-size: 25px;
+}
+/* 카페-------------------------------------- */
+.cafe{
+  display: flex;
+  gap: 6%;
+  margin-bottom: 80px;
+  background-color: antiquewhite;
+}
+.cafe-shop{
+ /* float: left; */
+ display: none;
+ width: calc(100% / 3);
+ /* padding: 0 10px 0 10px; */
+
+
+}
+.cafe-shop img{
+  width: 100%;
+  /* margin: 30px; */
+  margin-bottom: 15px;
+}
+.cafe-shop h3 , li{
+  text-align: left;
+  }
+.cafe-shop h3{
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+.cafe-shop li{
+  font-size: 25px;
+}

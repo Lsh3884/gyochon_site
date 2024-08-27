@@ -1,11 +1,14 @@
 @charset "utf-8";
-
+*{
+  list-style: none;
+  text-decoration: none;
+}
 .header {
   position: fixed;
   width: 100%;
-  background-color: #fc3838;
-  padding: 20px 50px;
-  background-color: #fff;
+  background-color: bisque;
+  
+  /* background-color: #fff; */
 }
 
 /* 헤더의 상단영역 */
@@ -64,6 +67,11 @@
 .lang-submenu > a {
   line-height: 30px;
 }
+.header-menu-title > h3{
+  margin-right: 30px;
+  color: black;
+  
+}
 
 /* 헤더 오른쪽 하단 메뉴 */
 .header-menu {
@@ -103,7 +111,6 @@
 } */
 /* 헤더 아래쪽 */
 .header-bottom {
-  width: 100%;
   height: 100px;
   background-color: aqua;
 }
