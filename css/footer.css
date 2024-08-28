@@ -1,1 +1,29 @@
 @charset "utf-8";
+.footer{
+    background-color: grey;
+    margin-top: 150px;
+    width: 100%;
+    padding: 20px 40px;
+}
+.footer-one ul{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 100px;
+    font-size: 25px;
+}
+.footer-two{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.footer-three{
+    font-size: 20px;
+}
+.footer-wrap{
+    width: 70%;
+}
+.footer-logo{
+    width:100px;
+    height: 100px;
+    margin-right: 100px;
+}

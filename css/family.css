@@ -1,13 +1,14 @@
 @charset "utf-8";
 
-.tour-title {
+.family-title {
   font-size: 70px;
   line-height: 100px;
   font-family: "Nanum Brush Script", cursive;
   text-align: center;
   margin-bottom: 20px;
+
 }
-.tour-title h2 {
+.family-title h2 {
   font-weight: bold;
 }
 .good {
@@ -20,28 +21,28 @@
   height: 400px;
   mix-blend-mode: multiply;
 }
-.tour-course .inner {
+.family-course .inner {
   position: relative;
   display: block;
 }
-.tour-course .swiper-button-next {
+.family-course .swiper-button-next {
     position: absolute;
     margin-top: -70px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
 }
-.tour-course .swiper-button-prev {
+.family-course .swiper-button-prev {
   position: absolute;
   margin-top: -70px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
-.tour-course .swiper-button-prev::after{
+.family-course .swiper-button-prev::after{
   font-size: 30px;
 }
-.tour-course .swiper-button-next::after{
+.family-course .swiper-button-next::after{
   font-size: 30px;
 }
 .good-info-list li b{
@@ -53,7 +54,7 @@
 .good-info{
     line-height: 40px;
 }
-.tour-course .line {
+.family-course .line {
   width: 450px;
   height: 2px;
   background-color: gray;
