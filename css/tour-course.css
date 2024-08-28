@@ -1,11 +1,11 @@
 @charset "utf-8";
-
 .tour-title {
-  font-size: 70px;
+  text-align: center;
+}
+.tour-title {
+  font-size: 50px;
   line-height: 100px;
   font-family: "Nanum Brush Script", cursive;
-  text-align: center;
-  margin-bottom: 20px;
 }
 .tour-title h2 {
   font-weight: bold;
@@ -52,11 +52,4 @@
 } 
 .good-info{
     line-height: 40px;
-}
-.tour-course .line {
-  width: 450px;
-  height: 2px;
-  background-color: gray;
-  text-align: center;
-  margin: 100px auto;
 }
