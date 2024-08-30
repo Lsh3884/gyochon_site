@@ -1,14 +1,22 @@
 @charset "utf-8";
-
+.tour-course .inner{
+  position: relative;
+  display: block;
+}
 .tour-title {
-  font-size: 70px;
-  line-height: 100px;
+  width: 100%;
+  font-size: 4.5rem;
+  line-height: 60px;
   font-family: "Nanum Brush Script", cursive;
   text-align: center;
   margin-bottom: 20px;
+
 }
 .tour-title h2 {
+  width: 100%;
   font-weight: bold;
+  margin-bottom: 80px;
+  margin-top: 150px;
 }
 .good {
   width: 100%;
@@ -21,22 +29,26 @@
   mix-blend-mode: multiply;
 }
 .tour-course .inner {
-  position: relative;
   display: block;
+  /* background-color: blue; */
 }
 .tour-course .swiper-button-next {
-    position: absolute;
-    margin-top: -70px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}
-.tour-course .swiper-button-prev {
   position: absolute;
-  margin-top: -70px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  display: inline-block;
+  top: 45%;
+  right: -5%;
+}
+.tour-course .swiper-button-prev {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  top: 45%;
+  left: -5%;
 }
 .tour-course .swiper-button-prev::after{
   font-size: 30px;
@@ -44,14 +56,15 @@
 .tour-course .swiper-button-next::after{
   font-size: 30px;
 }
-.good-info-list li b{
-    font-size: 40px;
+.good-info .good-info-list li{
+  line-height: 23px;
+  margin-top: 30px;
 }
-.good-info-list li p{
-    font-size: 20px;
-} 
-.good-info{
-    line-height: 40px;
+.good-info .good-info-list li:first-child{
+  margin-bottom: 20px;
+}
+.good-info .good-info-list li:last-child{
+    margin-top: 20px;
 }
 .tour-course .line {
   width: 450px;

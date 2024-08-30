@@ -1,7 +1,11 @@
 @charset "utf-8";
-
+.gallery{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
 .gallery h2 {
-  font-size: 70px;
+  font-size: 2.9rem;
   line-height: 100px;
   font-family: "Nanum Brush Script", cursive;
   text-align: center;
@@ -31,7 +35,7 @@
   margin: auto;
 }
 .img-container img {
-  width: 33.33%;
+  width: 25%;
   float: left;
 }
 .gallery .line{

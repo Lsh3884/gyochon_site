@@ -53,7 +53,14 @@
 
   <body>
     <!-- 모달창 -->
-    <div class="modal"></div>
+    <div class="modal">
+      <div class="modal-img">
+        <img src="images/popupPass.jpg" alt="프리패스" />
+        <div class="passClose">
+          <p>X</p>
+        </div>
+      </div>
+    </div>
     <!-- 고정 메뉴 -->
     <div class="fixed-category"></div>
     <!-- 전체레이아웃 -->
@@ -238,8 +245,7 @@
       <section class="tour-course">
         <div class="inner">
           <div class="tour-title">
-            <h2>외국 여행객 추천!!</h2>
-            <p>Recommendation for foreign travelers!!</p>
+            <h2>외국 여행객 추천!! <br> Recommendation for foreign travelers!!</h2>
           </div>
           <!-- navigation -->
           <button class="swiper-button-next"></button>
@@ -331,7 +337,7 @@
                       <li>
                         <b>교촌가람 떡인당<br />Gyochon Garam</b>
                       </li>
-                      <li><p>아이들과 함께 화과자만들기, 캐릭터송편만들기로 맛있고 즐거운 체험하기!</p></li>
+                      <li><p>아이들과 함께 화과자만들기<br> 캐릭터송편만들기로 맛있고 즐거운 체험하기!</p></li>
                     </ul>
                   </div>
                 </div>
@@ -372,6 +378,8 @@
           <img src="images/img_gallery(1).jpg" alt="이미지" />
           <img src="images/img_gallery(2).jpg" alt="이미지" />
           <img src="images/img_gallery(3).jpg" alt="이미지" />
+          <img src="images/img_gallery(1).jpg" alt="이미지" />
+          <img src="images/img_gallery(2).jpg" alt="이미지" />
           <img src="images/img_gallery(3).jpg" alt="이미지" />
           <img src="images/img_gallery(1).jpg" alt="이미지" />
           <img src="images/img_gallery(2).jpg" alt="이미지" />
@@ -386,6 +394,7 @@
           <li>교촌마을 주변보기</li>
         </ul>
         <img src="images/load_map.jpg" alt="지도보기" class="load-map" />
+        
       </section>
       <!-- footer -->
       <footer class="footer">
@@ -405,15 +414,24 @@
           </div>
           <div class="footer-three">
             <p>
-              본 홈페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며,<br />
+              본 홈페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며<br />
               이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다. <br />
               Copyright © 2020 Gimcheon City. All rights reserved.
             </p>
           </div>
-          <img src="images/logo2.png" alt="푸터로고" class="footer-logo">
-        </div>
-        
+          <div class="footer-logo">
+            <img src="images/logo2.png" alt="푸터로고">
+          </div>
+      </div>
       </footer>
     </div>
+    <script>
+      // x버튼누를시 모탈창 없애기
+      $(function(){
+        $(".passClose").click(function(){
+          $(".modal").css("display","none")
+        })
+      })
+    </script>
   </body>
 </html>
