@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="../css/main.css" />
     <!-- js -->
     <script src="../js/html5shiv.js"></script>
+    <script src="js/swiper.js"></script>
     <!-- <script src="../js/prefixfree.min.js"></script> -->
     <script src="../js/respond.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -52,7 +53,14 @@
 
   <body>
     <!-- 모달창 -->
-    <div class="modal"></div>
+    <div class="modal">
+      <div class="modal-img">
+        <img src="images/popupPass.jpg" alt="프리패스" />
+        <div class="passClose">
+          <p>X</p>
+        </div>
+      </div>
+    </div>
     <!-- 고정 메뉴 -->
     <div class="fixed-category"></div>
     <!-- 전체레이아웃 -->
@@ -130,6 +138,7 @@
             <h2>교촌 마을 소개</h2>
           </div>
           <div class="introduction-button">
+            <!-- 마을유래 섹션 -->
             <div class="introBt-1">
               <h3>마을유래</h3>
               <h3 class="hover-txt">
@@ -138,6 +147,8 @@
               </h3>
               <img src="images/intro_2.jpg" alt="마을유래 img" />
             </div>
+
+            <!-- 최부자네 섹션 -->
             <div class="introBt-2">
               <h3>최부자네</h3>
               <h3 class="hover-txt">
@@ -146,6 +157,8 @@
               </h3>
               <img src="images/intro_1.jpg" alt="최부자네 img" />
             </div>
+
+            <!-- 문화유산 섹션 -->
             <div class="introBt-3">
               <h3>문화유산</h3>
               <h3 class="hover-txt">
@@ -154,7 +167,10 @@
               </h3>
               <img src="images/intro_3.jpg" alt="문화유산 img" />
             </div>
+          </div>
+          <!-- introduction-button 끝 -->
         </div>
+        <!-- inner 끝 -->
       </section>
       <!-- 투어 가이드 -->
       <section class="guide">
@@ -203,7 +219,6 @@
             </div>
           </div>
         </div>
-        </div>
       </section>
       <!-- 이벤트 -->
       <section class="event">
@@ -226,12 +241,11 @@
         </div>
         <p class="line"></p>
       </section>
-      <!-- 여행 추천 -->
+      <!-- 외국여행 추천 -->
       <section class="tour-course">
         <div class="inner">
           <div class="tour-title">
-            <h2>외국 여행객 추천!!</h2>
-            <p>Recommendation for foreign travelers!!</p>
+            <h2>외국 여행객 추천!! <br> Recommendation for foreign travelers!!</h2>
           </div>
           <!-- navigation -->
           <button class="swiper-button-next"></button>
@@ -288,32 +302,136 @@
           <img src="images/button-white.png" alt="오른쪽화살표" class="plus-show-img" />
           <p>행사더보기</p>
         </div>
+        <p class="line"></p>
+      </section>
+      <!-- 가족여행투어 -->
+      <section class="family-course">
+        <div class="inner">
+          <div class="family-title">
+            <h2>가족 여행 추천<br />Family trip recommendation</h2>
+          </div>
+          <!-- navigation -->
+          <button class="swiper-button-next"></button>
+          <button class="swiper-button-prev"></button>
+          <!-- swiper -->
+          <div class="swiper familySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="good">
+                  <img src="images/fmytour1.jpg" alt="불국사" />
+                  <div class="good-info">
+                    <ul class="good-info-list">
+                      <li>
+                        <b>불국사 <br />Bulguksa Temple</b>
+                      </li>
+                      <li><p>경상북도 경주시 토함산(吐含山) 서쪽 중턱에 있는 남북국시대 통일신라 김대성의 발원으로 창건한 사찰.</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="good">
+                  <img src="images/fmytour2.jpg" alt="교촌가람 떡인당" />
+                  <div class="good-info">
+                    <ul class="good-info-list">
+                      <li>
+                        <b>교촌가람 떡인당<br />Gyochon Garam</b>
+                      </li>
+                      <li><p>아이들과 함께 화과자만들기<br> 캐릭터송편만들기로 맛있고 즐거운 체험하기!</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="good">
+                  <img src="images/fmytour3.jpg" alt="한복 투어" />
+                  <div class="good-info">
+                    <ul class="good-info-list">
+                      <li>
+                        <b>한복체험 <br />traditional costume experience</b>
+                      </li>
+                      <li><p>화려하고 아름다운 전통 한복을 입고 가족사진찍기!</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plus-show">
+          <img src="images/button-white.png" alt="오른쪽화살표" class="plus-show-img" />
+          <p>행사더보기</p>
+        </div>
+        <p class="line"></p>
       </section>
       <!-- 갤러리 -->
       <section class="gallery">
-        <div class="inner"></div>
+        <h2>여행 갤러리</h2>
+        <div class="gallery-logo">
+          <ul>
+            <li><img src="images/insta_logo.jpg" alt="인스타로고" />@gyochon</li>
+            <li><img src="images/facebook_logo.jpg" alt="페이스북로고" />@gyochon</li>
+            <li><img src="images/youtube_logo.jpg" alt="유튜브로고" />@gyochon</li>
+          </ul>
+        </div>
+        <div class="img-container">
+          <img src="images/img_gallery(1).jpg" alt="이미지" />
+          <img src="images/img_gallery(2).jpg" alt="이미지" />
+          <img src="images/img_gallery(3).jpg" alt="이미지" />
+          <img src="images/img_gallery(1).jpg" alt="이미지" />
+          <img src="images/img_gallery(2).jpg" alt="이미지" />
+          <img src="images/img_gallery(3).jpg" alt="이미지" />
+          <img src="images/img_gallery(1).jpg" alt="이미지" />
+          <img src="images/img_gallery(2).jpg" alt="이미지" />
+        </div>
+        <p class="line"></p>
       </section>
       <!-- map -->
       <section class="map">
-        <div class="inner"></div>
+        <ul class="map-list">
+          <li>교촌마을 지도보기</li>
+          <li>교촌마을 찾아오기</li>
+          <li>교촌마을 주변보기</li>
+        </ul>
+        <img src="images/load_map.jpg" alt="지도보기" class="load-map" />
+        
       </section>
       <!-- footer -->
       <footer class="footer">
-        <div class="inner"></div>
+        <div class="footer-one">
+          <ul>
+            <li>개인정보처리방침</li>
+            <li>저작권보호정책</li>
+          </ul>
+        </div>
+        <div class="footer-wrap">
+          <div class="footer-two">
+            <ul>
+              <li>경상북도 경주시 교촌길39-2(교동88-5)</li>
+              <li>경주시청 관광컨벤션과 관광관리팀 전화 054-779-6830~6834</li>
+              <li>경주최부자아카데미 054-774-0202</li>
+            </ul>
+          </div>
+          <div class="footer-three">
+            <p>
+              본 홈페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며<br />
+              이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다. <br />
+              Copyright © 2020 Gimcheon City. All rights reserved.
+            </p>
+          </div>
+          <div class="footer-logo">
+            <img src="images/logo2.png" alt="푸터로고">
+          </div>
+      </div>
       </footer>
     </div>
-    <!-- 스와이퍼 버튼 -->
     <script>
-      var swiper = new Swiper(".tourSwiper", {
-        slidesPerView: 2.3,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        loop: true,
-        loopFillGroupWithBlank: true,
-      });
+      // x버튼누를시 모탈창 없애기
+      $(function(){
+        $(".passClose").click(function(){
+          $(".modal").css("display","none")
+        })
+      })
     </script>
   </body>
 </html>
