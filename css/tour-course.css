@@ -40,6 +40,7 @@
   display: inline-block;
   top: 45%;
   right: -5%;
+  font-weight: bold;
 }
 .tour-course .swiper-button-prev {
   position: absolute;
@@ -49,6 +50,7 @@
   display: inline-block;
   top: 45%;
   left: -5%;
+  font-weight: bold;
 }
 .tour-course .swiper-button-prev::after{
   font-size: 30px;
