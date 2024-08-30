@@ -12,8 +12,8 @@ window.addEventListener("load",function(){
         slidesPerView: 2.3,
         spaceBetween: 30,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-nextt",
+          prevEl: ".swiper-button-prevt",
         },
         loop: true,
       });

@@ -1,5 +1,5 @@
 @charset "utf-8";
-.family-course .inner{
+.family-course .inner {
   position: relative;
   display: block;
 }
@@ -9,7 +9,6 @@
   font-family: "Nanum Brush Script", cursive;
   text-align: center;
   margin-bottom: 20px;
-
 }
 .family-title h2 {
   font-weight: bold;
@@ -26,7 +25,7 @@
   mix-blend-mode: multiply;
 }
 
-.family-course .swiper-button-next {
+.family-course .swiper-button-nextt {
   position: absolute;
   border-radius: 50%;
   width: 50px;
@@ -34,8 +33,10 @@
   display: inline-block;
   top: 50%;
   right: -5%;
+  font-weight: bold;
+  font-size: 30px;
 }
-.family-course .swiper-button-prev {
+.family-course .swiper-button-prevt {
   position: absolute;
   border-radius: 50%;
   width: 50px;
@@ -43,21 +44,17 @@
   display: inline-block;
   top: 50%;
   left: -5%;
-}
-.family-course .swiper-button-prev::after{
   font-size: 30px;
 }
-.family-course .swiper-button-next::after{
-  font-size: 30px;
+
+.good-info-list li b {
+  font-size: 1.8rem;
 }
-.good-info-list li b{
-    font-size: 1.8rem;
+.good-info-list li p {
+  font-size: 20px;
 }
-.good-info-list li p{
-    font-size: 20px;
-} 
-.good-info{
-    line-height: 40px;
+.good-info {
+  line-height: 40px;
 }
 .family-course .line {
   width: 450px;

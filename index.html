@@ -53,14 +53,14 @@
 
   <body>
     <!-- 모달창 -->
-    <div class="modal">
+    <!-- <div class="modal">
       <div class="modal-img">
         <img src="images/popupPass.jpg" alt="프리패스" />
         <div class="passClose">
           <p>X</p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- 고정 메뉴 -->
     <div class="fixed-category"></div>
     <!-- 전체레이아웃 -->
@@ -311,8 +311,8 @@
             <h2>가족 여행 추천<br />Family trip recommendation</h2>
           </div>
           <!-- navigation -->
-          <button class="swiper-button-next"></button>
-          <button class="swiper-button-prev"></button>
+          <button class="swiper-button-nextt"><i class="fa-solid fa-angle-right" style="color: #007aff;"></i></button>
+          <button class="swiper-button-prevt"><i class="fa-solid fa-angle-left" style="color: #007aff;"></i></button>
           <!-- swiper -->
           <div class="swiper familySwiper">
             <div class="swiper-wrapper">
@@ -388,12 +388,34 @@
       </section>
       <!-- map -->
       <section class="map">
-        <ul class="map-list">
-          <li>교촌마을 지도보기</li>
-          <li>교촌마을 찾아오기</li>
-          <li>교촌마을 주변보기</li>
-        </ul>
-        <img src="images/load_map.jpg" alt="지도보기" class="load-map" />
+        <div class="map-inner">
+          <ul>
+            <li>
+              교촌마을 찾아오기
+              <img src="images/load_map.jpg" alt="지도보기">
+            </li>
+            <li>
+<!-- 1. 약도 노드 -->
+<div id="daumRoughmapContainer1724989564218" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+<!-- 2. 설치 스크립트 -->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1724989564218",
+		"key" : "2khwr",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+              
+            </li>
+            <li>
+              교촌마을 주변보기
+              
+            </li>
+          </ul>
+        </div>
         
       </section>
       <!-- footer -->
