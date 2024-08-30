@@ -53,7 +53,7 @@
   align-items: center;
   margin: auto;
 }
-.inner .restaurant{
+.inner .restaurant {
   width: 100%;
   padding: 0 80px;
   margin-top: 80px;
@@ -64,7 +64,7 @@
   gap: 6%;
   margin-bottom: 80px;
 }
-.intro-food-restaurant{
+.intro-food-restaurant {
   display: none;
 }
 .shop {
@@ -96,13 +96,13 @@ li {
   margin-bottom: 80px;
   /* background-color: antiquewhite; */
 }
-.inner .cafe{
+.inner .cafe {
   width: 100%;
   padding: 0 80px;
   margin-top: 80px;
   /* background-color: blanchedalmond; */
 }
-.intro-food-cafe{
+.intro-food-cafe {
   display: none;
 }
 .cafe-shop {
@@ -134,13 +134,13 @@ li {
   margin-bottom: 80px;
   /* background-color: antiquewhite; */
 }
-.inner .alcohol{
+.inner .alcohol {
   width: 100%;
   padding: 0 80px;
   margin-top: 80px;
   /* background-color: blanchedalmond; */
 }
-.intro-food-alcohol{
+.intro-food-alcohol {
   /* display: none; */
 }
 .alcohol-shop {
@@ -164,4 +164,74 @@ li {
 }
 .alcohol-shop li {
   font-size: 25px;
+}
+/* 후기 스와이퍼 */
+/* 버튼 디자인 */
+.sw-btn {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn > button {
+  background-color: #f8b400;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn > button:hover {
+  background-color: #f39c12;
+}
+
+.btn > button.active {
+  background-color: white;
+  color: #f39c12;
+}
+
+/* Swiper 디자인 */
+.swiper-container {
+  max-width: 800px;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffeaa7;
+}
+
+.swiper-slide {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.swiper-slide h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+.swiper-slide p {
+  font-size: 26px;
+  color: #636e72;
+}
+
+/* 페이지네이션 디자인 */
+.swiper-pagination-bullet {
+  background: #f39c12;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e17055;
+}
+
+/* 네비게이션 버튼 디자인 */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d35400;
 }
