@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>맛집 소개</title>
     <!-- <link rel="stylesheet" href="css/header.css"> -->
     <link rel="stylesheet" href="css/food_page.css" />
     <script src="js/jquery-1.10.2.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -190,7 +195,7 @@
           </div>
 
           <!-- 주류 -->
-           <div class="intro-food-alcohol">
+          <div class="intro-food-alcohol">
             <div class="alcohol">
               <ul class="alcohol-shop">
                 <img src="images/food이미지/food-img8.jpg" alt="shop1" />
@@ -237,47 +242,85 @@
                 <li>애견동반 : 가능</li>
               </ul>
             </div>
-           </div>
+          </div>
         </div>
       </div>
-      <!-- 후기모음 (스와이퍼) -->
+     <!-- 밥집 후기 섹션 -->
+<div class="intro-food-reviews">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- 후기 1 -->
+      <div class="swiper-slide">
+        <h3>불국정 <br> - 떡갈비정식</h3>
+        <p>정말 맛있었어요! 특히 떡갈비가 부드럽고 양념이 잘 배어 있었어요.</p>
+        <p>평점: ★★★★★</p>
+      </div>
+      <!-- 후기 2 -->
+      <div class="swiper-slide">
+        <h3>전통맷돌순두부 <br> - 손두부</h3>
+        <p>신선하고 고소한 맛이 일품이었어요. 매장에서 직접 만드는 두부라 더 맛있네요.</p>
+        <p>평점: ★★★★☆</p>
+      </div>
+      <!-- 후기 3 -->
+      <div class="swiper-slide">
+        <h3>향화정 <br> - 육회물회</h3>
+        <p>육회와 물회의 조합이 참신했어요. 다시 방문하고 싶어요.</p>
+        <p>평점: ★★★★☆</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
       <!-- 푸터 -->
     </div>
 
     <script>
-      $(document).ready(function() {
-    // 초기 상태에서 모든 메뉴 숨기기
-    $('.intro-food-restaurant, .intro-food-cafe, .intro-food-alcohol').hide();
+      $(document).ready(function () {
+        // 초기 상태에서 모든 메뉴 숨기기
+        $(".intro-food-restaurant, .intro-food-cafe, .intro-food-alcohol").hide();
 
-    // 버튼 클릭 시 이벤트 처리
-    $('.btn button').click(function() {
-      // 모든 버튼을 원래 색상으로 초기화
-      $('.btn button').css({
-        'background-color': '',
-        'color': ''
+        // 버튼 클릭 시 이벤트 처리
+        $(".btn button").click(function () {
+          // 모든 버튼을 원래 색상으로 초기화
+          $(".btn button").css({
+            "background-color": "",
+            color: "",
+          });
+
+          // 클릭된 버튼은 배경은 하얀색, 글자색은 검정색으로 변경
+          $(this).css({
+            "background-color": "white",
+            color: "black",
+          });
+
+          // 클릭된 버튼에 따라 해당 콘텐츠만 보여주기
+          if ($(this).hasClass("food-btn")) {
+            $(".intro-food-restaurant").show();
+            $(".intro-food-cafe").hide();
+            $(".intro-food-alcohol").hide();
+          } else if ($(this).hasClass("cafe-btn")) {
+            $(".intro-food-cafe").show();
+            $(".intro-food-restaurant").hide();
+            $(".intro-food-alcohol").hide();
+          } else if ($(this).hasClass("alcohol-btn")) {
+            $(".intro-food-alcohol").show();
+            $(".intro-food-cafe").hide();
+            $(".intro-food-restaurant").hide();
+          }
+        });
       });
-
-      // 클릭된 버튼은 배경은 하얀색, 글자색은 검정색으로 변경
-      $(this).css({
-        'background-color': 'white',
-        'color': 'black'
-      });
-
-      // 클릭된 버튼에 따라 해당 콘텐츠만 보여주기
-      if ($(this).hasClass('food-btn')) {
-        $('.intro-food-restaurant').show();
-        $('.intro-food-cafe').hide();
-        $('.intro-food-alcohol').hide();
-      } else if ($(this).hasClass('cafe-btn')) {
-        $('.intro-food-cafe').show();
-        $('.intro-food-restaurant').hide();
-        $('.intro-food-alcohol').hide();
-      }
-      else if ($(this).hasClass('alcohol-btn')) {
-        $('.intro-food-alcohol').show();
-        $('.intro-food-cafe').hide();
-        $('.intro-food-restaurant').hide();
-      }
+      document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+      
+      loop: true, // 슬라이드를 반복 재생
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2000, // 자동 슬라이드 전환 시간 (밀리초)
+      },
     });
   });
     </script>
