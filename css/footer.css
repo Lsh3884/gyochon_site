@@ -1,7 +1,9 @@
 @charset "utf-8";
 .footer{
+    margin: 0 auto;
+    max-width: 1200px;
     background-color: grey;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     width: 100%;
     position: relative;
     display: block;
@@ -9,20 +11,24 @@
 }
 .footer-one ul{
     display: flex;
-    margin-bottom: 30px;
+    margin: 40px 0;
     justify-content: center;
     padding-top: 35px;
     gap: 100px;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(65, 64, 64);
 }
 .footer-two{
     margin-bottom: 40px;
     margin-left: 50px;
-    font-size: 20px;
+}
+.footer-two ul li , .footer-three p{
+    color: rgb(65, 64, 64);
+    font-size: 23px;
 }
 .footer-three{
     width: 100%;
-    font-size: 20px;
     margin-left: 50px;
     margin-bottom: 40px;
 }
@@ -32,8 +38,8 @@
 }
 .footer-logo{
     position: absolute;
-    right: 15%;
-    top: 90px;
+    right: 8%;
+    top: 30%;
     width:200px;
     height: 150px;
     max-height: 70px;

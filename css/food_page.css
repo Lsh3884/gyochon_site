@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("footer.css");
 * {
   margin: 0;
   padding: 0;
@@ -37,12 +38,14 @@
   margin-top: 50px;
 }
 .btn .inner > button {
+  font-family: "Nanum Brush Script", cursive;
   float: left;
-  font-size: 50px;
+  font-size: 55px;
   color: white;
   background-color: black;
   padding: 5px 90px;
   margin: 50px;
+  border-radius: 10px;
 }
 /* 맛집 소개 영역 */
 /* 밥집-------------------------------------------------------------- */
@@ -194,44 +197,65 @@ li {
 }
 
 /* Swiper 디자인 */
+.intro-food-review h2{
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 80px;
+  margin: 30px;
+  margin-bottom: 60px;
+}
+.intro-food-review {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
 .swiper-container {
-  max-width: 800px;
+  max-width: 1200px;
   height: auto;
-  margin: 30px auto;
+  margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: #ffeaa7;
+  padding: 20px;
+}
+
+.swiper-wrapper {
+  display: flex;
 }
 
 .swiper-slide {
-  text-align: center;
   padding: 20px;
-  border-radius: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  white-space: normal;
 }
 
-.swiper-slide h3 {
-  font-size: 40px;
+.review {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+  margin: 30px;
+  /* float: left; */
+  font-size: 70px;
+  font-weight: 900;
   margin-bottom: 10px;
   color: #2d3436;
 }
 
-.swiper-slide p {
-  font-size: 26px;
+.star-rating {
+  margin: 20px;
+  font-size: 70px;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.review p {
+  margin: 30px;
+  font-size: 40px;
   color: #636e72;
-}
-
-/* 페이지네이션 디자인 */
-.swiper-pagination-bullet {
-  background: #f39c12;
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background: #e17055;
-}
-
-/* 네비게이션 버튼 디자인 */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #d35400;
+  word-wrap: break-word;
+  line-height: 1.6;
 }
