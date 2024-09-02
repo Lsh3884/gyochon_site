@@ -1,1 +1,87 @@
 @charset "utf-8";
+.visual {
+  font-family: "Nanum Brush Script", cursive;
+}
+.bannerSwiper {
+  width: 100%;
+}
+.bannerslide {
+  position: relative;
+}
+
+.bannerSwiper img {
+  width: 100%;
+}
+.banner-info {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 40%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: #fff;
+}
+/*  글자 슬라이드 */
+.banner-txt h1 {
+  font-size: 100px;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.banner-txt p {
+  font-size: 30px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.5s; /* h1 애니메이션이 끝난 후 p가 나옴 */
+}
+
+/* 배너 버튼 */
+.bannerbtn {
+  border-radius: 50px;
+  display: flex;
+  width: 40%;
+  background-color: black;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bannerbtn > a {
+  width: 40px;
+}
+.bannerbtn > a > img {
+  width: 100%;
+}
+.bannerbtn > p {
+  font-size: 30px;
+}
+/* ============ */
+
+/* 애니메이션 정의 */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.swiper-slide-active .banner-txt h1 {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.swiper-slide-active .banner-txt p {
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* 애니메이션 정의 */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

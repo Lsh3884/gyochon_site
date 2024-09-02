@@ -67,6 +67,7 @@
     <!-- js -->
     <script src="../js/html5shiv.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/visual.js"></script>
     <!-- <script src="../js/prefixfree.min.js"></script> -->
     <script src="../js/respond.min.js"></script>
     <link
@@ -177,7 +178,74 @@
         </div>
       </header>
       <!-- 비주얼(배너) -->
-      <section class="visual"></section>
+      <section class="visual">
+        <!-- Swiper -->
+        <div class="swiper bannerSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bannerslide">
+              <a href="#"><img src="images/banner1.png" alt="배너1" /></a>
+              <div class="banner-info">
+                <div class="banner-txt">
+                  <h1>포토존 투어</h1>
+                  <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
+                </div>
+                <div class="bannerbtn">
+                  <a href="#"
+                    ><img src="images/button-white.png" alt="버튼"
+                  /></a>
+                  <p>바로가기</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bannerslide">
+              <a href="#"><img src="images/banner2.png" alt="배너2" /></a>
+              <div class="banner-info">
+                <div class="banner-txt">
+                  <h1>포토존 투어</h1>
+                  <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
+                </div>
+                <div class="bannerbtn">
+                  <a href="#"
+                    ><img src="images/button-white.png" alt="버튼"
+                  /></a>
+                  <p>바로가기</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bannerslide">
+              <a href="#"><img src="images/banner3.png" alt="배너3" /></a>
+              <div class="banner-info">
+                <div class="banner-txt">
+                  <h1>포토존 투어</h1>
+                  <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
+                </div>
+                <div class="bannerbtn">
+                  <a href="#"
+                    ><img src="images/button-white.png" alt="버튼"
+                  /></a>
+                  <p>바로가기</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bannerslide">
+              <a href="#"><img src="images/banner4.png" alt="배너4" /></a>
+              <div class="banner-info">
+                <div class="banner-txt">
+                  <h1>포토존 투어</h1>
+                  <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
+                </div>
+                <div class="bannerbtn">
+                  <a href="#"
+                    ><img src="images/button-white.png" alt="버튼"
+                  /></a>
+                  <p>바로가기</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination bannerslide"></div>
+        </div>
+      </section>
       <!-- 마을 소게 -->
       <section class="introduction">
         <div class="inner">
@@ -400,8 +468,12 @@
             <h2>가족 여행 추천<br />Family trip recommendation</h2>
           </div>
           <!-- navigation -->
-          <button class="swiper-button-nextt"><i class="fa-solid fa-angle-right" style="color: #007aff;"></i></button>
-          <button class="swiper-button-prevt"><i class="fa-solid fa-angle-left" style="color: #007aff;"></i></button>
+          <button class="swiper-button-nextt">
+            <i class="fa-solid fa-angle-right" style="color: #007aff"></i>
+          </button>
+          <button class="swiper-button-prevt">
+            <i class="fa-solid fa-angle-left" style="color: #007aff"></i>
+          </button>
           <!-- swiper -->
           <div class="swiper familySwiper">
             <div class="swiper-wrapper">
@@ -499,36 +571,37 @@
       </section>
       <!-- map -->
       <section class="map">
-
         <div class="map-inner">
           <ul>
             <li>
               교촌마을 찾아오기
-              <img src="images/load_map.jpg" alt="지도보기">
+              <img src="images/load_map.jpg" alt="지도보기" />
             </li>
             <li>
-<!-- 1. 약도 노드 -->
-<div id="daumRoughmapContainer1724989564218" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-<!-- 2. 설치 스크립트 -->
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-<!-- 3. 실행 스크립트 -->
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1724989564218",
-		"key" : "2khwr",
-		"mapWidth" : "640",
-		"mapHeight" : "360"
-	}).render();
-</script>
-              
+              <!-- 1. 약도 노드 -->
+              <div
+                id="daumRoughmapContainer1724989564218"
+                class="root_daum_roughmap root_daum_roughmap_landing"
+              ></div>
+              <!-- 2. 설치 스크립트 -->
+              <script
+                charset="UTF-8"
+                class="daum_roughmap_loader_script"
+                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+              ></script>
+              <!-- 3. 실행 스크립트 -->
+              <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                  timestamp: "1724989564218",
+                  key: "2khwr",
+                  mapWidth: "640",
+                  mapHeight: "360",
+                }).render();
+              </script>
             </li>
-            <li>
-              교촌마을 주변보기
-              
-            </li>
+            <li>교촌마을 주변보기</li>
           </ul>
         </div>
-        
       </section>
       <!-- footer -->
       <footer class="footer">

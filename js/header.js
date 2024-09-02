@@ -40,7 +40,7 @@ $(document).ready(function () {
       case 1:
         return "내일";
       case 2:
-        return "모레";
+        return "모래";
       default:
         return "";
     }
