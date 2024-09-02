@@ -38,6 +38,7 @@
     <!-- js -->
     <script src="../js/html5shiv.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/visual.js"></script>
     <!-- <script src="../js/prefixfree.min.js"></script> -->
     <script src="../js/respond.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -132,7 +133,74 @@
         </div>
       </header>
       <!-- 비주얼(배너) -->
-      <section class="visual"></section>
+      <section class="visual">
+        <!-- Swiper -->
+        <div class="swiper bannerSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bannerslide">
+              <a href="#"><img src="images/banner1.png" alt="배너1" /></a>
+              <div class="banner-info">
+                <div class="banner-txt">
+                  <h1>포토존 투어</h1>
+                  <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
+                </div>
+                <div class="bannerbtn">
+                  <a href="#"
+                    ><img src="images/button-white.png" alt="버튼"
+                  /></a>
+                  <p>바로가기</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bannerslide">
+              <a href="#"><img src="images/banner2.png" alt="배너2" /></a>
+              <div class="banner-info">
+                <div class="banner-txt">
+                  <h1>포토존 투어</h1>
+                  <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
+                </div>
+                <div class="bannerbtn">
+                  <a href="#"
+                    ><img src="images/button-white.png" alt="버튼"
+                  /></a>
+                  <p>바로가기</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bannerslide">
+              <a href="#"><img src="images/banner3.png" alt="배너3" /></a>
+              <div class="banner-info">
+                <div class="banner-txt">
+                  <h1>포토존 투어</h1>
+                  <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
+                </div>
+                <div class="bannerbtn">
+                  <a href="#"
+                    ><img src="images/button-white.png" alt="버튼"
+                  /></a>
+                  <p>바로가기</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bannerslide">
+              <a href="#"><img src="images/banner4.png" alt="배너4" /></a>
+              <div class="banner-info">
+                <div class="banner-txt">
+                  <h1>포토존 투어</h1>
+                  <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
+                </div>
+                <div class="bannerbtn">
+                  <a href="#"
+                    ><img src="images/button-white.png" alt="버튼"
+                  /></a>
+                  <p>바로가기</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination bannerslide"></div>
+        </div>
+      </section>
       <!-- 마을 소게 -->
       <section class="introduction">
         <div class="inner">
@@ -326,8 +394,10 @@
             <h2>가족 여행 추천<br />Family trip recommendation</h2>
           </div>
           <!-- navigation -->
+
           <button class="swiper-button-nextt"><i class="fa-solid fa-angle-right" style="color: #007aff"></i></button>
           <button class="swiper-button-prevt"><i class="fa-solid fa-angle-left" style="color: #007aff"></i></button>
+
           <!-- swiper -->
           <div class="swiper familySwiper">
             <div class="swiper-wrapper">
@@ -412,11 +482,13 @@
       </section>
       <!-- map -->
       <section class="map">
+
         <ul>
           <li></li>
           <li></li>
           <li></li>
         </ul>
+
       </section>
       <!-- footer -->
       <footer class="footer">
