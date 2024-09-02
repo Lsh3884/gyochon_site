@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 .header {
+
+  padding: 10px 20px;
   position: fixed;
   width: 100%;
-  background-color: #fc3838;
-  padding: 20px 50px;
   background-color: #fff;
   z-index: 9999;
 }
@@ -16,13 +16,11 @@
   justify-content: space-around;
   position: relative;
   width: 100%;
-  height: 80px;
   border-bottom: 1px solid #333;
 }
 /* 로고 =====*/
 .header-logo {
-  width: 15%;
-  height: 100%;
+  width: 10%;
   overflow: hidden;
 }
 
@@ -31,13 +29,12 @@
   height: 100%;
 }
 .header-logo img {
-  height: 100%;
+  width: 100%;
 }
 /* 메뉴 영역 */
 .header-rigth-top {
   position: relative;
   width: 100%;
-  height: 30px;
 }
 
 /* 로그인 영역 */
@@ -93,9 +90,13 @@
 
 .header-menu-submenu {
   width: calc(100% / 4);
-  display: none;
+  max-height: 0; /* 처음에 높이를 0으로 설정 */
+  overflow: hidden; /* 내용이 보이지 않도록 설정 */
   position: absolute;
   background-color: #fff;
+  opacity: 0; /* 처음에 투명하게 설정 */
+  visibility: hidden; /* 처음에 보이지 않게 설정 */
+  transition: opacity 0.7s ease; /* 높이와 투명도에 애니메이션 적용 */
 }
 
 .header-menu-submenu > li {
@@ -106,7 +107,9 @@
 }
 
 .header-menu > li:hover .header-menu-submenu {
-  display: block;
+  opacity: 1; /* 호버 시 투명도 변경 */
+  visibility: visible; /* 호버 시 보이도록 설정 */
+  max-height: 300px;
 }
 
 /* 헤더 아래쪽============================================= */
@@ -119,8 +122,7 @@
 
 /*날씨  아래쪽============================================= */
 .weather {
-  width: 20%;
-  height: 100%;
+  width: 25%;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -130,16 +132,15 @@
 }
 
 .day {
+  height: 50px;
   width: calc(100% / 3);
   position: relative;
+  display: flex;
 }
-
+.day > h3,
 .day > p {
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
+  line-height: 50px;
+  font-size: 15px;
 }
 /* 검색하기============== */
 .search {
@@ -147,11 +148,9 @@
   border-radius: 20px;
   width: 20%;
   height: 40px;
-
   position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translate(-50%, -10%);
+  right: 0;
+  top: 0;
   overflow: hidden;
 }
 .search input {

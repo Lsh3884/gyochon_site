@@ -1,4 +1,12 @@
 @charset "utf-8";
-.root_daum_roughmap .cont{
-  opacity: 0;
+.map-inner{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.map-inner a{
+  display: none;
+}
+.map-inner .hide{
+  display: none;
 }
