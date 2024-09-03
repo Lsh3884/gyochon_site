@@ -1,5 +1,7 @@
 @charset "utf-8";
 .visual {
+  margin-bottom: 200px;
+  width: 100%;
   font-family: "Nanum Brush Script", cursive;
 }
 .bannerSwiper {
@@ -24,6 +26,7 @@
   gap: 50px;
   color: #fff;
 }
+
 /*  글자 슬라이드 */
 .banner-txt h1 {
   font-size: 100px;
@@ -44,22 +47,29 @@
 /* 배너 버튼 */
 .bannerbtn {
   border-radius: 50px;
-  display: flex;
-  width: 40%;
+  width: 50%;
   background-color: black;
-  padding: 10px;
-  justify-content: space-evenly;
-  align-items: center;
+  padding: 15px 40px;
 }
+
 .bannerbtn > a {
-  width: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
 }
-.bannerbtn > a > img {
+.btn-img {
+  width: 20%;
+}
+.btn-img img {
   width: 100%;
 }
-.bannerbtn > p {
-  font-size: 30px;
+
+.bannerbtn p {
+  font-size: 50px;
+  color: #fff;
 }
+
 /* ============ */
 
 /* 애니메이션 정의 */

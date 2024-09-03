@@ -5,6 +5,11 @@ $(document).ready(function () {
     $(".lang-submenu").toggle();
   });
 
+  $(".mb-lang > a").on("click", function (e) {
+    e.preventDefault();
+    $(".lang-submenu-mb").toggle();
+  });
+
   // 날씨 API 가져오기
   const apiKey = "784ab24ff2ed5d94d4288abed9e25d13"; // 실제 API 키로 변경하세요.
   const city = "Gyeongju"; // 원하는 도시로 변경 가능
@@ -74,4 +79,24 @@ $(document).ready(function () {
 
   // 페이지 로드 시 날씨 데이터 가져오기
   getWeatherData();
+
+  // 헤더 스크롤
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    const headerBottom = document.querySelector(".header-bottom"); // 변수명 오타 수정
+    const logo = document.querySelector(".logo-img");
+    const langBtn = document.querySelector(".lang-button");
+    if (window.scrollY > 50) {
+      // 스크롤이 50px 이상 내려가면
+      header.classList.add("scrolled");
+      headerBottom.style.display = "none";
+      logo.src = "images/logo-w.png";
+      langBtn.src = "images/button-white.png";
+    } else {
+      header.classList.remove("scrolled");
+      headerBottom.style.display = "flex";
+      logo.src = "../images/logo3.png";
+      langBtn.src = "images/button-black.png";
+    } // side-navi-mb-inner의 글자색을 유지하도록 설정
+  });
 });
