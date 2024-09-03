@@ -3,9 +3,8 @@
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: 0;
-    margin: 0 auto;
 }
+
 .gallery h2 {
   font-size: 4.2rem;
   line-height: 100px;
@@ -14,45 +13,184 @@
   margin-bottom: 80px;
   font-weight: bold;
 }
+
 .gallery-logo {
   margin-bottom: 60px;
 }
+
 .gallery-logo > ul {
   display: flex;
   width: 50%;
   justify-content: space-around;
   margin: auto;
 }
+
 .gallery-logo > ul > li {
   font-size: 40px;
   font-weight: bold;
   font-family: "Nanum Brush Script", cursive;
 }
+
 .gallery-logo > ul > li > img {
   width: 50px;
   height: 50px;
   margin: 10px;
 }
+
+/* 이미지 컨테이너 */
 .img-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
   width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 40px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-.img-container > img {
-  /* margin: 0 auto; */
-  /* width: 200px; */
-  width: calc(100% / 4);
-  height: 200px;
 
+/* 이미지 스타일링 */
+.img-container img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
 
+/* 오버레이 (확대된 이미지 배경) 스타일링 */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 확대된 이미지 스타일링 */
+.overlay-img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* 닫기 버튼 스타일링 */
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+/* 반응형 */
+/* 990px 이하 */
+@media screen and (max-width: 990px) {
+  
+  .gallery h2 {
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 60px;
+  }
+  .gallery-logo > ul {
+    width: 70%;
+  }
+  .gallery-logo > ul > li {
+    font-size: 30px;
+  }
+  .gallery-logo > ul > li > img {
+    width: 40px;
+    height: 40px;
+  }
+  .img-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 80%;
+  }
 
 }
-.gallery .line {
-  width: 450px;
-  height: 2px;
-  background-color: gray;
-  text-align: center;
-  margin: 100px auto;
+
+/* 768px 이하 */
+@media screen and (max-width: 768px) {
+  
+  .gallery h2 {
+    font-size: 65px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+  .gallery-logo > ul {
+    width: 80%;
+  }
+  .gallery-logo > ul > li {
+    font-size: 25px;
+  }
+  .gallery-logo > ul > li > img {
+    width: 35px;
+    height: 35px;
+  }
+  .img-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    width: 80%;
+  }
+}
+
+/* 480px 이하 */
+@media screen and (max-width: 480px) {
+  
+  .gallery h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+  .gallery-logo > ul {
+    width: 90%;
+  }
+  .gallery-logo > ul > li {
+    font-size: 20px;
+  }
+  .gallery-logo > ul > li > img {
+    width: 30px;
+    height: 30px;
+  }
+  .img-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    width: 80%;
+  }
+}
+
+/* 320px 이하 */
+@media screen and (max-width: 320px) {
+ 
+  .img-container img {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .gallery h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .gallery-logo > ul {
+    width: 100%;
+  }
+  .gallery-logo > ul > li {
+    font-size: 18px;
+  }
+  .gallery-logo > ul > li > img {
+    width: 25px;
+    height: 25px;
+  }
+  .img-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    width: 80%;
+  }
+  .img-container img {
+    width: 90%;
+    margin-left: 5%;
+  }
 }

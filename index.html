@@ -83,10 +83,12 @@
     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap"
       rel="stylesheet"
     />
+
   </head>
 
   <body>
@@ -348,7 +350,7 @@
               <p>전통한식부터 퓨전한식까지 다양한 먹거리 가득한 먹방 투어 ~</p>
             </div>
             <div class="btn">
-              <a href="#"><img src="images/button-white.png" alt="버튼" /></a>
+              <a href="food_page.html"><img src="images/button-white.png" alt="버튼" /></a>
               <p>맛집 찾기</p>
             </div>
           </div>
@@ -616,6 +618,19 @@
         </div>
         <p class="line"></p>
       </section>
+
+      <!-- 확대된 이미지 및 닫기 버튼을 위한 구조 -->
+      <div id="overlay" class="overlay">
+        <span id="closeBtn">&times;</span>
+        <img id="overlayImg" class="overlay-img" src="" alt="확대된 이미지" />
+      </div>
+
+      <!-- 확대된 이미지 및 닫기 버튼을 위한 구조 -->
+      <div id="overlay" class="overlay">
+        <span id="closeBtn">&times;</span>
+        <img id="overlayImg" class="overlay-img" src="" alt="확대된 이미지" />
+      </div>
+
       <!-- map -->
       <section class="map">
 
@@ -673,6 +688,7 @@
         </div>
       </footer> -->
     </div>
+    <script src="js/gallery.js"></script>
     <script>
       // x버튼누를시 모탈창 없애기
       $(function () {
