@@ -41,6 +41,7 @@
     <script src="../js/html5shiv.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/visual.js"></script>
+    <script src="js/map.js"></script>
     <!-- <script src="../js/prefixfree.min.js"></script> -->
     <script src="../js/respond.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -490,14 +491,33 @@
 
       <!-- map -->
       <section class="map">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+
+        <ul class="map-nav">
+          <li><a href="#map01">교촌마을 지도보기</a></li>
+          <li><a href="#map02">교촌마을 찾아오기</a></li>
+          <li><a href="#map03">위치</a></li>
         </ul>
+        <div class="section">
+          <section class="tabitem" id="map01">
+            <div class="image-wrap">
+              <img src="images/load_map.jpg" alt="map1">
+            </div>
+          </section>
+          <section class="tabitem" id="map02">
+            <div class="image-wrap">
+              <a href="https://map.kakao.com/?urlX=1000842&urlY=653836&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="310" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=1000842&MY=653836&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a><div class="hide" style="overflow:hidden;padding:7px 11px;border:1px solid #dfdfdf;border-color:rgba(0,0,0,.1);border-radius:0 0 2px 2px;background-color:#f9f9f9;width:482px;"><strong style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵"></strong><div style="float: right;position:relative"><a style="font-size:12px;text-decoration:none;float:left;height:15px;padding-top:1px;line-height:15px;color:#000" target="_blank" href="https://map.kakao.com/?urlX=1000842&urlY=653836&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false">지도 크게 보기</a></div></div>
+            </div>
+          </section>
+          <section class="tabitem" id="map03">
+            <div class="image-wrap">
+              <img src="images/map-wichi.jpg" alt="map3">
+            </div>
+          </section>
+        </div>
+
       </section>
       <!-- footer -->
-      <footer class="footer">
+      <!-- <footer class="footer">
         <div class="footer-one">
           <ul>
             <li>개인정보처리방침</li>
@@ -524,7 +544,7 @@
             <img src="images/logo2.png" alt="푸터로고" />
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
     <script src="js/gallery.js"></script>
     <script>
