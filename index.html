@@ -11,10 +11,7 @@
     <meta name="keywords" content="경주여행, 경주, 경주가족여행, 경주필수코스, 경주체험, 경주여행코스, 경주먹거리투어, 경주원데이클래스, 외국인여행지추천, 경주한옥여행" />
     <meta property="og:title" content="경주교촌마을" />
 
-    <meta
-      property="og:description"
-      content="경주여행, 경주, 경주가족여행, 경주필수코스, 경주체험, 경주여행코스, 경주먹거리투어, 경주원데이클래스, 외국인여행지추천, 경주한옥여행"
-    />
+    <meta property="og:description" content="경주여행, 경주, 경주가족여행, 경주필수코스, 경주체험, 경주여행코스, 경주먹거리투어, 경주원데이클래스, 외국인여행지추천, 경주한옥여행" />
     <meta property="og:image" content="http://127.0.0.1:5500/images/logo3.png" />
     <meta property="og:url" content="https://gyochon-site.vercel.app/" />
 
@@ -55,6 +52,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet" />
+   <script src="js/gallery.js"></script>
   </head>
 
   <body>
@@ -150,9 +148,7 @@
                   <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
                 </div>
                 <div class="bannerbtn">
-                  <a href="#"
-                    ><img src="images/button-white.png" alt="버튼"
-                  /></a>
+                  <a href="#"><img src="images/button-white.png" alt="버튼" /></a>
                   <p>바로가기</p>
                 </div>
               </div>
@@ -165,9 +161,7 @@
                   <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
                 </div>
                 <div class="bannerbtn">
-                  <a href="#"
-                    ><img src="images/button-white.png" alt="버튼"
-                  /></a>
+                  <a href="#"><img src="images/button-white.png" alt="버튼" /></a>
                   <p>바로가기</p>
                 </div>
               </div>
@@ -180,9 +174,7 @@
                   <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
                 </div>
                 <div class="bannerbtn">
-                  <a href="#"
-                    ><img src="images/button-white.png" alt="버튼"
-                  /></a>
+                  <a href="#"><img src="images/button-white.png" alt="버튼" /></a>
                   <p>바로가기</p>
                 </div>
               </div>
@@ -195,9 +187,7 @@
                   <p>문화유산, 카페, 한옥마을 등 넘쳐나는 포토존 !</p>
                 </div>
                 <div class="bannerbtn">
-                  <a href="#"
-                    ><img src="images/button-white.png" alt="버튼"
-                  /></a>
+                  <a href="#"><img src="images/button-white.png" alt="버튼" /></a>
                   <p>바로가기</p>
                 </div>
               </div>
@@ -263,7 +253,7 @@
               <p>전통한식부터 퓨전한식까지 다양한 먹거리 가득한 먹방 투어 ~</p>
             </div>
             <div class="btn">
-              <a href="#"><img src="images/button-white.png" alt="버튼" /></a>
+              <a href="food_page.html"><img src="images/button-white.png" alt="버튼" /></a>
               <p>맛집 찾기</p>
             </div>
           </div>
@@ -485,15 +475,26 @@
         </div>
         <p class="line"></p>
       </section>
+
+      <!-- 확대된 이미지 및 닫기 버튼을 위한 구조 -->
+      <div id="overlay" class="overlay">
+        <span id="closeBtn">&times;</span>
+        <img id="overlayImg" class="overlay-img" src="" alt="확대된 이미지" />
+      </div>
+
+      <!-- 확대된 이미지 및 닫기 버튼을 위한 구조 -->
+      <div id="overlay" class="overlay">
+        <span id="closeBtn">&times;</span>
+        <img id="overlayImg" class="overlay-img" src="" alt="확대된 이미지" />
+      </div>
+
       <!-- map -->
       <section class="map">
-
         <ul>
           <li></li>
           <li></li>
           <li></li>
         </ul>
-
       </section>
       <!-- footer -->
       <footer class="footer">
@@ -525,6 +526,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/gallery.js"></script>
     <script>
       // x버튼누를시 모탈창 없애기
       $(function () {
