@@ -12,6 +12,7 @@
 }
 .event-top {
   width: calc(100% / 2 - 100px);
+  height: 100%;
   display: flex;
   gap: 30px;
   margin: auto;
@@ -19,6 +20,8 @@
 }
 .event-top img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .evetn-bottom {
   width: 85%;
