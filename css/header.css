@@ -1,12 +1,13 @@
 @charset "utf-8";
 
 .header {
-
   padding: 10px 20px;
   position: fixed;
   width: 100%;
+  height: 150px;
   background-color: #fff;
   z-index: 9999;
+  transition: all 0.3s ease;
 }
 
 /* 헤더의 상단영역======================================= */
@@ -16,6 +17,7 @@
   justify-content: space-around;
   position: relative;
   width: 100%;
+  height: 80px;
   border-bottom: 1px solid #333;
 }
 /* 로고 =====*/
@@ -55,10 +57,46 @@
   font-size: 13px;
   width: calc(100% / 3);
 }
+/* 모바일 navi */
+.side-navi-mb {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+.side-navi-mb > i {
+  font-size: 50px;
+}
+
+.side-navi-mb-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: navajowhite;
+  width: 40%;
+  height: 100vh;
+  z-index: 9999;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.navi-mb-inner-list > li {
+  font-size: 50px;
+  line-height: 2;
+  font-weight: bold;
+}
+.navi-mb-inner-list > li > a > img {
+margin-top: 2%;
+  width: 30px;
+}
+.lang-submenu-mb {
+  display: none;
+}
+
 /* 언어 선택 영역  */
 .lang-button {
   width: 10px;
   transform: rotate(90deg);
+  transition: all 0.3s ease; /* 숨길 때 부드럽게 처리 */
 }
 
 .lang-submenu {
@@ -73,7 +111,7 @@
 
 /* 헤더 오른쪽 하단 메뉴 */
 .header-menu {
-  width: 40%;
+  width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -122,6 +160,7 @@
 
 /*날씨  아래쪽============================================= */
 .weather {
+  min-width: 400px;
   width: 25%;
   display: flex;
   justify-content: space-around;
@@ -149,7 +188,7 @@
   width: 20%;
   height: 40px;
   position: absolute;
-  right: 0;
+  right: 10%;
   top: 0;
   overflow: hidden;
 }
@@ -158,4 +197,49 @@
   border: #fff;
   line-height: 40px;
   margin-left: 10%;
+}
+/* =========스크롤 시 변경================================= */
+
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 100px;
+  border: none;
+}
+.header.scrolled a {
+  color: #fff;
+}
+.header.scrolled .search input {
+  background-color: transparent; /* 배경색 없음 */
+  color: #fff; /* 글자색 흰색 */
+  border-color: #fff; /* 경계색 흰색 */
+}
+.header.scrolled .search {
+  border: #fff;
+}
+.header.scrolled .header-bottom {
+  display: none;
+}
+.header.scrolled .header-top {
+  border: none;
+}
+/* =====헤어 반응형 */
+@media screen and (max-width: 1600px) {
+  .header-logo {
+    width: 13%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .header-logo {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .side-navi {
+    display: none;
+  }
+  .side-navi-mb {
+    display: block;
+  }
 }
