@@ -76,15 +76,7 @@
   max-height: 90%;
 }
 
-/* 닫기 버튼 스타일링 */
-#closeBtn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-}
+
 /* 반응형 */
 /* 990px 이하 */
 @media screen and (max-width: 990px) {

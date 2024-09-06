@@ -58,7 +58,6 @@
 }
 .inner .restaurant {
   width: 100%;
-  padding: 0 80px;
   margin-top: 80px;
   /* background-color: blanchedalmond; */
 }
@@ -102,7 +101,6 @@ li {
 }
 .inner .cafe {
   width: 100%;
-  padding: 0 80px;
   margin-top: 80px;
   /* background-color: blanchedalmond; */
 }
@@ -141,7 +139,6 @@ li {
 }
 .inner .alcohol {
   width: 100%;
-  padding: 0 80px;
   margin-top: 80px;
   /* background-color: blanchedalmond; */
 }
@@ -219,14 +216,16 @@ li {
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: #ffeaa7;
-  padding: 20px;
+  padding: 10px;
 }
 
 .swiper-wrapper {
+ 
   display: flex;
 }
 
 .swiper-slide {
+  
   padding: 20px;
   box-sizing: border-box;
   max-width: 100%;
@@ -234,7 +233,8 @@ li {
 }
 
 .review {
-  background-color: white;
+
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -263,5 +263,325 @@ li {
   word-wrap: break-word;
   line-height: 1.6;
 }
-/* 반응형 */
+/* 더보기 버튼 스타일 */
+.more-btn {
+  display: block;
+  margin: 20px auto 40px auto;
+  padding: 10px 40px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  transition: background-color 0.3s;
+  margin-top: 120px;
+}
 
+.more-btn:hover {
+  background-color: #686868;
+}
+
+/* 숨겨진 항목 스타일 */
+.more-restaurant,
+.more-cafe,
+.more-alcohol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  /* 슬라이드 애니메이션 효과 적용 */
+}
+
+.more-restaurant.show,
+.more-cafe.show,
+.more-alcohol.show {
+  display: flex !important;
+  
+  opacity: 1;
+  z-index: 999;
+}
+.more-restaurant, .more-cafe , .more-alcohol{
+  width: calc(100% / 3);
+}
+
+@media (max-width: 990px) {
+  .shop, .cafe-shop, .alcohol-shop, .more-restaurant ul, .more-cafe ul, .more-alcohol ul {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop, .cafe-shop, .alcohol-shop, .more-restaurant ul, .more-cafe ul, .more-alcohol ul {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .shop img, .cafe-shop img, .alcohol-shop img {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+    font-size: 20px;
+  }
+
+  .shop li, .cafe-shop li, .alcohol-shop li {
+    font-size: 16px;
+  }
+}
+
+/* 반응형 디자인 적용 */
+@media (max-width: 990px) {
+  .shop, .cafe-shop, .alcohol-shop, .more-restaurant ul, .more-cafe ul, .more-alcohol ul {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop, .cafe-shop, .alcohol-shop, .more-restaurant ul, .more-cafe ul, .more-alcohol ul {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* 반응형 */
+/* 990px 이하 */
+@media (max-width: 990px) {
+  .main-img h2 {
+    font-size: 100px;
+  }
+
+  .btn .inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn .inner > button {
+    font-size: 40px;
+    padding: 5px 70px;
+    margin: 20px 15px;
+  }
+
+  .shop, .cafe-shop, .alcohol-shop {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+
+  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+    font-size: 30px;
+  }
+
+  .shop li, .cafe-shop li, .alcohol-shop li {
+    font-size: 20px;
+  }
+
+  .intro-food-review h2 {
+    font-size: 60px;
+  }
+  .swiper-container{
+    height: 600px;
+  }
+  .review h3 {
+    font-size: 50px;
+  }
+
+  .star-rating {
+    font-size: 50px;
+  }
+
+  .review p {
+    font-size: 30px;
+  }
+}
+
+/* 768px 이하 */
+@media (max-width: 768px) {
+  .main-img h2 {
+    font-size: 80px;
+  }
+
+  .btn .inner > button {
+    font-size: 35px;
+    padding: 5px 50px;
+    margin: 10px 15px;
+  }
+  .shop, .cafe-shop, .alcohol-shop {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+    font-size: 24px;
+  }
+
+  .shop li, .cafe-shop li, .alcohol-shop li {
+    font-size: 18px;
+  }
+
+  .intro-food {
+    width: 90%;
+    margin: auto;
+  }
+
+  .intro-food-review h2 {
+    font-size: 50px;
+  }
+
+  .review h3 {
+    font-size: 40px;
+  }
+
+  .star-rating {
+    font-size: 40px;
+  }
+
+  .review p {
+    font-size: 25px;
+  }
+  .swiper-container{
+    height: 550px;
+  }
+  
+}
+
+/* 576px 이하 */
+@media (max-width: 576px) {
+  .main-img h2 {
+    font-size: 60px;
+  }
+
+  .btn .inner > button {
+    font-size: 30px;
+    padding: 5px 30px;
+  }
+
+  .shop img, .cafe-shop img, .alcohol-shop img {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+    font-size: 20px;
+  }
+
+  .shop li, .cafe-shop li, .alcohol-shop li {
+    font-size: 16px;
+  }
+
+  .intro-food-review h2 {
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  .review h3 {
+    font-size: 35px;
+  }
+
+  .star-rating {
+    font-size: 35px;
+  }
+
+  .review p {
+    font-size: 20px;
+  }
+  .swiper-container{
+    height: 520px;
+  }
+}
+
+/* 420px 이하 */
+@media (max-width: 420px) {
+  .main-img h2 {
+    font-size: 50px;
+  }
+
+  .btn .inner > button {
+    font-size: 25px;
+    padding: 5px 20px;
+  }
+
+  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+    font-size: 18px;
+  }
+
+  .shop li, .cafe-shop li, .alcohol-shop li {
+    font-size: 14px;
+  }
+
+  .intro-food-review h2 {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .review h3 {
+    margin: 10px;
+    font-size: 30px;
+  }
+
+  .star-rating {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  .review p {
+    font-size: 17px;
+    margin: 10px;
+  }
+  .swiper-container{
+    width: 90%;
+    height: 465px;
+  }
+}
+
+/* 320px 이하 */
+@media (max-width: 320px) {
+  .main-img h2 {
+    font-size: 40px;
+  }
+  
+  .btn .inner > button {
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 10px;
+  }
+  .restaurant , .cafe , .alcohol{
+    margin: 0px;
+  }
+  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+    font-size: 16px;
+  }
+
+  .shop li, .cafe-shop li, .alcohol-shop li {
+    font-size: 12px;
+  }
+
+  .intro-food-review h2 {
+    font-size: 30px;
+  }
+
+  .review h3 {
+    font-size: 24px;
+    margin: 5px;
+  }
+
+  .star-rating {
+    font-size: 24px;
+    margin: 5px;
+  }
+
+  .review p {
+    font-size: 15px;
+    margin: 5px;
+  }
+  .swiper-container{
+    width: 90%;
+    height: 440px;
+  }
+}
