@@ -7,12 +7,12 @@ window.addEventListener("load", function () {
   
     tabitem.forEach(function (item) {
       item.addEventListener("click", function (e) {
-        e.preventDefault(); 
+        e.preventDefault(); // 기본 동작(링크 클릭)을 막습니다.
   
         // 모든 탭 내용을 숨깁니다.
         maps.forEach(function (map) {
           map.classList.remove("active");
-          map.style.display = "none"; 
+          map.style.display = "none"; // 탭 내용을 숨깁니다.
         });
   
         // 클릭된 탭에 해당하는 내용을 표시합니다.
@@ -23,5 +23,4 @@ window.addEventListener("load", function () {
       });
     });
   });
-
   
