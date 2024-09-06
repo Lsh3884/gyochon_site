@@ -5,9 +5,9 @@
   font-family: "Nanum Brush Script", cursive;
 }
 .guide .inner {
-  background: url("../images/tour_back.JPG") no-repeat center;
+  background: url("../images/background.png") no-repeat center;
   width: 100%;
-  
+
   background-size: cover;
   background-color: pink;
 }
@@ -32,9 +32,9 @@
   width: 80%;
   margin: 0 auto;
 }
-.FOOD .text{
- padding-top: 100px;
- padding-left: 450px;
+.FOOD .text {
+  padding-top: 100px;
+  padding-left: 450px;
 }
 .FOOD .guide-img {
   float: left;
@@ -47,32 +47,30 @@
   font-size: 80px;
   font-weight: 800;
 }
-.FOOD  > .text > p {
+.FOOD > .text > p {
   text-align: left;
   font-size: 50px;
   margin-top: 20px;
   line-height: 40px;
 }
-.FOOD .btn{
-    justify-content: center;
-    display: flex;
-    margin-top: 100px;
-    margin-left: 700px;
-    background-color: black;
-    border-radius: 50px;
-    width: 250px;
-    padding: 10px;
-    
+.FOOD .btn {
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 700px;
+  background-color: black;
+  border-radius: 50px;
+  width: 250px;
+  padding: 10px;
 }
-.FOOD .btn a img{
-  
+.FOOD .btn a img {
   width: 40px;
 }
-.FOOD .btn p{
-    font-size: 40px;
-    margin-top: 5px;
-    margin-left: 10px;
-    color: white;
+.FOOD .btn p {
+  font-size: 40px;
+  margin-top: 2px;
+  margin-left: 10px;
+  color: white;
 }
 /* 체험 영역 */
 .EXPERIENCE {
@@ -81,9 +79,9 @@
   width: 80%;
   margin: 0 auto;
 }
-.EXPERIENCE .text{
- padding-top: 100px;
- padding-left: 450px;
+.EXPERIENCE .text {
+  padding-top: 100px;
+  padding-left: 450px;
 }
 .EXPERIENCE .guide-img {
   float: left;
@@ -96,30 +94,28 @@
   font-size: 80px;
   font-weight: 800;
 }
-.EXPERIENCE  > .text > p {
+.EXPERIENCE > .text > p {
   text-align: left;
   font-size: 50px;
   margin-top: 10px;
   line-height: 40px;
 }
-.EXPERIENCE .btn{
-    justify-content: center;
-    display: flex;
-    margin-top: 100px;
-    margin-left: 700px;
-    background-color: black;
-    border-radius: 50px;
-    width: 300px;
-    padding: 10px;
-    
+.EXPERIENCE .btn {
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 700px;
+  background-color: black;
+  border-radius: 50px;
+  width: 300px;
+  padding: 10px;
 }
-.EXPERIENCE .btn a img{
-  
+.EXPERIENCE .btn a img {
   width: 40px;
 }
-.EXPERIENCE .btn p{
+.EXPERIENCE .btn p {
   font-size: 40px;
-  margin-top: 5px;
+  margin-top: 2px;
   margin-left: 10px;
   color: white;
 }
@@ -131,9 +127,9 @@
   width: 80%;
   margin: 0 auto;
 }
-.HOTEL .text{
- padding-top: 100px;
- padding-left: 450px;
+.HOTEL .text {
+  padding-top: 100px;
+  padding-left: 450px;
 }
 .HOTEL .guide-img {
   float: left;
@@ -146,30 +142,28 @@
   font-size: 80px;
   font-weight: 800;
 }
-.HOTEL  > .text > p {
+.HOTEL > .text > p {
   text-align: left;
   font-size: 50px;
   margin-top: 10px;
   line-height: 40px;
 }
-.HOTEL .btn{
-    justify-content: center;
-    display: flex;
-    margin-top: 100px;
-    margin-left: 700px;
-    background-color: black;
-    border-radius: 50px;
-    width: 300px;
-    padding: 10px;
-    
+.HOTEL .btn {
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 700px;
+  background-color: black;
+  border-radius: 50px;
+  width: 300px;
+  padding: 10px;
 }
-.HOTEL .btn a img{
-  
+.HOTEL .btn a img {
   width: 40px;
 }
-.HOTEL .btn p{
+.HOTEL .btn p {
   font-size: 40px;
-  margin-top: 5px;
+  margin-top: 2px;
   margin-left: 10px;
   color: white;
 }
@@ -186,38 +180,56 @@
   .guide .title p {
     font-size: 50px;
   }
-  .FOOD, .EXPERIENCE, .HOTEL {
+  .inner > .HOTEL {
+    padding: 100px 0 200px;
+  }
+  .FOOD,
+  .EXPERIENCE,
+  .HOTEL {
     padding-top: 100px;
     width: 90%;
   }
-  .FOOD .text, .EXPERIENCE .text, .HOTEL .text {
+  .FOOD .text,
+  .EXPERIENCE .text,
+  .HOTEL .text {
     padding-top: 50px;
     padding-left: 0;
     text-align: center;
   }
-  .FOOD .guide-img, .EXPERIENCE .guide-img, .HOTEL .guide-img {
+  .FOOD .guide-img,
+  .EXPERIENCE .guide-img,
+  .HOTEL .guide-img {
     width: 300px;
     height: 300px;
     margin: 0 auto;
     display: block;
     float: none;
   }
-  .FOOD h3, .EXPERIENCE h3, .HOTEL h3 {
+  .FOOD h3,
+  .EXPERIENCE h3,
+  .HOTEL h3 {
     font-size: 60px;
   }
-  .FOOD > .text > p, .EXPERIENCE > .text > p, .HOTEL > .text > p {
+  .FOOD > .text > p,
+  .EXPERIENCE > .text > p,
+  .HOTEL > .text > p {
     font-size: 40px;
     line-height: 35px;
     text-align: center;
   }
-  .FOOD .btn, .EXPERIENCE .btn, .HOTEL .btn {
+  .FOOD .btn,
+  .EXPERIENCE .btn,
+  .HOTEL .btn {
     margin: 50px auto 0 auto;
-    margin-left: 0;
+    /* margin-left: 0; */
     width: 220px;
     padding: 10px;
   }
-  .FOOD .btn p, .EXPERIENCE .btn p, .HOTEL .btn p {
+  .FOOD .btn p,
+  .EXPERIENCE .btn p,
+  .HOTEL .btn p {
     font-size: 30px;
+    margin-top: 6px;
   }
 }
 
@@ -232,21 +244,35 @@
   .guide .title p {
     font-size: 25px;
   }
-  .FOOD .guide-img, .EXPERIENCE .guide-img, .HOTEL .guide-img {
+  .inner > .HOTEL {
+    padding: 100px 0 150px;
+  }
+  .FOOD .guide-img,
+  .EXPERIENCE .guide-img,
+  .HOTEL .guide-img {
     width: 250px;
     height: 250px;
   }
-  .FOOD h3, .EXPERIENCE h3, .HOTEL h3 {
+  .FOOD h3,
+  .EXPERIENCE h3,
+  .HOTEL h3 {
     font-size: 50px;
   }
-  .FOOD > .text > p, .EXPERIENCE > .text > p, .HOTEL > .text > p {
+  .FOOD > .text > p,
+  .EXPERIENCE > .text > p,
+  .HOTEL > .text > p {
     font-size: 35px;
   }
-  .FOOD .btn, .EXPERIENCE .btn, .HOTEL .btn {
+  .FOOD .btn,
+  .EXPERIENCE .btn,
+  .HOTEL .btn {
     width: 200px;
   }
-  .FOOD .btn p, .EXPERIENCE .btn p, .HOTEL .btn p {
+  .FOOD .btn p,
+  .EXPERIENCE .btn p,
+  .HOTEL .btn p {
     font-size: 25px;
+    margin-top: 8px;
   }
 }
 
@@ -258,25 +284,39 @@
   .guide .title p {
     font-size: 20px;
   }
-  .FOOD, .EXPERIENCE, .HOTEL {
+  .FOOD,
+  .EXPERIENCE,
+  .HOTEL {
     padding-top: 50px;
     width: 95%;
   }
-  .FOOD .guide-img, .EXPERIENCE .guide-img, .HOTEL .guide-img {
+  .FOOD .guide-img,
+  .EXPERIENCE .guide-img,
+  .HOTEL .guide-img {
     width: 200px;
     height: 200px;
   }
-  .FOOD h3, .EXPERIENCE h3, .HOTEL h3 {
+  .FOOD h3,
+  .EXPERIENCE h3,
+  .HOTEL h3 {
     font-size: 40px;
   }
-  .FOOD > .text > p, .EXPERIENCE > .text > p, .HOTEL > .text > p {
+  .FOOD > .text > p,
+  .EXPERIENCE > .text > p,
+  .HOTEL > .text > p {
     font-size: 25px;
   }
-  .FOOD .btn, .EXPERIENCE .btn, .HOTEL .btn {
-    width: 180px;
+  .FOOD .btn,
+  .EXPERIENCE .btn,
+  .HOTEL .btn {
+    width: 220px;
   }
-  .FOOD .btn p, .EXPERIENCE .btn p, .HOTEL .btn p {
-    font-size: 20px;
+  .FOOD .btn p,
+  .EXPERIENCE .btn p,
+  .HOTEL .btn p {
+    font-size: 30px;
+    margin: 0 20px;
+    margin-top: 5px;
   }
 }
 
@@ -288,22 +328,35 @@
   .guide .title p {
     font-size: 15px;
   }
-  .FOOD .guide-img, .EXPERIENCE .guide-img, .HOTEL .guide-img {
+  .FOOD .guide-img,
+  .EXPERIENCE .guide-img,
+  .HOTEL .guide-img {
     width: 150px;
     height: 150px;
   }
-  .FOOD h3, .EXPERIENCE h3, .HOTEL h3 {
+  .inner > .FOOD{
+    margin-bottom: 50px;
+  }
+  .FOOD h3,
+  .EXPERIENCE h3,
+  .HOTEL h3 {
     font-size: 30px;
   }
-  .FOOD > .text > p, .EXPERIENCE > .text > p, .HOTEL > .text > p {
+  .FOOD > .text > p,
+  .EXPERIENCE > .text > p,
+  .HOTEL > .text > p {
+    margin: 0 20px;
     font-size: 20px;
   }
-  .FOOD .btn, .EXPERIENCE .btn, .HOTEL .btn {
-    width: 150px;
+  .FOOD .btn,
+  .EXPERIENCE .btn,
+  .HOTEL .btn {
+    width: 180px;
   }
-  .FOOD .btn p, .EXPERIENCE .btn p, .HOTEL .btn p {
-    font-size: 18px;
+  .FOOD .btn p,
+  .EXPERIENCE .btn p,
+  .HOTEL .btn p {
+    font-size: 20px;
+    margin-top: 12px;
   }
 }
-
-
