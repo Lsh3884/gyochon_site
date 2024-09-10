@@ -1,98 +1,82 @@
-$(document).ready(function () {
-  // 언어 버튼
-  // $(".lang > a").on("click", function (e) {
-  //   e.preventDefault();
-  //   $(".lang-submenu").toggle();
-  // });
+window.addEventListener("load", function () {
+  // 언어 클릭 시 토글
+  const langBtn = document.querySelector(".lang > a");
+  const langmenu = document.querySelector(".lang-submenu");
 
-  // $(".mb-lang > a").on("click", function (e) {
-  //   e.preventDefault();
-  //   $(".lang-submenu-mb").toggle();
-  // });
-
-  // $(".side-navi-mb").on("click", function () {
-  //   $(".side-navi-mb-inner")
-  //     .css({
-  //       display: "block",
-  //       right: "-100%",
-  //     })
-  //     .animate(
-  //       {
-  //         right: "0",
-  //       },
-  //       300
-  //     ); // 300ms 동안 오른쪽에서 왼쪽으로 슬라이드
-  //   $("body").addClass("no-scroll"); // 스크롤을 없앱니다
-  // });
-  // $(".mb-close").on("click", function () {
-  //   $(".side-navi-mb-inner").animate(
-  //     {
-  //       right: "-100%",
-  //     },
-  //     300,
-  //     function () {
-  //       $(this).css("display", "none");
-  //       $("body").removeClass("no-scroll"); // 애니메이션이 끝난 후 요소를 숨깁니다
-  //     }
-  //   );
-  // });
-  // $(window).resize(function () {
-  //   if ($(window).width() >= 900) {
-  //     $(".side-navi-mb-inner").hide(); // 900px 이상일 때 모바일 네비게이션 메뉴를 닫습니다
-  //     $("body").removeClass("no-scroll");
-  //   }
-  // });
-  // //
-
-  // $(".header-menu-title-mb").on("click", function (e) {
-  //   e.preventDefault();
-
-  //   // 클릭한 요소의 서브메뉴가 열려 있는지 확인
-  //   var submenu = $(this).next(".header-menu-submenu-mb");
-
-  //   // 다른 서브메뉴는 모두 닫음
-  //   $(".header-menu-submenu-mb").not(submenu).slideUp();
-
-  //   // 클릭한 서브메뉴는 열거나 닫음
-  //   submenu.stop().slideToggle();
-  // });
-
-  $(".side-navi-mb").on("click", function () {
-    $(".side-navi-mb-inner").show();
-    $("body").css("overflow", "hidden"); // 스크롤 방지
-    $(window).scrollTop(0); // 윈도우 위치를 맨 위로
+  langBtn.addEventListener("click", function () {
+    langmenu.classList.toggle("active");
   });
-
-  // 모바일 네비게이션 메뉴 닫기
-  $(".mb-closed").on("click", function () {
-    $(".side-navi-mb-inner").hide(); // 메뉴를 숨김
-    $("body").css("overflow", "auto"); // 스크롤 허용
-  });
-  
-  // 언어 버튼
-  $(".lang > a").on("click", function (e) {
-    e.preventDefault();
-    $(".lang-submenu").toggle();
-  });
-
-  // 언어 선택 서브메뉴 토글
-  $(".mb-lang > a").on("click", function (e) {
-    e.preventDefault();
-    $(".lang-submenu-mb").toggle();
-  });
-
-  // 윈도우 크기 변경 시 처리 (900px 이상일 때)
-  $(window).resize(function () {
-    if ($(window).width() >= 900) {
-      $(".side-navi-mb-inner").hide(); // 900px 이상일 때 메뉴 닫기
-      $("body").css("overflow", "auto"); // 스크롤 허용
+  document.addEventListener("click", function (e) {
+    // Check if the click was outside the lang menu
+    if (!langBtn.contains(e.target) && !langmenu.contains(e.target)) {
+      langmenu.classList.remove("active");
     }
   });
-  // 윈도우 크기 변경 시 처리 (900px 이상일 때)
-  $(window).resize(function () {
-    if ($(window).width() >= 900) {
-      $(".side-navi-mb-inner").hide(); // 900px 이상일 때 메뉴 닫기
-      $("body").css("overflow", "auto"); // 스크롤 허용
+
+  // 모바일 navi
+  const sideNaviMb = document.querySelector(".side-navi-mb");
+  const mbHeaderNavi = document.querySelector(".mb-header-navi");
+  const closeButton = document.querySelector(".closeBtn");
+
+  function toggleBodyScroll(disable) {
+    document.body.style.overflow = disable ? "hidden" : ""; // 스크롤 비활성화 또는 활성화
+  }
+  sideNaviMb.addEventListener("click", function () {
+    mbHeaderNavi.classList.toggle("active");
+    toggleBodyScroll(mbHeaderNavi.classList.contains("active")); // mbHeaderNavi가 active일 때 윈도우를 맨 위로 스크롤
+    if (mbHeaderNavi.classList.contains("active")) {
+      window.scrollTo(0, 0);
+    }
+  });
+
+  closeButton.addEventListener("click", function () {
+    mbHeaderNavi.classList.remove("active");
+    toggleBodyScroll(false);
+  });
+
+  const mbnaviTitles = document.querySelectorAll(".header-menu-title-mb");
+  const mbSubmenus = document.querySelectorAll(".header-menu-submenu-mb");
+
+  mbnaviTitles.forEach(function (title, index) {
+    title.addEventListener("click", function (e) {
+      e.preventDefault(); // 기본 동작 방지
+
+      const submenu = mbSubmenus[index];
+
+      if (submenu.classList.contains("active")) {
+        submenu.classList.remove("active");
+      } else {
+        mbSubmenus.forEach(function (submenu) {
+          submenu.classList.remove("active");
+        });
+
+        submenu.classList.add("active");
+      }
+    });
+  }); // 윈도우 사이즈가 900픽셀을 초과할 때 자동으로 네비게이션을 비활성화하는 함수
+  function handleResize() {
+    if (window.innerWidth > 900) {
+      mbHeaderNavi.classList.remove("active");
+      toggleBodyScroll(false);
+    }
+  }
+
+  // 윈도우 리사이즈 이벤트 리스너 추가
+  window.addEventListener("resize", handleResize);
+  handleResize();
+
+  // 페이지 로드 시 윈도우 사이즈 체크
+  handleResize();
+  const mbLog = document.querySelector(".mb-lang");
+  const mbLangsubmenu = document.querySelector(".mb-lang-wrap");
+
+  mbLog.addEventListener("click", function () {
+    mbLangsubmenu.classList.toggle("active");
+  });
+  document.addEventListener("click", function (e) {
+    // Check if the click was outside the lang menu
+    if (!mbLog.contains(e.target) && !mbLangsubmenu.contains(e.target)) {
+      mbLangsubmenu.classList.remove("active");
     }
   });
   // 날씨 API 가져오기
@@ -142,11 +126,13 @@ $(document).ready(function () {
     weatherDiv.empty(); // 기존 데이터를 지우고 새로 추가
 
     dailyData.forEach((day, index) => {
+      const weatherIcon = day.weather[0].icon;
       const dayLabel = getDayLabel(index);
       const description = day.weather[0].description;
       const temperature = `${Math.round(day.main.temp)} °C`;
-      const iconCode = day.weather[0].icon;
-      const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+      // const iconCode = day.weather[0].icon;
+      // const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+      const iconUrl = `http://openweathermap.org/img/w/${weatherIcon}.png`;
 
       // 각 날씨 데이터를 담을 HTML 구조
       const dayHtml = `
@@ -165,32 +151,43 @@ $(document).ready(function () {
   // 페이지 로드 시 날씨 데이터 가져오기
   getWeatherData();
 
-  // 헤더 스크롤
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-    const headerBottom = document.querySelector(".header-bottom");
-    const logo = document.querySelector(".logo-img");
-    const langBtn = document.querySelector(".lang-button");
-    const langBtnMb = document.querySelector(".lang-button-mb");
-    const submenu = document.querySelectorAll(".header-menu-submenu"); // .header-menu-submenu 요소 선택 console.log("Scroll position:", window.scrollY); // 스크롤 위치 출력
+  // 스크롤 시 헤더 변경
+  const header = document.querySelector(".header");
+  const headerTop = document.querySelector(".header-top");
+  const headerBottom = document.querySelector(".header-bottom");
+  const langBtnImg = document.querySelector(".lang-button");
+  const logo = document.querySelector(".logo-img");
+  const headerSubmenu = document.querySelectorAll(".header-menu-submenu");
+  const hamberherbar = document.querySelector(".side-navi-mb");
+  const search = document.querySelector(".search");
+  const Langbtn = document.querySelector(".lang-submenu");
 
-    if (window.scrollY > 50) {
+  let scy = 0;
+  this.window.addEventListener("scroll", function () {
+    scy = this.window.document.documentElement.scrollTop;
+    if (scy > 0) {
+      headerTop.classList.add("scrolled");
+      headerBottom.classList.add("scrolled");
       header.classList.add("scrolled");
-      headerBottom.style.display = "none";
+      langBtnImg.src = "images/button-white.png";
       logo.src = "images/logo-w.png";
-      langBtn.src = "images/button-white.png";
-
-      submenuItems.forEach(function (submenu) {
+      hamberherbar.classList.add("scrolled");
+      Langbtn.classList.add("scrolled");
+      headerSubmenu.forEach(function (submenu) {
         submenu.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
       });
+      search.classList.add("scrolled");
     } else {
+      headerTop.classList.remove("scrolled");
       header.classList.remove("scrolled");
-      headerBottom.style.display = "flex";
+      hamberherbar.classList.remove("scrolled");
+      langBtnImg.src = "images/button-black.png";
+      Langbtn.classList.remove("scrolled");
       logo.src = "images/logo3.png";
-      langBtn.src = "images/button-black.png";
-      submenuItems.forEach(function (submenu) {
+      headerSubmenu.forEach(function (submenu) {
         submenu.style.backgroundColor = ""; // 원래 설정으로 되돌리기
       });
+      search.classList.remove("scrolled");
     }
   });
 });

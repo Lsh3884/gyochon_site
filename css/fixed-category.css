@@ -1,1 +1,13 @@
 @charset "utf-8";
+
+.fixed-category {
+  z-index: 9999999;
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  width: 10%;
+  background-color: antiquewhite;
+}
+.fixed-category img {
+  width: 100%;
+}
