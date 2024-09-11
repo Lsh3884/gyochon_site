@@ -5,9 +5,37 @@
   position: fixed;
   right: 5%;
   bottom: 10%;
-  width: 10%;
-  background-color: antiquewhite;
 }
-.fixed-category img {
+
+.go-top {
+  width: 55px;
+  height: 55px;
+  padding: 20%;
+  /* margin-bottom: 10%;
+  padding: 20% 0; */
+  border-radius: 50%;
+  background-color: rgb(238, 192, 93);
+  transform: rotate(180deg);
+}
+
+.go-top.up {
+  transform: rotate(0deg);
+}
+.gotopimg {
+  margin: auto;
   width: 100%;
+  height: 100%;
+}
+.center {
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+}
+
+.center img {
+  width: 55px;
+  height: 55px;
+}
+.center-text {
+  display: block;
 }
