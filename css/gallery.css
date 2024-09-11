@@ -16,7 +16,7 @@
 
 .gallery-logo {
   margin-bottom: 60px;
-  
+  cursor: pointer;
 }
 
 .gallery-logo > ul {
@@ -168,19 +168,21 @@
     margin-bottom: 30px;
   }
   .gallery-logo > ul {
-    width: 100%;
+    width: 85%;
   }
   .gallery-logo > ul > li {
     font-size: 18px;
   }
   .gallery-logo > ul > li > img {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
+    margin: 2px;
   }
   .img-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 2px;
     width: 80%;
+    margin-top: 40px;
   }
   .img-container img {
     width: 90%;

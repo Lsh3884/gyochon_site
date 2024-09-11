@@ -1,31 +1,31 @@
 window.addEventListener("load", function () {
   // 고탑버튼
-  const topBtn = document.querySelector(".go-top");
-  topBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    console.log(window.screenY);
-    if (window.scrollY == 0) {
-      window.scrollTo({
-        top: 10000,
-        behavior: "smooth",
-      });
-    } else {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-  });
-  // 화살표 모양 회전
-  const topBtnImg = document.querySelector(".go-top");
-  window.addEventListener("scroll", function (scTop) {
-    scTop = window.document.documentElement.scrollTop;
-    if (scTop > 0) {
-      topBtn.classList.add("up");
-    } else {
-      topBtn.classList.remove("up");
-    }
-  });
+  // const topBtn = document.querySelector(".go-top");
+  // topBtn.addEventListener("click", function (event) {
+  //   event.preventDefault();
+  //   console.log(window.screenY);
+  //   if (window.scrollY == 0) {
+  //     window.scrollTo({
+  //       top: 10000,
+  //       behavior: "smooth",
+  //     });
+  //   } else {
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // });
+  // // 화살표 모양 회전
+  // const topBtnImg = document.querySelector(".go-top");
+  // window.addEventListener("scroll", function (scTop) {
+  //   scTop = window.document.documentElement.scrollTop;
+  //   if (scTop > 0) {
+  //     topBtn.classList.add("up");
+  //   } else {
+  //     topBtn.classList.remove("up");
+  //   }
+  // });
   // 언어 클릭 시 토글
   const langBtn = document.querySelector(".lang > a");
   const langmenu = document.querySelector(".lang-submenu");

@@ -44,7 +44,7 @@
   color: white;
   background-color: black;
   padding: 5px 90px;
-  margin: 50px;
+  margin: 70px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -78,6 +78,12 @@
 .shop {
   cursor: pointer;
   width: calc(100% / 3);
+}
+.shop:hover h3,
+.cafe > :hover h3,
+.alcohol > :hover h3 {
+  color: #f39c12;
+  text-decoration: underline;
 }
 .shop img {
   width: 100%;
@@ -435,7 +441,17 @@ li {
   .main-img h2 {
     font-size: 80px;
   }
-
+  .btn{
+    margin-top: 50px;
+  }
+  .btn .inner{
+    margin: 60px;
+  }
+  .intro-food-restaurant > .restaurant,
+  .intro-food-cafe > .cafe,
+  .intro-food-alcohol > .alcohol {
+    margin: 50px 0;
+  }
   .btn .inner > button {
     font-size: 35px;
     padding: 5px 50px;
@@ -558,10 +574,20 @@ li {
   .main-img h2 {
     font-size: 50px;
   }
-
+  .btn{
+    margin-top: 30px;
+  }
   .btn .inner > button {
     font-size: 25px;
     padding: 5px 20px;
+  }
+  .btn .inner {
+    margin: 45px;
+  }
+  .intro-food-restaurant > .restaurant,
+  .intro-food-cafe > .cafe,
+  .intro-food-alcohol > .alcohol {
+    margin: 30px 0;
   }
 
   .shop h3,
@@ -616,16 +642,21 @@ li {
   .main-img h2 {
     font-size: 40px;
   }
-
+  .btn {
+    margin-top: 20px;
+  }
+  .btn .inner{
+    margin: 30px;
+  }
   .btn .inner > button {
     font-size: 20px;
     padding: 5px 15px;
     margin: 10px;
   }
-  .restaurant,
-  .cafe,
-  .alcohol {
-    margin: 0px;
+  .intro-food-restaurant > .restaurant,
+  .intro-food-cafe > .cafe,
+  .intro-food-alcohol > .alcohol {
+    margin: 20px 0;
   }
   .shop h3,
   .cafe-shop h3,
