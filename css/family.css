@@ -143,14 +143,15 @@
     margin-bottom: 20px !important;
     font-weight: bold;
   }
+  
   .good {
     width: 100%;
     height: 100%;
     text-align: center;
   }
-  .good img {
+  .family-course .good img {
     width: 100%;
-    height: 100%;
+    height: 320px !important;
     mix-blend-mode: multiply;
   }
   .family-course .swiper-button-nextt {
@@ -188,7 +189,6 @@
   }
   .family-course .line {
     max-width: 300px;
-
     height: 2px;
     background-color: gray;
     text-align: center;
@@ -201,10 +201,10 @@
     line-height: 40px;
     font-family: "Nanum Brush Script", cursive;
     text-align: center;
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
     font-weight: bold;
   }
-  .family-course .good {
+  .good {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -213,13 +213,10 @@
     font-weight: bold;
     margin-bottom: 50px;
   }
-  .good img {
+  .family-course .good img {
     width: 100%;
     height: 250px !important;
     mix-blend-mode: multiply;
-  }
-  .good-info-list li b{
-    font-size: 1.8rem;
   }
   .family-course .swiper-button-nextt {
     position: absolute;
@@ -227,7 +224,7 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 35%;
+    top: 42%;
     right: 0;
     font-weight: bold;
     font-size: 30px;
@@ -239,17 +236,94 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 35%;
+    top: 42%;
     left: 0;
     font-size: 30px;
     z-index: 99;
   }
-  
+  .family-course .swiper-button-prevt > i{
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .family-course .swiper-button-nextt > i{
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
   .good-info-list li b {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .good-info-list li p {
-    font-size: 20px;
+    font-size: 15px;
+  }
+  .good-info {
+    line-height: 40px;
+  }
+  .family-course .line {
+    max-width: 300px;
+    height: 2px;
+    background-color: gray;
+    text-align: center;
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .family-title {
+    font-size: 2.2rem;
+    line-height: 40px;
+    font-family: "Nanum Brush Script", cursive;
+    text-align: center;
+    margin-bottom: 20px !important;
+    font-weight: bold;
+  }
+  .family-title h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .good {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .family-course .good img {
+    width: 100%;
+    height: 250px !important;
+    mix-blend-mode: multiply;
+  }
+  .family-course .swiper-button-nextt {
+    position: absolute;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    top: 50%;
+    right: 0;
+    font-weight: bold;
+    font-size: 30px;
+    z-index: 99;
+  }
+  .family-course .swiper-button-prevt {
+    position: absolute;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    top: 50%;
+    left: 0;
+    font-size: 30px;
+    z-index: 99;
+  }
+
+  .good-info-list li b {
+    font-size: 1.4rem;
+  }
+  .good-info-list li p {
+    font-size: 15px;
   }
   .good-info {
     line-height: 40px;
@@ -261,5 +335,40 @@
     background-color: gray;
     text-align: center;
     margin: 100px auto;
+  }
+  .family-course .swiper-button-prevt > i{
+    font-size: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .family-course .swiper-button-nextt > i{
+    font-size: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .family-course .plus-show{
+    display: flex;
+        justify-content: center;
+        background-color: black;
+        width: 125px;
+        border-radius: 50px;
+        padding: 5px;
+        text-align: center;
+        margin: 10px auto;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+  }
+  .family-course .line{
+    max-width: 200px;
+        height: 2px;
+        background-color: gray;
+        text-align: center;
+        margin: 50px auto;
+        
   }
 }

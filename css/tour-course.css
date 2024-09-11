@@ -504,6 +504,7 @@
   .tour-course .swiper-slide {
     width: 250px !important;
   }
+
   .tour-course .good img {
     width: 100%;
     height: 250px !important;
@@ -677,10 +678,23 @@
     margin-top: 15px !important;
   }
   .tour-course .line {
-    max-width: 300px;
+    max-width: 200px;
     height: 2px;
     background-color: gray;
     text-align: center;
-    margin: 70px auto;
+    margin: 50px auto;
+  }
+  .tour-course .plus-show{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 125px;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px auto;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
   }
 }
