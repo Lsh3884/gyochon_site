@@ -4,15 +4,8 @@
   position: relative;
 }
 .header {
-
   transition: background-color 0.5s ease;
   z-index: 9999;
-
-  padding: 10px 20px;
-  /* position: fixed; */
-  width: 100%;
-  height: 150px;
-
   background-color: #fff;
   width: 100%;
 

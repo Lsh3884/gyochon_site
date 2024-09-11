@@ -1,18 +1,11 @@
 @charset "utf-8";
 @import url("footer.css");
-@import url("main.css");
-@import url("header.css");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   /* font-family: "Nanum Brush Script", cursive; */
-}
-
-a {
-  text-decoration: none;
 }
 .wrap {
   width: 100%;
@@ -297,12 +290,6 @@ li {
   opacity: 1;
   z-index: 999;
 }
-
-.more-restaurant,
-.more-cafe,
-.more-alcohol {
-  width: calc(100% / 3);
-
 .more-restaurant img,
 .more-cafe img,
 .more-alcohol img {
@@ -310,7 +297,6 @@ li {
   height: 223px;
   object-fit: cover; /* 이미지를 부모 요소에 맞추기 */
   border-radius: 10px; /* 모서리 둥글게 */
-
 }
 
 @media (max-width: 990px) {
@@ -497,7 +483,6 @@ li {
   .swiper-container {
     height: 550px;
   }
-
   .more-restaurant img,
   .more-cafe img,
   .more-alcohol img {
@@ -507,7 +492,6 @@ li {
     margin: 20px auto 40px auto;
     font-size: 25px;
   }
-
 }
 
 /* 576px 이하 */
