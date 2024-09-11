@@ -32,6 +32,9 @@
   font-weight: bold;
   margin-bottom: 80px;
 }
+.tour-course .swiper-slide{
+  padding: 0;
+}
 .good {
   width: 100%;
   height: 100%;
@@ -46,24 +49,19 @@
   display: block;
   /* background-color: blue; */
 }
-.tour-course .swiper-button-nextt {
+.tour-course .swiper-button-next {
   position: absolute;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   display: inline-block;
-
-  top: 45%;
-  right:- 5%;
-
   top: 43%;
   right: 0;
-
   font-weight: bold;
   font-size: 30px;
   z-index: 99;
 }
-.tour-course .swiper-button-prevt {
+.tour-course .swiper-button-prev {
   position: absolute;
   border-radius: 50%;
   width: 40px;
@@ -75,15 +73,14 @@
   font-size: 30px;
   z-index: 99;
 }
-.tour-course .swiper-button-prev::after {
-  font-size: 30px;
+.swiper-button-next:after, .swiper-button-prev:after{
+  display: none;
 }
-.tour-course .swiper-button-next::after {
-  font-size: 30px;
-}
+
 .good-info .good-info-list li {
   line-height: 23px;
   margin-top: 30px;
+  text-align: center;
 }
 .good-info .good-info-list li:first-child {
   margin-bottom: 20px;
@@ -141,10 +138,8 @@
     display: block;
     /* background-color: blue; */
   }
-  .tour-course .swiper-wrapper {
-    margin-right: 30px;
-  }
-  .tour-course .swiper-button-nextt {
+
+  .tour-course .swiper-button-next {
     position: absolute;
     border-radius: 50%;
     width: 40px;
@@ -154,7 +149,7 @@
     right: 0;
     font-weight: bold;
   }
-  .tour-course .swiper-button-prevt {
+  .tour-course .swiper-button-prev {
     position: absolute;
     border-radius: 50%;
     width: 40px;
@@ -229,9 +224,7 @@
     display: block;
     /* background-color: blue; */
   }
-  .tour-course .swiper-wrapper {
-    margin-left: 30px;
-  }
+ 
   .tour-course .swiper-button-next {
     position: absolute;
     border-radius: 50%;
@@ -248,9 +241,10 @@
     width: 40px;
     height: 40px;
     display: inline-block;
-    top: 35% !important;
-    left: 0 !important;
-    font-weight: bold;
+    top: 38%;
+    left: 69px;
+    font-size: 30px;
+    z-index: 99;
   }
   .tour-course .swiper-button-prev::after {
     font-size: 30px;
@@ -294,11 +288,9 @@
     -webkit-line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 17px;
   }
 
-  .tour-course .swiper-wrapper {
-    margin-left: 30px;
-  }
   .tour-title > h2 {
     font-size: 2.9rem;
     width: 100%;
@@ -325,31 +317,47 @@
     display: block;
     /* background-color: blue; */
   }
-  .tour-course .swiper-button-nextt {
+  .tour-course .swiper-button-next {
     position: absolute;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    top: 47% !important;
-    right: 0;
-    font-weight: bold;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        top: 50% !important;
+        right: -16px;
+        font-size: 30px;
+        z-index: 99;
   }
-  .tour-course .swiper-button-prevt {
+  .tour-course .swiper-button-prev {
     position: absolute;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    top: 50% !important;
-    left: 50px;
-    font-weight: bold;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        top: 50%;
+        left: 0;
+        font-size: 30px;
+        z-index: 99;
+  }
+  .tour-course .swiper-button-prev > i {
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .tour-course .swiper-button-next > i {
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
   }
   .tour-course .swiper-button-prevt::after {
-    font-size: 30px;
+    font-size: 15px;
   }
   .tour-course .swiper-button-nextt::after {
-    font-size: 30px;
+    font-size: 15px;
   }
   .tour-course .good-info .good-info-list li {
     line-height: 23px;
@@ -390,9 +398,7 @@
     text-overflow: ellipsis;
   }
 
-  .tour-course .swiper-wrapper {
-    margin-left: 30px;
-  }
+
   .tour-title > h2 {
     font-size: 2.6rem;
     width: 100%;
@@ -422,30 +428,30 @@
     display: block;
     /* background-color: blue; */
   }
-  .tour-course .swiper-button-nextt {
+  .tour-course .swiper-button-next {
     position: absolute;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: inline-block;
-    top: 39% !important;
-    right: 0;
+    top: 47% !important;
+    right: -18px;
     font-weight: bold;
   }
-  .tour-course .swiper-button-prevt {
+  .tour-course .swiper-button-prev {
     position: absolute;
-    border-radius: 47%;
-    width: 40px;
-    height: 40px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
     display: inline-block;
-    top: 42% !important;
-    left: 50px;
+    top: 50% !important;
+    left: 0;
     font-weight: bold;
   }
-  .tour-course .swiper-button-prevt::after {
+  .tour-course .swiper-button-prev::after {
     font-size: 20px;
   }
-  .tour-course .swiper-button-nextt::after {
+  .tour-course .swiper-button-next::after {
     font-size: 20px;
   }
   .tour-course .good-info .good-info-list li {
@@ -519,7 +525,7 @@
     display: block;
     /* background-color: blue; */
   }
-  .tour-course .swiper-button-nextt {
+  .tour-course .swiper-button-next {
     position: absolute;
     border-radius: 50%;
     width: 35px;
@@ -529,7 +535,7 @@
     right: 0;
     font-weight: bold;
   }
-  .tour-course .swiper-button-prevt {
+  .tour-course .swiper-button-prev {
     position: absolute;
     border-radius: 47%;
     width: 35px;
@@ -539,26 +545,21 @@
     left: 46px;
     font-weight: bold;
   }
-  .tour-course .swiper-button-prevt > i{
+  .tour-course .swiper-button-prev > i {
     font-size: 15px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
-  .tour-course .swiper-button-nextt > i{
+  .tour-course .swiper-button-next > i {
     font-size: 15px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
-  .tour-course .swiper-button-prevt::after {
-    font-size: 20px;
-  }
-  .tour-course .swiper-button-nextt::after {
-    font-size: 20px;
-  }
+
   .tour-course .good-info .good-info-list li {
     line-height: 23px;
     margin-top: 30px;
@@ -620,7 +621,7 @@
   .tour-course .swiper-slide {
     width: 250px !important;
   }
-  .tour-course .good-info-list{
+  .tour-course .good-info-list {
     margin-right: 20px;
   }
   .tour-course .good img {
@@ -642,7 +643,7 @@
     right: 0;
     font-weight: bold;
   }
-  .tour-course .swiper-button-prevt {
+  .tour-course .swiper-button-prev {
     position: absolute;
     border-radius: 47%;
     width: 35px;
@@ -652,26 +653,21 @@
     left: 46px;
     font-weight: bold;
   }
-  .tour-course .swiper-button-prevt > i{
+  .tour-course .swiper-button-prev > i {
     font-size: 15px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
-  .tour-course .swiper-button-nextt > i{
+  .tour-course .swiper-button-next > i {
     font-size: 15px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
-  .tour-course .swiper-button-prevt::after {
-    font-size: 20px;
-  }
-  .tour-course .swiper-button-nextt::after {
-    font-size: 20px;
-  }
+ 
   .tour-course .good-info .good-info-list li {
     line-height: 23px;
     margin-top: 30px;
@@ -689,7 +685,7 @@
     text-align: center;
     margin: 50px auto;
   }
-  .tour-course .plus-show{
+  .tour-course .plus-show {
     display: flex;
     justify-content: center;
     background-color: black;
