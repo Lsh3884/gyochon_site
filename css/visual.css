@@ -1,5 +1,6 @@
 @charset "utf-8";
 .visual {
+  padding-top: 142px;
   margin-bottom: 200px;
   width: 100%;
   font-family: "Nanum Brush Script", cursive;
@@ -19,7 +20,7 @@
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-  width: 40%;
+  width: 50%;
   /* background-color: antiquewhite; */
   display: flex;
   flex-direction: column;
@@ -29,14 +30,14 @@
 
 /*  글자 슬라이드 */
 .banner-txt h1 {
-  font-size: 100px;
+  font-size: 200px;
   opacity: 0;
   transform: translateY(100%);
   animation: slideUp 0.5s ease-out forwards;
 }
 
 .banner-txt p {
-  font-size: 30px;
+  font-size: 80px;
   color: #fff;
   opacity: 0;
   transform: translateY(100%);
@@ -46,6 +47,7 @@
 
 /* 배너 버튼 */
 .bannerbtn {
+  margin-top: 5%;
   border-radius: 50px;
   width: 50%;
   background-color: black;
@@ -151,7 +153,9 @@
     top: 50%;
   }
 
-  .mb-header-navi{padding: 10px 20px;}
+  .mb-header-navi {
+    padding: 10px 20px;
+  }
 }
 @media screen and (max-width: 550px) {
   .bannerbtn {
