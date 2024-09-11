@@ -62,6 +62,7 @@
   border-radius: 50px;
   width: 250px;
   padding: 10px;
+  cursor: pointer;
 }
 .FOOD .btn a img {
   width: 40px;
@@ -109,6 +110,7 @@
   border-radius: 50px;
   width: 300px;
   padding: 10px;
+  cursor: pointer;
 }
 .EXPERIENCE .btn a img {
   width: 40px;
@@ -157,6 +159,7 @@
   border-radius: 50px;
   width: 300px;
   padding: 10px;
+  cursor: pointer;
 }
 .HOTEL .btn a img {
   width: 40px;

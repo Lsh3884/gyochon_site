@@ -16,7 +16,7 @@
 }
 /* 메인이미지 */
 .main-img {
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
   position: relative;
 }
@@ -46,7 +46,13 @@
   padding: 5px 90px;
   margin: 50px;
   border-radius: 10px;
+  cursor: pointer;
 }
+.btn .inner > button:hover {
+  background-color: #686868;
+  transition: background-color 0.3s;
+}
+
 /* 맛집 소개 영역 */
 /* 밥집-------------------------------------------------------------- */
 .intro-food {
@@ -70,10 +76,8 @@
   display: none;
 }
 .shop {
-  /* float: left; */
-  /* display: none; */
+  cursor: pointer;
   width: calc(100% / 3);
-  /* padding: 0 10px 0 10px; */
 }
 .shop img {
   width: 100%;
@@ -108,10 +112,8 @@ li {
   display: none;
 }
 .cafe-shop {
-  /* float: left; */
-  /* display: none; */
+  cursor: pointer;
   width: calc(100% / 3);
-  /* padding: 0 10px 0 10px; */
 }
 .cafe-shop img {
   width: 100%;
@@ -146,10 +148,8 @@ li {
   /* display: none; */
 }
 .alcohol-shop {
-  /* float: left; */
-  /* display: none; */
+  cursor: pointer;
   width: calc(100% / 3);
-  /* padding: 0 10px 0 10px; */
 }
 .alcohol-shop img {
   width: 100%;
@@ -176,7 +176,6 @@ li {
 }
 
 .btn > button {
-  background-color: #f8b400;
   color: white;
   border: none;
   border-radius: 20px;
@@ -187,17 +186,8 @@ li {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.btn > button:hover {
-  background-color: #f39c12;
-}
-
-.btn > button.active {
-  background-color: white;
-  color: #f39c12;
-}
-
 /* Swiper 디자인 */
-.intro-food-review h2{
+.intro-food-review h2 {
   font-family: "Nanum Brush Script", cursive;
   font-size: 80px;
   margin: 30px;
@@ -220,12 +210,10 @@ li {
 }
 
 .swiper-wrapper {
- 
   display: flex;
 }
 
 .swiper-slide {
-  
   padding: 20px;
   box-sizing: border-box;
   max-width: 100%;
@@ -233,11 +221,11 @@ li {
 }
 
 .review {
-
   background-color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .review h3 {
@@ -290,60 +278,91 @@ li {
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  gap: 6%;
+  align-items: flex-start;
   /* 슬라이드 애니메이션 효과 적용 */
 }
-
 .more-restaurant.show,
 .more-cafe.show,
 .more-alcohol.show {
   display: flex !important;
-  
+
   opacity: 1;
   z-index: 999;
 }
-.more-restaurant, .more-cafe , .more-alcohol{
-  width: calc(100% / 3);
+.more-restaurant img,
+.more-cafe img,
+.more-alcohol img {
+  width: 100%;
+  height: 223px;
+  object-fit: cover; /* 이미지를 부모 요소에 맞추기 */
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 @media (max-width: 990px) {
-  .shop, .cafe-shop, .alcohol-shop, .more-restaurant ul, .more-cafe ul, .more-alcohol ul {
+  .shop,
+  .cafe-shop,
+  .alcohol-shop,
+  .more-restaurant ul,
+  .more-cafe ul,
+  .more-alcohol ul {
     width: 48%;
     margin-bottom: 30px;
   }
 }
-
 @media (max-width: 768px) {
-  .shop, .cafe-shop, .alcohol-shop, .more-restaurant ul, .more-cafe ul, .more-alcohol ul {
+  .shop,
+  .cafe-shop,
+  .alcohol-shop,
+  .more-restaurant ul,
+  .more-cafe ul,
+  .more-alcohol ul {
     width: 100%;
     margin-bottom: 15px;
   }
 }
 
 @media (max-width: 576px) {
-  .shop img, .cafe-shop img, .alcohol-shop img {
+  .shop img,
+  .cafe-shop img,
+  .alcohol-shop img {
     height: auto;
     margin-bottom: 10px;
   }
 
-  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+  .shop h3,
+  .cafe-shop h3,
+  .alcohol-shop h3 {
     font-size: 20px;
   }
 
-  .shop li, .cafe-shop li, .alcohol-shop li {
+  .shop li,
+  .cafe-shop li,
+  .alcohol-shop li {
     font-size: 16px;
   }
 }
 
 /* 반응형 디자인 적용 */
 @media (max-width: 990px) {
-  .shop, .cafe-shop, .alcohol-shop, .more-restaurant ul, .more-cafe ul, .more-alcohol ul {
+  .shop,
+  .cafe-shop,
+  .alcohol-shop,
+  .more-restaurant ul,
+  .more-cafe ul,
+  .more-alcohol ul {
     width: 48%;
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .shop, .cafe-shop, .alcohol-shop, .more-restaurant ul, .more-cafe ul, .more-alcohol ul {
+  .shop,
+  .cafe-shop,
+  .alcohol-shop,
+  .more-restaurant ul,
+  .more-cafe ul,
+  .more-alcohol ul {
     width: 100%;
     margin-bottom: 15px;
   }
@@ -368,23 +387,29 @@ li {
     margin: 20px 15px;
   }
 
-  .shop, .cafe-shop, .alcohol-shop {
+  .shop,
+  .cafe-shop,
+  .alcohol-shop {
     width: 48%;
     margin-bottom: 30px;
   }
 
-  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+  .shop h3,
+  .cafe-shop h3,
+  .alcohol-shop h3 {
     font-size: 30px;
   }
 
-  .shop li, .cafe-shop li, .alcohol-shop li {
+  .shop li,
+  .cafe-shop li,
+  .alcohol-shop li {
     font-size: 20px;
   }
 
   .intro-food-review h2 {
     font-size: 60px;
   }
-  .swiper-container{
+  .swiper-container {
     height: 600px;
   }
   .review h3 {
@@ -397,6 +422,11 @@ li {
 
   .review p {
     font-size: 30px;
+  }
+  .more-restaurant img,
+  .more-cafe img,
+  .more-alcohol img {
+    height: 183px; /* 조정된 높이 */
   }
 }
 
@@ -411,16 +441,22 @@ li {
     padding: 5px 50px;
     margin: 10px 15px;
   }
-  .shop, .cafe-shop, .alcohol-shop {
+  .shop,
+  .cafe-shop,
+  .alcohol-shop {
     width: 100%;
     margin-bottom: 15px;
   }
 
-  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+  .shop h3,
+  .cafe-shop h3,
+  .alcohol-shop h3 {
     font-size: 24px;
   }
 
-  .shop li, .cafe-shop li, .alcohol-shop li {
+  .shop li,
+  .cafe-shop li,
+  .alcohol-shop li {
     font-size: 18px;
   }
 
@@ -444,10 +480,18 @@ li {
   .review p {
     font-size: 25px;
   }
-  .swiper-container{
+  .swiper-container {
     height: 550px;
   }
-  
+  .more-restaurant img,
+  .more-cafe img,
+  .more-alcohol img {
+    height: 128px; /* 조정된 높이 */
+  }
+  .more-btn {
+    margin: 20px auto 40px auto;
+    font-size: 25px;
+  }
 }
 
 /* 576px 이하 */
@@ -461,16 +505,22 @@ li {
     padding: 5px 30px;
   }
 
-  .shop img, .cafe-shop img, .alcohol-shop img {
+  .shop img,
+  .cafe-shop img,
+  .alcohol-shop img {
     height: auto;
     margin-bottom: 10px;
   }
 
-  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+  .shop h3,
+  .cafe-shop h3,
+  .alcohol-shop h3 {
     font-size: 20px;
   }
 
-  .shop li, .cafe-shop li, .alcohol-shop li {
+  .shop li,
+  .cafe-shop li,
+  .alcohol-shop li {
     font-size: 16px;
   }
 
@@ -490,8 +540,16 @@ li {
   .review p {
     font-size: 20px;
   }
-  .swiper-container{
+  .swiper-container {
     height: 520px;
+  }
+  .more-restaurant img,
+  .more-cafe img,
+  .more-alcohol img {
+    height: 95px; /* 조정된 높이 */
+  }
+  .more-btn {
+    font-size: 20px;
   }
 }
 
@@ -506,11 +564,15 @@ li {
     padding: 5px 20px;
   }
 
-  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+  .shop h3,
+  .cafe-shop h3,
+  .alcohol-shop h3 {
     font-size: 18px;
   }
 
-  .shop li, .cafe-shop li, .alcohol-shop li {
+  .shop li,
+  .cafe-shop li,
+  .alcohol-shop li {
     font-size: 14px;
   }
 
@@ -534,9 +596,18 @@ li {
     font-size: 17px;
     margin: 10px;
   }
-  .swiper-container{
+  .swiper-container {
     width: 90%;
     height: 465px;
+  }
+  .more-restaurant img,
+  .more-cafe img,
+  .more-alcohol img {
+    height: 69px; /* 조정된 높이 */
+  }
+  .more-btn {
+    padding: 10px 30px;
+    font-size: 15px;
   }
 }
 
@@ -545,20 +616,26 @@ li {
   .main-img h2 {
     font-size: 40px;
   }
-  
+
   .btn .inner > button {
     font-size: 20px;
     padding: 5px 15px;
     margin: 10px;
   }
-  .restaurant , .cafe , .alcohol{
+  .restaurant,
+  .cafe,
+  .alcohol {
     margin: 0px;
   }
-  .shop h3, .cafe-shop h3, .alcohol-shop h3 {
+  .shop h3,
+  .cafe-shop h3,
+  .alcohol-shop h3 {
     font-size: 16px;
   }
 
-  .shop li, .cafe-shop li, .alcohol-shop li {
+  .shop li,
+  .cafe-shop li,
+  .alcohol-shop li {
     font-size: 12px;
   }
 
@@ -580,8 +657,17 @@ li {
     font-size: 15px;
     margin: 5px;
   }
-  .swiper-container{
+  .swiper-container {
     width: 90%;
     height: 440px;
+  }
+  .more-restaurant img,
+  .more-cafe img,
+  .more-alcohol img {
+    height: 52px; /* 조정된 높이 */
+  }
+  .more-btn {
+    padding: 8px 20px;
+    font-size: 12px;
   }
 }

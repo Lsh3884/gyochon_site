@@ -17,6 +17,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
 }
 .introduction-button img {
   width: 300px;
