@@ -65,7 +65,7 @@
   width: 100%;
 }
 
-.bannerbtn p {
+.bannerbtn > a > p {
   font-size: 50px;
   color: #fff;
 }
@@ -93,5 +93,104 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* 반응형 */
+@media screen and (max-width: 1200px) {
+  .banner-info {
+    top: 60%;
+  }
+  .bannerbtn {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .banner-info {
+    width: 70%;
+  }
+  .banner-info {
+    gap: 30px;
+  }
+  .banner-info {
+    top: 60%;
+  }
+  .banner-txt > h1 {
+    font-size: 70px;
+  }
+  .bannerbtn {
+    width: 30%;
+  }
+
+  .bannerbtn > a > p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bannerbtn {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .banner-txt > h1 {
+    font-size: 50px;
+  }
+  .banner-txt p {
+    font-size: 20px;
+  }
+
+  .bannerbtn {
+    width: 30%;
+    padding: 10px 20px;
+  }
+  .bannerbtn > a > p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-info {
+    top: 50%;
+  }
+
+  .mb-header-navi{padding: 10px 20px;}
+}
+@media screen and (max-width: 550px) {
+  .bannerbtn {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner-info {
+    gap: 10px;
+  }
+  .banner-txt > h1 {
+    font-size: 30px;
+  }
+  .bannerbtn {
+    padding: 5px 10px;
+  }
+  .banner-txt p {
+    font-size: 18px;
+  }
+  .bannerbtn > a > p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .banner-info {
+    gap: 10px;
+    width: 100%;
+  }
+  .banner-txt > h1 {
+    font-size: 20px;
+  }
+  .banner-txt p {
+    font-size: 15px;
+  }
+  .bannerbtn {
+    width: 30%;
+    padding: 5px 5px;
+  }
+  .bannerbtn > a > p {
+    font-size: 15px;
   }
 }
