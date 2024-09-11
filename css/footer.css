@@ -17,6 +17,9 @@
     font-weight: 700;
     color: rgb(65, 64, 64);
 }
+.footer-one ul li{
+  cursor: pointer;
+}
 .footer-two{
     margin-bottom: 40px;
     margin-left: 50px;
@@ -41,6 +44,7 @@
     width:200px;
     height: 150px;
     max-height: 70px;
+    cursor: pointer;
 }
 .footer-logo img{
     width: 100%;
