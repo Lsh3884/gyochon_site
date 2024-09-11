@@ -3,8 +3,8 @@ window.addEventListener("load", function () {
     slidesPerView: 2.3,
     spaceBetween: 30,
     navigation: {
-      nextEl: ".swiper-button-nextt",
-      prevEl: ".swiper-button-prevt",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },breakpoints:{
       1420 : {
         slidesPerView: 2.3,
