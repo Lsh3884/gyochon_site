@@ -35,7 +35,7 @@
   height: 40px;
   display: inline-block;
   top: 50%;
-  right: 0;
+  right: -20px;
   font-weight: bold;
   font-size: 30px;
   z-index: 99;
@@ -70,70 +70,7 @@
 }
 
 /* 반응형 */
-@media screen and (max-width: 990px) {
-  .family-title {
-    font-size: 4.2rem;
-    line-height: 60px;
-    font-family: "Nanum Brush Script", cursive;
-    text-align: center;
-    margin-bottom: 25px !important;
-  }
-  .family-title h2 {
-    font-weight: bold;
-    margin-bottom: 90px;
-  }
-  .good {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-  .good img {
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: multiply;
-  }
-  .family-course .swiper-button-nextt {
-    position: absolute;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    top: 50%;
-    right: 0;
-    font-weight: bold;
-    font-size: 30px;
-    z-index: 99;
-  }
-  .family-course .swiper-button-prevt {
-    position: absolute;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    top: 50%;
-    left: 19px;
-    font-size: 30px;
-    z-index: 99;
-  }
 
-  .good-info-list li b {
-    font-size: 1.8rem;
-  }
-  .good-info-list li p {
-    font-size: 20px;
-  }
-  .good-info {
-    line-height: 40px;
-  }
-  .family-course .line {
-    max-width: 300px;
-
-    height: 2px;
-    background-color: gray;
-    text-align: center;
-    margin: 100px auto;
-  }
-}
 @media screen and (max-width: 767px) {
   .family-title {
     font-size: 3.7rem;
@@ -304,7 +241,7 @@
     text-align: center;
   }
   .family-course .good img {
-    width: 100%;
+    width: 250px;
     height: 250px !important;
     mix-blend-mode: multiply;
   }
@@ -315,7 +252,7 @@
     height: 35px;
     display: inline-block;
     top: 50%;
-    right: 0;
+    right: -16px;
     font-weight: bold;
     font-size: 30px;
     z-index: 99;
@@ -336,7 +273,12 @@
     font-size: 1.4rem;
   }
   .good-info-list li p {
-    font-size: 15px;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .good-info {
     line-height: 40px;
@@ -367,11 +309,12 @@
     display: flex;
         justify-content: center;
         background-color: black;
-        width: 125px;
+        width: 150px;
         border-radius: 50px;
-        padding: 5px;
+        padding: 10px;
         text-align: center;
-        margin: 10px auto;
+        margin: auto;
+        margin-top: -9px !important;
         bottom: 0;
         left: 0;
         cursor: pointer;
@@ -381,7 +324,7 @@
         height: 2px;
         background-color: gray;
         text-align: center;
-        margin: 50px auto;
+        margin: 65px auto;
         
   }
 }
