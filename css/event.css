@@ -21,9 +21,11 @@
   gap: 15px;
   margin: auto;
   justify-content: center;
+  
 }
 .event-top img {
   width:100%;
+  cursor: pointer;
 }
 .evetn-bottom {
   width: calc(100% / 2);
@@ -35,6 +37,7 @@
 }
 .evetn-bottom img {
   width: 100%;
+  cursor: pointer;
 }
 .evetn-bottom p {
   top: 50%;
