@@ -217,8 +217,21 @@ window.addEventListener("load", function () {
       search.classList.remove("scrolled");
     }
   });
-  const gotop = document.querySelector(".go-top");
+  const gotop = document.querySelector(".go-top-img");
   gotop.addEventListener("click", function (event) {
-
+    event.preventDefault();
+    if (window.scrollY === 0) {
+      // Scroll to the bottom
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
+    } else {
+      // Scroll to the top
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
   });
 });
