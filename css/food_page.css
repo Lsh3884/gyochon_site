@@ -444,10 +444,10 @@ li {
   .main-img h2 {
     font-size: 80px;
   }
-  .btn{
+  .btn {
     margin-top: 50px;
   }
-  .btn .inner{
+  .btn .inner {
     margin: 60px;
   }
   .intro-food-restaurant > .restaurant,
@@ -577,7 +577,7 @@ li {
   .main-img h2 {
     font-size: 50px;
   }
-  .btn{
+  .btn {
     margin-top: 30px;
   }
   .btn .inner > button {
@@ -648,7 +648,7 @@ li {
   .btn {
     margin-top: 20px;
   }
-  .btn .inner{
+  .btn .inner {
     margin: 30px;
   }
   .btn .inner > button {

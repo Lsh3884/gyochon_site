@@ -217,8 +217,8 @@ window.addEventListener("load", function () {
       search.classList.remove("scrolled");
     }
   });
-  // const gotop = document.querySelector(".go-top");
-  // gotop.addEventListener("click", function (event) {
+  const gotop = document.querySelector(".go-top");
+  gotop.addEventListener("click", function (event) {
 
-  // });
+  });
 });
