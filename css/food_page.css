@@ -40,6 +40,7 @@
 }
 .btn .inner > button {
   font-family: "Nanum Brush Script", cursive;
+  font-weight: 600;
   float: left;
   font-size: 55px;
   color: white;
@@ -196,7 +197,8 @@ li {
 /* Swiper 디자인 */
 .intro-food-review h2 {
   font-family: "Nanum Brush Script", cursive;
-  font-size: 80px;
+  font-size: 90px;
+  font-weight: 600;
   margin: 30px;
   margin-top: 150px;
   margin-bottom: 60px;
