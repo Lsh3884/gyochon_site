@@ -2,15 +2,40 @@
 
 .fixed-category {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 10%;
+  right: 5%;
   z-index: 99999;
+}
+
+.go-top,
+.center {
+  width: 100px;
+  height: 100px;
+}
+
+.go-top img,
+.center img {
+  width: 100%;
 }
 .center {
   position: relative;
 }
-.center > p {
+.question {
+  font-weight: bold;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10% 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 200%;
   position: absolute;
-  top: 0;
-  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.center:hover .question {
+  opacity: 1;
 }
