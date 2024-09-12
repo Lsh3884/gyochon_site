@@ -422,9 +422,7 @@ li {
   .intro-food-review h2 {
     font-size: 60px;
   }
-  .swiper-container {
-    height: 600px;
-  }
+  
   .review h3 {
     font-size: 50px;
   }
@@ -503,9 +501,7 @@ li {
   .review p {
     font-size: 25px;
   }
-  .swiper-container {
-    height: 550px;
-  }
+  
   .more-restaurant img,
   .more-cafe img,
   .more-alcohol img {
@@ -563,9 +559,7 @@ li {
   .review p {
     font-size: 20px;
   }
-  .swiper-container {
-    height: 520px;
-  }
+  
   .more-restaurant img,
   .more-cafe img,
   .more-alcohol img {
@@ -631,7 +625,7 @@ li {
   }
   .swiper-container {
     width: 90%;
-    height: 465px;
+    
   }
   .more-restaurant img,
   .more-cafe img,
@@ -643,7 +637,18 @@ li {
     font-size: 15px;
   }
 }
-
+/* 340px 이하 */
+@media (max-width: 340px) {
+  
+  .btn .inner {
+    margin: 40px;
+  }
+  .btn .inner > button {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 7px;
+  }
+}
 /* 320px 이하 */
 @media (max-width: 320px) {
   .main-img h2 {
@@ -697,7 +702,7 @@ li {
   }
   .swiper-container {
     width: 90%;
-    height: 440px;
+    
   }
   .more-restaurant img,
   .more-cafe img,
