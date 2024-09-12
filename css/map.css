@@ -103,6 +103,37 @@
   }
 }
 
+@media screen and (max-width: 358px) {
+  .map{
+    margin-bottom: 15px;
+    margin: auto;
+
+  }
+  .map-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10px ;
+    padding: 1px;
+    margin: 40px 0;
+  }
+  .map-nav a{
+    font-size: 15px;
+    gap: 10px;
+  }
+  .image-wrap {
+    width: 100%;
+    margin: auto;
+    height: 170px;
+  }
+  .image-wrap img {
+    width: 100%;
+    height: 100%;
+  }
+  .section{
+    margin-bottom: 40px;
+  }
+}
 @media screen and (max-width: 320px) {
   .map{
     margin-bottom: 15px;
