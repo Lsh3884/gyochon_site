@@ -285,8 +285,8 @@
   }
 }
 
-/* 480px 이하 */
-@media screen and (max-width: 480px) {
+/* 450px 이하 */
+@media screen and (max-width: 450px) {
   .guide .title {
     font-size: 40px;
   }
@@ -296,7 +296,7 @@
   .FOOD,
   .EXPERIENCE,
   .HOTEL {
-    padding-top: 50px;
+    padding-top: 100px;
     width: 95%;
   }
   .FOOD .guide-img,
@@ -310,6 +310,11 @@
   .HOTEL h3 {
     font-size: 40px;
   }
+  .FOOD > .text ,
+  .EXPERIENCE > .text,
+  .HOTEL > .text{
+    padding-top: 20px;
+  }
   .FOOD > .text > p,
   .EXPERIENCE > .text > p,
   .HOTEL > .text > p {
@@ -319,6 +324,7 @@
   .EXPERIENCE .btn,
   .HOTEL .btn {
     width: 220px;
+    margin-top: 30px;
   }
   .FOOD .btn p,
   .EXPERIENCE .btn p,

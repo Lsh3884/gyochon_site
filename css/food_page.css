@@ -216,6 +216,8 @@ li {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: #ffeaa7;
   padding: 10px;
+  width: 100%;  /* 컨테이너의 너비를 100%로 설정 */
+  overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -585,7 +587,7 @@ li {
     padding: 5px 20px;
   }
   .btn .inner {
-    margin: 45px;
+    margin: 35px;
   }
   .intro-food-restaurant > .restaurant,
   .intro-food-cafe > .cafe,
