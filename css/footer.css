@@ -7,10 +7,8 @@
 }
 .footer-one ul {
   display: flex;
-  /* margin: 40px 0; */
   margin-bottom: 40px;
   justify-content: center;
-  /* padding-top: 35px; */
   gap: 100px;
   font-size: 30px;
   font-weight: 700;
@@ -21,140 +19,178 @@
 }
 .footer-two {
   margin-bottom: 40px;
-  margin-left: 150px;
+  margin-left: 50px; /* 왼쪽으로 더 붙이기 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
 }
 .footer-two ul li,
 .footer-three p {
   color: rgb(65, 64, 64);
   font-size: 23px;
+  line-height: 1.6; /* 글 간격을 더 넓게 */
 }
+
 .footer-three {
   margin-left: 150px;
   margin-bottom: 40px;
 }
+
 .footer-wrap {
-  width: 78%;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-three {
+  width: 40%;
+  text-align: left; /* 텍스트 왼쪽 정렬 */
 }
 .footer-logo {
-  position: absolute;
-  right: 10%;
-  top: 30%;
+  position: relative;
   width: 200px;
-  height: 150px;
-  max-height: 70px;
+  height: auto;
   cursor: pointer;
+  align-self: center;
 }
 .footer-logo img {
   width: 100%;
+  height: auto;
 }
 /* 반응형 */
-/* 기본 스타일 */
-
 /* 990px 이하 */
 @media screen and (max-width: 990px) {
-  .footer-one ul {
-    /* flex-direction: column; */
+  .footer-wrap {
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
-    font-size: 20px;
+    text-align: center;
+  }
+  .footer-one ul {
+    gap: 50px;
+    font-size: 22px;
   }
   .footer-two {
-    margin-left: 30px;
+    margin-left: 0; /* 로고와 겹치지 않게 마진 제거 */
+    text-align: center;
     margin-bottom: 20px;
+  }
+  .footer-three {
+    text-align: center;
   }
   .footer-two ul li,
   .footer-three p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.5; /* 간격 유지 */
   }
+
   .footer-three {
     margin-left: 30px;
     margin-bottom: 20px;
     width: 100%;
   }
+
   .footer-logo {
-    right: 10%;
-    top: 55px;
-    width: 16.3vw; /* 로고 크기 조정 */
+    width: 150px;
+    margin-top: 20px;
+    order: -1; /* 로고를 제일 위로 */
+  }
+  .footer-logo img{
+    margin-bottom: 30px;
   }
 }
+/* 600px 이하 */
 @media screen and (max-width: 600px) {
-  .footer-one ul {
-    /* flex-direction: column; */
+  .footer-wrap {
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+  .footer-one ul {
     gap: 30px;
     font-size: 20px;
   }
   .footer-two {
-    margin-left: 30px;
-    margin-bottom: 20px;
+    margin-left: 0; /* 로고와 겹치지 않게 조정 */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer-three {
+    text-align: center;
   }
   .footer-two ul li,
   .footer-three p {
     font-size: 16px;
+    line-height: 1.4;
   }
+
   .footer-three {
     margin-left: 30px;
     margin-bottom: 20px;
     width: 100%;
   }
+
   .footer-logo {
-    right: 4%;
-    top: 90px;
-  }
-  .footer-logo img {
-    width: 100%;
-    height: 100%;
+    width: 120px;
+    margin-top: 20px;
+    order: -1; /* 로고를 제일 위로 */
   }
 }
 /* 480px 이하 */
 @media screen and (max-width: 480px) {
+  .footer-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .footer-one ul {
     gap: 15px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .footer-two {
-    margin-left: 30px;
+    margin-left: 0; /* 로고와 겹치지 않게 조정 */
+    text-align: center;
     margin-bottom: 10px;
   }
   .footer-two ul li,
   .footer-three p {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.3;
   }
+
   .footer-three {
     margin-left: 30px;
     margin-bottom: 10px;
   }
+
   .footer-logo {
-    width: 90px; /* 로고 크기 줄임 */
-    right: 20px;
-    top: 70px;
+    width: 100px;
+    margin-top: 20px;
+    order: -1; /* 로고를 제일 위로 */
   }
 }
-
 /* 320px 이하 */
 @media screen and (max-width: 320px) {
   .footer {
-    padding: 30px 0;
+    padding: 20px 0;
+  }
+  .footer-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .footer-one ul {
     gap: 10px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .footer-two {
-    width: 100%;
-    margin-bottom: 10px;
-    margin-left: 40px;
-    line-height: 20px;
-  }
-  .footer-two ul li:nth-child(2) {
-    white-space: nowrap; /* 텍스트를 한 줄로 만듦 */
-    overflow: hidden; /* 넘치는 부분을 숨김 */
-    text-overflow: ellipsis;
+    margin-left: 0;
+    text-align: center;
   }
   .footer-two ul li,
   .footer-three p {
     font-size: 12px;
   }
+
+
   .footer-three {
     width: 100%;
     margin-left: 13px;
@@ -163,11 +199,10 @@
     width: 100%;
     height: 100%;
   }
+
   .footer-logo {
-    position: static;
-    transform: translateY(0);
-    margin: 25px 30px 15px 90px;
-    width: 140px; /* 로고 크기 줄임 */
-    height: 100px;
+    width: 90px;
+    margin-top: 20px;
+    order: -1; /* 로고를 제일 위로 */
   }
 }

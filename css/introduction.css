@@ -174,6 +174,7 @@
     .introduction-button {
       flex-direction: column;
       align-items: center;
+      margin-top: 10px;
     }
   
     .introduction-button img {
@@ -219,15 +220,15 @@
     }
   
     .introduction-button img {
-      width: 120px;
-      height: 120px;
-      margin-bottom: 10px;
+      width: 230px;
+      height: 230px;
+      /* margin-bottom: 10px; */
     }
   
     .introduction-button .introBt-1 h3,
     .introduction-button .introBt-2 h3,
     .introduction-button .introBt-3 h3 {
-      font-size: 20px;
+      font-size: 37px;
     }
   }
   
