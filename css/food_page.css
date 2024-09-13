@@ -67,9 +67,20 @@ a{color: #333;}
   background-color: #686868;
   transition: background-color 0.3s;
 }
-
-
-
+/* 가게 별점 */
+h5{
+font-size: 30px;
+color: #ffb515;
+font-weight: 600;
+margin-bottom: 20px;
+}
+.shop h3 , .cafe h3, .alcohol h3{
+  font-weight: 600;
+}
+.shop li , .cafe li , .alcohol li{
+  line-height: 40px;
+  font-size: 27px;
+}
 /* 맛집 소개 영역 */
 /* 밥집-------------------------------------------------------------- */
 .intro-food {
@@ -116,9 +127,6 @@ li {
   font-size: 38px;
   margin-bottom: 8px;
 }
-.shop li {
-  font-size: 27px;
-}
 /* 카페-------------------------------------- */
 .cafe {
   display: flex;
@@ -152,9 +160,6 @@ li {
   font-size: 38px;
   margin-bottom: 8px;
 }
-.cafe-shop li {
-  font-size: 25px;
-}
 /* 주류--------------------------------------------- */
 .alcohol {
   display: flex;
@@ -187,9 +192,6 @@ li {
 .alcohol-shop h3 {
   font-size: 38px;
   margin-bottom: 8px;
-}
-.alcohol-shop li {
-  font-size: 25px;
 }
 /* 후기 스와이퍼 */
 /* 버튼 디자인 */
