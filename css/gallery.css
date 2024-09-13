@@ -148,6 +148,7 @@
   .gallery-logo > ul > li > img {
     width: 30px;
     height: 30px;
+    margin: 3px;
   }
   .img-container {
     grid-template-columns: repeat(2, 1fr);

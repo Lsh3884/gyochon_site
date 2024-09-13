@@ -68,7 +68,7 @@ a{color: #333;}
   transition: background-color 0.3s;
 }
 /* 가게 별점 */
-h5{
+ .intro-food h5{
 font-size: 30px;
 color: #ffb515;
 font-weight: 600;
@@ -78,6 +78,7 @@ margin-bottom: 20px;
   font-weight: 600;
 }
 .shop li , .cafe li , .alcohol li{
+  width: 100%;
   line-height: 40px;
   font-size: 27px;
 }
@@ -489,6 +490,7 @@ li {
   .cafe-shop li,
   .alcohol-shop li {
     font-size: 18px;
+    line-height: 35px;
   }
 
   .intro-food {
@@ -532,19 +534,19 @@ li {
   .main-img h2 {
     font-size: 60px;
   }
-
   .btn .inner > button {
     font-size: 30px;
     margin: 0 30px;
   }
-
   .shop img,
   .cafe-shop img,
   .alcohol-shop img {
     height: auto;
     margin-bottom: 10px;
   }
-
+  .intro-food h5{
+font-size: 15px;
+}
   .shop h3,
   .cafe-shop h3,
   .alcohol-shop h3 {
@@ -555,6 +557,7 @@ li {
   .cafe-shop li,
   .alcohol-shop li {
     font-size: 16px;
+    line-height: 30px;
   }
 
   .intro-food-review h2 {
@@ -612,6 +615,7 @@ li {
   .cafe-shop li,
   .alcohol-shop li {
     font-size: 14px;
+    line-height: 25px;
   }
 
   .intro-food-review h2 {
@@ -648,17 +652,6 @@ li {
   }
 }
 
-/* 340px 이하 */
-@media (max-width: 340px) {
-  .btn .inner {
-    margin: 40px;
-  }
-  .btn .inner > button {
-    font-size: 20px;
-    padding: 5px 20px;
-    margin: 7px;
-  }
-}
 
 /* 320px 이하 */
 @media (max-width: 320px) {
@@ -670,7 +663,7 @@ li {
   }
   .btn .inner > button {
     font-size: 20px;
-    margin: 0 20px;
+    margin: 0 15px;
   }
   .intro-food-restaurant > .restaurant,
   .intro-food-cafe > .cafe,
