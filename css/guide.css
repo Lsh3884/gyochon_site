@@ -1,7 +1,7 @@
 @charset "utf-8";
 .guide {
   width: 100%;
-  margin-top: 200px;
+  margin-top: 150px;
   font-family: "Nanum Brush Script", cursive;
 }
 .guide .inner {
@@ -41,6 +41,7 @@
   width: 400px;
   height: 400px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .guide-img{
   transition: all 0.3s ease;
@@ -95,6 +96,7 @@
   width: 400px;
   height: 400px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .EXPERIENCE h3 {
   /* margin-top: 100px; */
@@ -144,6 +146,7 @@
   width: 400px;
   height: 400px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .HOTEL h3 {
   /* margin-top: 100px; */
@@ -284,9 +287,17 @@
     margin-top: 8px;
   }
 }
-
+/* 590px 이하 */
+@media screen and (max-width: 590px){
+ .guide{
+  margin-top: 60px;
+ }
+}
 /* 450px 이하 */
 @media screen and (max-width: 450px) {
+  .guide{
+    margin-top: 40px;
+   }
   .guide .title {
     font-size: 40px;
   }
@@ -337,6 +348,9 @@
 
 /* 320px 이하 */
 @media screen and (max-width: 320px) {
+  .guide{
+    margin-top: 30px;
+   }
   .guide .title {
     font-size: 30px;
   }
