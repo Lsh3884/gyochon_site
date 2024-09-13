@@ -216,7 +216,8 @@
   width: 100%;
   display: block;
   text-align: right;
-  padding-bottom: 20px;
+  padding: 20px;
+  padding-right: 20px;
 }
 .mb-weather {
   display: none;
@@ -441,6 +442,7 @@
   }
   .day > img {
     width: 30px;
+
     height: 30px;
   }
   .header-menu-mb {
@@ -460,6 +462,25 @@
   }
   .mb-lang-wrap > li {
     line-height: 1.5;
+  }
+  .mb-lang-wrap {
+    position: absolute; /* 필요시 수정 */
+    bottom: 100%; /* 상단에 붙이기 */
+    right: 19%;
+    transform: translateY(-10px); /* 살짝 떨어진 위치에서 */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .mb-lang-wrap.active {
+    transform: translateY(0); /* 활성화 시 원래 위치로 */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mb-lang img {
+    transform: rotate(-90deg);
   }
 }
 

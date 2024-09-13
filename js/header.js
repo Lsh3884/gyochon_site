@@ -1,31 +1,4 @@
 window.addEventListener("load", function () {
-  // 고탑버튼
-  // const topBtn = document.querySelector(".go-top");
-  // topBtn.addEventListener("click", function (event) {
-  //   event.preventDefault();
-  //   console.log(window.screenY);
-  //   if (window.scrollY == 0) {
-  //     window.scrollTo({
-  //       top: 10000,
-  //       behavior: "smooth",
-  //     });
-  //   } else {
-  //     window.scrollTo({
-  //       top: 0,
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // });
-  // // 화살표 모양 회전
-  // const topBtnImg = document.querySelector(".go-top");
-  // window.addEventListener("scroll", function (scTop) {
-  //   scTop = window.document.documentElement.scrollTop;
-  //   if (scTop > 0) {
-  //     topBtn.classList.add("up");
-  //   } else {
-  //     topBtn.classList.remove("up");
-  //   }
-  // });
   // 언어 클릭 시 토글
   const langBtn = document.querySelector(".lang > a");
   const langmenu = document.querySelector(".lang-submenu");
@@ -34,7 +7,6 @@ window.addEventListener("load", function () {
     langmenu.classList.toggle("active");
   });
   document.addEventListener("click", function (e) {
-    // Check if the click was outside the lang menu
     if (!langBtn.contains(e.target) && !langmenu.contains(e.target)) {
       langmenu.classList.remove("active");
     }
@@ -45,42 +17,46 @@ window.addEventListener("load", function () {
   const mbHeaderNavi = document.querySelector(".mb-header-navi");
   const closeButton = document.querySelector(".closeBtn");
 
+  // 스크롤 비활성화/활성화 함수
   function toggleBodyScroll(disable) {
     document.body.style.overflow = disable ? "hidden" : ""; // 스크롤 비활성화 또는 활성화
   }
+
+  // 사이드 네비게이션 클릭 시 메뉴 열기/닫기
   sideNaviMb.addEventListener("click", function () {
     mbHeaderNavi.classList.toggle("active");
-    toggleBodyScroll(mbHeaderNavi.classList.contains("active")); // mbHeaderNavi가 active일 때 윈도우를 맨 위로 스크롤
+    toggleBodyScroll(mbHeaderNavi.classList.contains("active"));
     if (mbHeaderNavi.classList.contains("active")) {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0); // 메뉴가 열리면 화면을 맨 위로 이동
     }
   });
 
+  // 닫기 버튼 클릭 시 메뉴 닫기
   closeButton.addEventListener("click", function () {
     mbHeaderNavi.classList.remove("active");
     toggleBodyScroll(false);
   });
 
+  // 모바일 서브메뉴 토글
   const mbnaviTitles = document.querySelectorAll(".header-menu-title-mb");
   const mbSubmenus = document.querySelectorAll(".header-menu-submenu-mb");
 
   mbnaviTitles.forEach(function (title, index) {
     title.addEventListener("click", function (e) {
       e.preventDefault(); // 기본 동작 방지
-
       const submenu = mbSubmenus[index];
-
       if (submenu.classList.contains("active")) {
         submenu.classList.remove("active");
       } else {
         mbSubmenus.forEach(function (submenu) {
           submenu.classList.remove("active");
         });
-
         submenu.classList.add("active");
       }
     });
-  }); // 윈도우 사이즈가 900픽셀을 초과할 때 자동으로 네비게이션을 비활성화하는 함수
+  });
+
+  // 창 크기 변경 시 메뉴 자동 닫기
   function handleResize() {
     if (window.innerWidth > 900) {
       mbHeaderNavi.classList.remove("active");
@@ -90,18 +66,19 @@ window.addEventListener("load", function () {
 
   // 윈도우 리사이즈 이벤트 리스너 추가
   window.addEventListener("resize", handleResize);
-  handleResize();
+  handleResize(); // 페이지 로드 시 체크
 
-  // 페이지 로드 시 윈도우 사이즈 체크
-  handleResize();
+  // 언어 선택 메뉴 토글
   const mbLog = document.querySelector(".mb-lang");
   const mbLangsubmenu = document.querySelector(".mb-lang-wrap");
 
   mbLog.addEventListener("click", function () {
     mbLangsubmenu.classList.toggle("active");
   });
+
+  // 언어 선택 메뉴 외부 클릭 시 닫기
   document.addEventListener("click", function (e) {
-    // Check if the click was outside the lang menu
+    // 언어 메뉴 외부 클릭 시 닫기
     if (!mbLog.contains(e.target) && !mbLangsubmenu.contains(e.target)) {
       mbLangsubmenu.classList.remove("active");
     }
@@ -218,6 +195,7 @@ window.addEventListener("load", function () {
     }
   });
   const gotop = document.querySelector(".go-top-img");
+  const goTopContainer = document.querySelector(".go-top");
   gotop.addEventListener("click", function (event) {
     event.preventDefault();
     if (window.scrollY === 0) {
@@ -232,6 +210,14 @@ window.addEventListener("load", function () {
         top: 0,
         behavior: "smooth",
       });
+    }
+  });
+  window.addEventListener("scroll", function () {
+    // 사용자가 화면 맨 아래로 스크롤했는지 확인
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      goTopContainer.style.transform = "rotate(0deg)"; // 0도로 회전
+    } else {
+      goTopContainer.style.transform = "rotate(180deg)"; // 180도로 유지
     }
   });
 });

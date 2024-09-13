@@ -8,7 +8,9 @@
   list-style: none;
   /* font-family: "Nanum Brush Script", cursive; */
 }
+
 a{color: #333;}
+
 .wrap {
   width: 100%;
 }
@@ -643,6 +645,19 @@ li {
     font-size: 15px;
   }
 }
+
+/* 340px 이하 */
+@media (max-width: 340px) {
+  .btn .inner {
+    margin: 40px;
+  }
+  .btn .inner > button {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 7px;
+  }
+}
+
 /* 320px 이하 */
 @media (max-width: 320px) {
   .main-img h2 {
