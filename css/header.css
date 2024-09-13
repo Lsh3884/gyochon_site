@@ -10,7 +10,7 @@
   width: 100%;
   height: auto;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
 }
 
 /* 헤더 위에*/
@@ -159,6 +159,7 @@
   min-width: 220px;
 }
 .search > input {
+  background-color: transparent;
   width: 70%;
   border: #ffffff;
   line-height: 40px;
