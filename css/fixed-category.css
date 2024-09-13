@@ -14,15 +14,20 @@
   height: 100px;
 }
 
-.go-top {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-  margin-bottom: 10%;
-}
 .go-top img,
 .center img {
   width: 100%;
 }
+
+.go-top-img {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.go-top-img.up {
+  transform: rotate(0deg);
+}
+
 .center {
   position: relative;
 }
@@ -44,18 +49,4 @@
 
 .center:hover .question {
   opacity: 1;
-}
-@media screen and (max-width: 900px) {
-  .go-top,
-  .center {
-    width: 80px;
-    height: 80px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .go-top,
-  .center {
-    width: 50px;
-    height: 50px;
-  }
 }
