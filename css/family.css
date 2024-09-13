@@ -98,7 +98,7 @@
     height: 35px;
     display: inline-block;
     top: 50%;
-    right: 0;
+    right: -16px;
     font-weight: bold;
     font-size: 30px;
     z-index: 99;
@@ -110,7 +110,7 @@
     height: 35px;
     display: inline-block;
     top: 50%;
-    left: 0;
+    left: -16px;
     font-size: 30px;
     z-index: 99;
   }
@@ -175,7 +175,7 @@
     height: 35px;
     display: inline-block;
     top: 42%;
-    right: 0;
+    right:-16px;
     font-weight: bold;
     font-size: 30px;
     z-index: 99;
@@ -187,7 +187,161 @@
     height: 35px;
     display: inline-block;
     top: 42%;
-    left: 0;
+    left: -16px;
+    font-size: 30px;
+    z-index: 99;
+  }
+  .family-course .swiper-button-prevt > i{
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .family-course .swiper-button-nextt > i{
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .good-info-list li b {
+    font-size: 1.4rem;
+  }
+  .good-info-list li p {
+    font-size: 15px;
+  }
+  .good-info {
+    line-height: 40px;
+  }
+  .family-course .line {
+    max-width: 300px;
+    height: 2px;
+    background-color: gray;
+    text-align: center;
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 386px) {
+  .family-title {
+    font-size: 2.7rem;
+    line-height: 40px;
+    font-family: "Nanum Brush Script", cursive;
+    text-align: center;
+    margin-bottom: 10px !important;
+    font-weight: bold;
+  }
+  .good {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .family-title h2 {
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .family-course .good img {
+    width: 100%;
+    height: 250px !important;
+    mix-blend-mode: multiply;
+  }
+  .family-course .swiper-button-nextt {
+    position: absolute;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    top: 42%;
+    right:-16px;
+    font-weight: bold;
+    font-size: 30px;
+    z-index: 99;
+  }
+  .family-course .swiper-button-prevt {
+    position: absolute;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    top: 42%;
+    left: -16px;
+    font-size: 30px;
+    z-index: 99;
+  }
+  .family-course .swiper-button-prevt > i{
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .family-course .swiper-button-nextt > i{
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+  .good-info-list li b {
+    font-size: 1.1rem;
+  }
+  .good-info-list li p {
+    font-size: 12px;
+  }
+  .good-info {
+    line-height: 40px;
+  }
+  .family-course .line {
+    max-width: 220px;
+    height: 2px;
+    background-color: gray;
+    text-align: center;
+    margin: 90px auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .family-title {
+    font-size: 2.7rem;
+    line-height: 40px;
+    font-family: "Nanum Brush Script", cursive;
+    text-align: center;
+    margin-bottom: 10px !important;
+    font-weight: bold;
+  }
+  .good {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .family-title h2 {
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .family-course .good img {
+    width: 100%;
+    height: 250px !important;
+    mix-blend-mode: multiply;
+  }
+  .family-course .swiper-button-nextt {
+    position: absolute;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    top: 42%;
+    right:-16px;
+    font-weight: bold;
+    font-size: 30px;
+    z-index: 99;
+  }
+  .family-course .swiper-button-prevt {
+    position: absolute;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    top: 42%;
+    left: -16px;
     font-size: 30px;
     z-index: 99;
   }
