@@ -285,11 +285,118 @@
     margin-top: 15px !important;
   }
   .tour-course .line {
-    max-width: 300px;
+    max-width: 220px;
     height: 2px;
     background-color: gray;
     text-align: center;
     margin: 70px auto;
+  }
+}
+@media screen and (max-width: 412px) {
+  .tour-title {
+    width: 100%;
+    line-height: 25px;
+    font-family: "Nanum Brush Script", cursive;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .tour-course .good-info-list li b {
+    font-size: 1.2rem;
+  }
+  .tour-course .good-info-list li p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 17px;
+  }
+
+  .tour-title > h2 {
+    font-size: 2.9rem;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 90px;
+  }
+  .tour-title p {
+    font-size: 2.7rem;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 80px;
+  }
+  .tour-course .good {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .tour-course .good img {
+    width: 100%;
+    height: 250px !important;
+    mix-blend-mode: multiply;
+  }
+  .tour-course .inner {
+    display: block;
+    /* background-color: blue; */
+  }
+  .tour-course .swiper-button-next {
+    position: absolute;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        top: 47% !important;
+        right: -13px;
+        font-size: 30px;
+        z-index: 99;
+  }
+  .tour-course .swiper-button-prev {
+    position: absolute;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        top: 50%;
+        left: 0;
+        font-size: 30px;
+        z-index: 99;
+  }
+  .tour-course .swiper-button-prev > i {
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .tour-course .swiper-button-next > i {
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .tour-course .swiper-button-prevt::after {
+    font-size: 15px;
+  }
+  .tour-course .swiper-button-nextt::after {
+    font-size: 15px;
+  }
+  .tour-course .good-info .good-info-list li {
+    line-height: 23px;
+    margin-top: 30px;
+  }
+  .tour-course .good-info .good-info-list li:first-child {
+    margin-bottom: 10px;
+  }
+  .good-info .good-info-list li {
+    margin-top: 15px !important;
+  }
+  .tour-course .line {
+    max-width: 220px;
+    height: 2px;
+    background-color: gray;
+    text-align: center;
+    margin: 90px auto;
   }
 }
 
