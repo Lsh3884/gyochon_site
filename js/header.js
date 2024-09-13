@@ -195,7 +195,7 @@ window.addEventListener("load", function () {
     }
   });
   const gotop = document.querySelector(".go-top-img");
-  const goTopContainer = document.querySelector(".go-top");
+
   gotop.addEventListener("click", function (event) {
     event.preventDefault();
     if (window.scrollY === 0) {
@@ -212,12 +212,14 @@ window.addEventListener("load", function () {
       });
     }
   });
-  window.addEventListener("scroll", function () {
-    // 사용자가 화면 맨 아래로 스크롤했는지 확인
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-      goTopContainer.style.transform = "rotate(0deg)"; // 0도로 회전
+
+  const gotopimg = this.document.querySelector(".go-top-img");
+  this.window.addEventListener("scroll", function (scTop) {
+    scTop = window.document.documentElement.scrollTop;
+    if (scTop > 0) {
+      gotopimg.classList.add("up");
     } else {
-      goTopContainer.style.transform = "rotate(180deg)"; // 180도로 유지
+      gotopimg.classList.remove("up");
     }
   });
 });
