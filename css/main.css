@@ -11,6 +11,7 @@
 @import url("family.css");
 @import url("map.css");
 @import url("footer.css");
+@import url("roulette.css");
 /* @import url("food_page.css"); */
 * {
   margin: 0;
@@ -98,7 +99,7 @@ a {
     z-index: 99999;
     cursor: pointer;
   }
-  .passClose > p{
+  .passClose > p {
     margin-left: -5px;
   }
 }
