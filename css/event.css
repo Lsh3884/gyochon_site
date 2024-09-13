@@ -92,13 +92,6 @@
     margin: auto;
     justify-content: center;
   }
-  .event .line {
-    max-width: 400px;
-    height: 2px;
-    background-color: gray;
-    text-align: center;
-    margin: 50px auto;
-  }
   .plus-show {
     display: flex;
     justify-content: center;
@@ -201,20 +194,13 @@
     left: 0;
     cursor: pointer;
   }
-  .event .line {
-    max-width: 250px;
-    height: 2px;
-    background-color: gray;
-    text-align: center;
-    margin: 50px auto;
-  }
 }
 @media screen and (max-width: 480px) {
   .event-title {
     font-size: 3.5rem !important;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
   }
   .event-top {
     width: calc(100% / 2);
@@ -225,19 +211,13 @@
     margin: auto;
     justify-content: center;
   }
-  .plus-show {
+  .evetn-bottom {
+    width: calc(100% / 2);
+    padding: 0 10px;
     display: flex;
+    gap: 15px;
+    margin: 80px auto;
     justify-content: center;
-    background-color: black;
-    width: 150px;
-    border-radius: 50px;
-    padding: 10px;
-    text-align: center;
-    margin: auto;
-    margin-top: 40px !important;
-    bottom: 0;
-    left: 0;
-    cursor: pointer;
   }
   .plus-show {
     display: flex;
@@ -247,31 +227,17 @@
     border-radius: 50px;
     padding: 5px;
     text-align: center;
-    margin: 50px auto;
+    margin: 70px auto;
     bottom: 0;
     left: 0;
     cursor: pointer;
-  }
-  .event .line {
-    max-width: 250px;
-    height: 2px;
-    background-color: gray;
-    text-align: center;
-    margin: 50px auto;
-  }
-  .event .line {
-    max-width: 350px;
-    height: 2px;
-    background-color: gray;
-    text-align: center;
-    margin: 40px auto;
   }
   .event .line {
     max-width: 220px;
     height: 2px;
     background-color: gray;
     text-align: center;
-    margin: 50px auto;
+    margin: 80px auto;
   }
 }
 @media screen and (max-width: 320px) {
