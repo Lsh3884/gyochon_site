@@ -19,7 +19,7 @@
 
 .baneerimg img {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   display: block;
   object-fit: cover;
 }
@@ -105,6 +105,11 @@
   }
 }
 /* 반응형 */
+@media screen and (max-width: 1400px) {
+  .baneerimg img {
+    height: 800px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .banner-txt h1 {
     font-size: 100px;
