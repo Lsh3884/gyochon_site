@@ -81,6 +81,8 @@ margin-bottom: 20px;
   width: 100%;
   line-height: 40px;
   font-size: 27px;
+  font-weight: 600;
+  color: #485052;
 }
 /* 맛집 소개 영역 */
 /* 밥집-------------------------------------------------------------- */
@@ -655,6 +657,9 @@ font-size: 15px;
 
 /* 320px 이하 */
 @media (max-width: 320px) {
+  .shop, .cafe-shop, .alcohol-shop{
+    width: calc(100% / 2);
+  }
   .main-img h2 {
     font-size: 40px;
   }
@@ -663,7 +668,7 @@ font-size: 15px;
   }
   .btn .inner > button {
     font-size: 20px;
-    margin: 0 15px;
+    margin: 10px 15px;
   }
   .intro-food-restaurant > .restaurant,
   .intro-food-cafe > .cafe,
