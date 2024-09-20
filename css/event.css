@@ -9,8 +9,8 @@
 .event-title {
   font-size: 4.8rem !important;
   text-align: center;
-  margin-top: 120px !important;
-  margin-bottom: 120px !important;
+  margin-top: 220px !important;
+  margin-bottom: 220px !important;
   font-family: "Nanum Brush Script", cursive;
   font-weight: bold;
 }
@@ -51,7 +51,7 @@
   border-radius: 50px;
   padding: 15px;
   text-align: center;
-  margin: 130px auto;
+  margin: 200px auto;
   bottom: 0;
   left: 0;
   cursor: pointer;
@@ -213,22 +213,25 @@
   .event-title {
     font-size: 3.5rem !important;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
   }
   .event-top {
-    width: calc(100% / 2);
-    height: 100%;
+    width: 80%;
+    height: 80%;
     padding: 0 10px;
     display: flex;
+    flex-direction: column;
     gap: 15px;
     margin: auto;
     justify-content: center;
   }
   .evetn-bottom {
-    width: calc(100% / 2);
+    width: 80%;
+    height: 80%;
     padding: 0 10px;
     display: flex;
+    flex-direction: column;
     gap: 15px;
     margin: 20px auto;
     justify-content: center;
@@ -286,24 +289,26 @@
   .event-title {
     font-size: 2.5rem !important;
     text-align: center;
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: 85px !important;
+    margin-bottom: 85px !important;
   }
   .event-top {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     padding: 0 10px;
     display: flex;
+    flex-direction: column;
     gap: 15px;
     margin: auto;
     flex-direction: column;
     margin-bottom: 20px;
   }
   .evetn-bottom {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     padding: 0 10px;
     display: flex;
+    flex-direction: column;
     gap: 15px;
     margin: auto;
     flex-direction: column;
@@ -340,14 +345,15 @@
     border-radius: 50px;
     padding: 5px;
     text-align: center;
-    margin: 30px auto;
+    margin: 70px auto;
+    margin-top: 70px !important;
     bottom: 0;
     left: 0;
     cursor: pointer;
     
   }
   .event .line {
-    max-width: 170px;
+    max-width: 200px;
     height: 2px;
     background-color: gray;
     text-align: center;

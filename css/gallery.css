@@ -156,6 +156,30 @@
     width: 80%;
   }
 }
+@media screen and (max-width: 350px) {
+  
+  .gallery h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+  .gallery-logo > ul {
+    width: 90%;
+  }
+  .gallery-logo > ul > li {
+    font-size: 20px;
+  }
+  .gallery-logo > ul > li > img {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+  }
+  .img-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    width: 80%;
+  }
+}
 
 /* 320px 이하 */
 @media screen and (max-width: 320px) {
