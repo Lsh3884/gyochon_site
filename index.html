@@ -141,14 +141,31 @@
       ></iframe
     ></noscript>
     <div class="roulette">
-      <div class="roulette-wrap">
+      <div class="roulette-inner">
         <div class="roullette-close">
           <span class="roullette-close-button">x</span>
         </div>
-        <canvas width="380" height="380"></canvas>
-        <button onclick="rotate()" class="roulettebtn">룰렛 돌리기</button>
+        <h1 class="roulette-title">룰렛돌리고 <span>쿠폰</span>받자!!</h1>
+        <div class="roulette-main">
+          <div class="roulette-wrap">
+            <canvas width="380" height="380" id="canvas"></canvas>
+            <button onclick="rotate()" class="roulettebtn">룰렛 돌리기</button>
+          </div>
+          <div class="roulette-text">
+            <div>
+              <h3 class="roulette-result-title">당첨된 쿠폰은?!</h3>
+              <h3 class="roulette-result"></h3>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="roulette-text"></div>
+    </div>
+    <div class="popup-overlay" style="display: none">
+      <div class="popup-content">
+        <span class="popup-close">&times;</span>
+        <p class="mb-result">당첨된 쿠폰은?!</p>
+        <p class="popup-result"></p>
+      </div>
     </div>
     <!-- End Google Tag Manager (noscript) -->
     <!-- 모달창 -->
@@ -178,7 +195,15 @@
     <div class="wrap">
       <!-- 고정 메뉴 -->
       <section class="mb-header-navi">
-        <div class="closeBtn">X</div>
+        <div>
+          <div class="mb-search">
+            <input type="text" placeholder="검색어를 입력하세요" /><i
+              class="fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
+          <div class="closeBtn">X</div>
+        </div>
+
         <div class="weather mb-weather"></div>
         <ul class="header-menu-mb">
           <li>
@@ -297,7 +322,7 @@
         <div class="header-bottom">
           <div class="weather"></div>
           <div class="search">
-            <input type="text" value="검색어를 입력하세요" /><i
+            <input type="text" placeholder="검색어를 입력하세요" /><i
               class="fa-solid fa-magnifying-glass"
             ></i>
           </div>

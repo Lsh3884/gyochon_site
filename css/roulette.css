@@ -8,17 +8,20 @@ body {
   background: #f7f8fc;
 } */
 .roulette {
+  display: block;
   padding: 3%;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  position: absolute;
+
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99999999999;
 }
-.roulette-wrap {
-  width: 100%;
+.roulette-inner {
+  padding: 1% 2%;
+  width: 40%;
+  height: 900px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -26,33 +29,28 @@ body {
   background-color: #febf00;
 }
 
-canvas {
-  transition: 2s;
-  pointer-events: none;
-}
-.roullette-close {
-  width: 100%;
-}
-.roullette-close-button {
-  float: right;
-  background: #bb2222;
-  font-size: 50px;
-  color: #fff;
-}
-
-.roulettebtn:active {
-  background: #444;
-  color: #f9f9f9;
-}
-
 .roulette-wrap {
-  width: 380px;
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
 }
+.roullette-close {
+  width: 100%;
+}
 
+.roullette-close-button {
+  width: 50px;
+  height: 50px;
+  float: right;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+canvas {
+  transition: 2s;
+  pointer-events: none;
+}
 .roulette-wrap::before {
   content: "";
   position: absolute;
@@ -65,6 +63,39 @@ canvas {
   transform: translateX(-50%);
   z-index: 22;
 }
+
+.roulettebtn:active {
+  background: #444;
+  color: #f9f9f9;
+}
+.roulette-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+.roulette-text {
+  padding: 5% 0;
+  position: relative;
+  background-color: #f9f9f9;
+  width: 50%;
+  height: 150px;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 5%;
+  /*
+  margin-bottom: 5%; */
+}
+
+.roulette-text > div {
+  padding: 5% 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .roulettebtn {
   background: #cfa311;
   margin-top: 1rem;
@@ -75,4 +106,210 @@ canvas {
   border-radius: 5px;
   transition: 0.2s;
   cursor: pointer;
+}
+.roulette-title {
+  font-size: 40px;
+  display: block;
+  letter-spacing: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.roulette-title > span {
+  color: red;
+  font-size: 60px;
+}
+
+.roulette-result-title {
+  /* padding: 10%; */
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 8%;
+}
+.roulette-result {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999999;
+}
+
+.popup-content {
+  width: 400px;
+  height: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.mb-result {
+  margin: 50px 0;
+
+  font-size: 30px;
+}
+.popup-result {
+  margin: 10% 0;
+  font-size: 30px;
+}
+/* 
+@media screen and (max-width: 1400px) {
+  .roulette-result-title {
+    font-size: 35px;
+  }
+  .roulette-result {
+    font-size: 35px;
+  }
+  .roulette-title {
+    font-size: 50px;
+  }
+  .roulette-title > span {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .roulette-inner {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .roulette-main {
+    flex-direction: column;
+  }
+  .roulette-text {
+    height: 200px;
+    margin: 10% 0;
+  }
+  .roulette-result-title {
+    margin-bottom: 10%;
+    font-size: 25px;
+  }
+  .roulette-result {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .roulette-title {
+    font-size: 38px;
+  }
+  .roulette-title > span {
+    font-size: 43px;
+  }
+  .roullette-close-button {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .roulette-title {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .roulette-title > span {
+    font-size: 43px;
+  }
+  .roulette-text {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .roulette-inner {
+    width: 80%;
+  }
+  .roullette-close {
+    height: 30px;
+  }
+  .roulette-title {
+    font-size: 25px;
+  }
+  .roulette-title > span {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .roulette-text {
+    display: none;
+  }
+  .roulette-inner {
+    width: 90%;
+  }
+  .roulette-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .roulette-title > span {
+    font-size: 20px;
+  }
+} */
+/* @media screen and (max-width: 900px) {
+  .roulette-result-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .roulette-text {
+    margin: 5% 0;
+    padding: 5% 0;
+  }
+
+  .roulette-result-title {
+    padding: 0;
+    font-size: 30px;
+  }
+
+  .roulette-result {
+    font-size: 20px;
+  }
+} */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.roulette-title {
+  font-size: 40px;
+  display: block;
+  letter-spacing: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10%;
+  animation: bounce 2s infinite; /* Add the animation */
 }

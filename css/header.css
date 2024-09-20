@@ -49,6 +49,7 @@
 .header-menu-title > h3 {
   line-height: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 .header-menu-title > h3:hover {
@@ -66,7 +67,7 @@
   background-color: rgb(255, 255, 255);
   padding-top: 20px;
   padding-left: 5%;
-  width: 80%;
+  width: 100%;
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -86,7 +87,7 @@
   font-weight: bold;
 }
 .side-navi {
-  width: 20%;
+  width: 15%;
   position: relative;
 }
 .side-navi > li {
@@ -150,7 +151,8 @@
   width: 40px;
   height: 40px;
 }
-.search {
+.search,
+.mb-search {
   border: 1px solid #333;
   border-radius: 20px;
   width: 20%;
@@ -158,7 +160,13 @@
   overflow: hidden;
   min-width: 220px;
 }
-.search > input {
+
+.mb-search {
+  display: none;
+}
+.search > input,
+.mb-search > input {
+  outline: none;
   background-color: transparent;
   width: 70%;
   border: #ffffff;
@@ -196,6 +204,9 @@
 .search.scrolled {
   border: 1px solid #fff;
 }
+.search.scrolled input::placeholder {
+  color: #fff; /* 스크롤 시 색상 */
+}
 /*  햄버거바 누르면 오픈 되는 영역 */
 .mb-header-navi {
   padding: 20px 10px;
@@ -213,6 +224,12 @@
   display: block; /* 활성화되면 화면에 보이기 */
   transform: translateX(0); /* 화면에 보이도록 이동 */
 }
+
+.mb-header-navi > div {
+  align-items: center;
+  display: flex;
+  margin-bottom: 5%;
+}
 .closeBtn {
   width: 100%;
   display: block;
@@ -221,7 +238,7 @@
   padding-right: 20px;
 }
 .mb-weather {
-  display: none;
+  display: none !important;
   margin: 0 auto;
   width: 100% !important;
   padding-bottom: 20px;
@@ -332,7 +349,7 @@
   .side-navi {
     font-weight: bold;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     display: none;
   }
   .side-navi-mb {
@@ -381,6 +398,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .mb-search {
+    display: block;
+  }
   .header {
     height: 60px;
     padding: 30px 0;
@@ -431,13 +451,6 @@
     width: 100%;
   }
 
-  .mb-weather {
-    display: flex;
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 50px;
-  }
-
   .day {
     width: 100%;
   }
@@ -483,6 +496,9 @@
   .mb-lang img {
     transform: rotate(-90deg);
   }
+  .mb-weather {
+    display: flex !important;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -491,5 +507,11 @@
   }
   .day > p {
     font-size: 12px;
+  }
+  .mb-weather {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 50px;
   }
 }
