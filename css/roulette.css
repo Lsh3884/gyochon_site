@@ -25,7 +25,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50% , -50%);
   background-color: #febf00;
 }
 
@@ -182,7 +182,7 @@ body.no-scroll {
   margin: 10% 0;
   font-size: 30px;
 }
-/* 
+
 @media screen and (max-width: 1400px) {
   .roulette-result-title {
     font-size: 35px;
@@ -269,10 +269,16 @@ body.no-scroll {
   }
 }
 @media screen and (max-width: 350px) {
+  .roulette-title {
+    font-size: 25px !important; 
+  }
   .roulette-title > span {
     font-size: 20px;
   }
-} */
+  .roulette-inner {
+    height: 480px;
+  }
+}
 /* @media screen and (max-width: 900px) {
   .roulette-result-title {
     font-size: 20px;
