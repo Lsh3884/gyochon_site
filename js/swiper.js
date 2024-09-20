@@ -8,13 +8,13 @@ window.addEventListener("load", function () {
     },
     breakpoints: {
       1420: {
-        slidesPerView: 2.3,
+        slidesPerView: 3,
       },
       768: {
         slidesPerView: 2.3,
       },
       350: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       320: {
         slidesPerView: 1,
@@ -31,13 +31,13 @@ window.addEventListener("load", function () {
     },
     breakpoints: {
       1420: {
-        slidesPerView: 2.3,
+        slidesPerView: 3,
       },
       768: {
         slidesPerView: 2.3,
       },
       350: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       320: {
         slidesPerView: 1,
