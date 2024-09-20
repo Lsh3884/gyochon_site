@@ -21,7 +21,7 @@ body {
 .roulette-inner {
   padding: 1% 2%;
   width: 40%;
-  height: 900px;
+  /* height: 900px; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,7 +79,7 @@ canvas {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 .roulette-text {
   padding: 5% 0;
@@ -210,7 +210,6 @@ body.no-scroll {
   }
   .roulette-text {
     height: 200px;
-    margin: 10% 0;
   }
   .roulette-result-title {
     margin-bottom: 10%;
@@ -231,7 +230,8 @@ body.no-scroll {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
+ 
   .roulette-title {
     font-size: 30px;
     letter-spacing: 5px;
@@ -268,16 +268,14 @@ body.no-scroll {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 320px) {
   .roulette-title {
     font-size: 25px !important; 
   }
   .roulette-title > span {
     font-size: 20px;
   }
-  .roulette-inner {
-    height: 480px;
-  }
+ 
 }
 /* @media screen and (max-width: 900px) {
   .roulette-result-title {
