@@ -117,7 +117,7 @@
     justify-content: space-evenly;
     font-size: 10px ;
     padding: 1px;
-    margin: 40px 0;
+    margin: 40px auto;
   }
   .map-nav a{
     font-size: 15px;
