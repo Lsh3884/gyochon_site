@@ -120,6 +120,7 @@
 }
 
 .side-navi-mb {
+  cursor: pointer;
   color: black;
   display: none;
   position: absolute;
@@ -231,6 +232,7 @@
   margin-bottom: 5%;
 }
 .closeBtn {
+  cursor: pointer;
   width: 100%;
   display: block;
   text-align: right;
@@ -260,6 +262,10 @@
   overflow: hidden; /* 내용이 넘치지 않도록 설정 */
   transition: max-height 0.5s ease; /* 부드러운 애니메이션 */
 }
+
+.header-menu-submenu-mb > li :hover {
+  font-weight: bold;
+}
 .header-menu-submenu-mb.active {
   max-height: 500px; /* 서브메뉴가 열릴 때의 최대 높이, 필요에 따라 조정 */
 }
@@ -277,6 +283,7 @@
   flex-direction: column;
 }
 .mb-log > li {
+  cursor: pointer;
   font-size: 30px;
   line-height: 3;
   width: calc(100% / 3);
@@ -513,5 +520,9 @@
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 50px;
+  }
+  .header-menu-submenu-mb {
+    display: flex;
+    gap: 20px;
   }
 }

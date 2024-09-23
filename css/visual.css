@@ -78,7 +78,13 @@
   font-size: 50px;
   color: #fff;
 }
+/* 페이지네이션 기본 버튼 색상 */
 
+/* 활성화된 페이지네이션 버튼 색상 */
+.visual-pag .swiper-pagination-bullet-active {
+  background: #777777; /* 활성화된 버튼 색상을 빨간색으로 설정 */
+  opacity: 1; /* 활성화된 상태는 불투명하게 설정 */
+}
 /* ============ */
 
 /* 애니메이션 정의 */
