@@ -62,6 +62,7 @@
     margin: auto;
     margin-bottom: 50px;
   }
+  
   .map-nav li > a:hover {
     border-bottom: 2px solid black;
     padding-bottom: 15px;
