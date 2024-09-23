@@ -27,13 +27,16 @@
   color: rgb(65, 64, 64);
   font-size: 23px;
   line-height: 1.6; /* 글 간격을 더 넓게 */
+  
 }
 
 .footer-three {
   margin-left: 150px;
   margin-bottom: 40px;
 }
-
+.footer-three p{
+  text-align: left;
+}
 .footer-wrap {
   width: 85%;
   margin: 0 auto;
@@ -91,7 +94,7 @@
   .footer-logo {
     width: 150px;
     margin-top: 20px;
-    order: -1; /* 로고를 제일 위로 */
+    order: -1; 로고를 제일 위로
   }
   .footer-logo img{
     margin-bottom: 30px;

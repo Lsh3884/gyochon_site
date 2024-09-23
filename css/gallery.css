@@ -49,6 +49,7 @@
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 /* 이미지 스타일링 */
@@ -77,12 +78,17 @@
   max-width: 90%;
   max-height: 90%;
 }
-
+#closeBtn {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 /* 반응형 */
 /* 990px 이하 */
 @media screen and (max-width: 990px) {
-  
   .gallery h2 {
     font-size: 80px;
     line-height: 80px;
@@ -103,12 +109,10 @@
     gap: 8px;
     width: 80%;
   }
-
 }
 
 /* 768px 이하 */
 @media screen and (max-width: 768px) {
-  
   .gallery h2 {
     font-size: 65px;
     line-height: 60px;
@@ -133,7 +137,6 @@
 
 /* 480px 이하 */
 @media screen and (max-width: 480px) {
-  
   .gallery h2 {
     font-size: 40px;
     line-height: 50px;
@@ -157,7 +160,6 @@
   }
 }
 @media screen and (max-width: 350px) {
-  
   .gallery h2 {
     font-size: 40px;
     line-height: 50px;
@@ -183,7 +185,6 @@
 
 /* 320px 이하 */
 @media screen and (max-width: 320px) {
- 
   .img-container img {
     width: 90%;
     margin-left: 5%;

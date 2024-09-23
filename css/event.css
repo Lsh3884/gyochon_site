@@ -341,9 +341,9 @@
     display: flex;
     justify-content: center;
     background-color: black;
-    width: 125px;
+    width: 150px;
     border-radius: 50px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     margin: 70px auto;
     margin-top: 70px !important;

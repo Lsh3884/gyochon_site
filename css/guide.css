@@ -357,6 +357,17 @@
   .guide .title p {
     font-size: 15px;
   }
+  .guide .title h2 {
+    padding-top: 70px;
+}
+  .FOOD,
+  .EXPERIENCE {
+    padding-top: 50px;
+    width: 95%;
+  }
+  .inner > .HOTEL{
+    padding: 50px 0 90px;
+  }
   .FOOD .guide-img,
   .EXPERIENCE .guide-img,
   .HOTEL .guide-img {
@@ -364,24 +375,27 @@
     height: 150px;
   }
   .inner > .FOOD {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   .FOOD h3,
   .EXPERIENCE h3,
   .HOTEL h3 {
-    font-size: 30px;
+    font-size: 35px;
+    margin-bottom: 3px;
   }
   .FOOD > .text > p,
   .EXPERIENCE > .text > p,
   .HOTEL > .text > p {
     margin: 0 20px;
     font-size: 20px;
+    line-height: 22px;
   }
   .FOOD .btn,
   .EXPERIENCE .btn,
   .HOTEL .btn {
     width: 180px;
     height: 40px;
+    margin-top: 10px;
   }
 
   .FOOD .btn p,
@@ -394,6 +408,6 @@
   .EXPERIENCE .btn a img,
   .HOTEL .btn a img {
     width: 30px;
-    margin-top: 0px;
+    margin-top: -6px;
   }
 }
