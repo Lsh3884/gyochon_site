@@ -9,7 +9,7 @@
 .map-nav {
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 1.7rem;
   margin: auto;
   margin-bottom: 50px;
@@ -30,7 +30,7 @@
 .image-wrap {
   width: 100%;
   margin: auto;
-  height: 600px;
+  height: 630px;
 }
 .image-wrap img {
   width: 100%;
@@ -109,7 +109,7 @@
 
   }
   .map-nav {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     font-size: 10px ;
