@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
     tabitem.forEach(function (item) {
       item.addEventListener("click", function (e) {
         e.preventDefault(); // 기본 동작(링크 클릭)을 막습니다.
-  
+        
         // 모든 탭 내용을 숨깁니다.
         maps.forEach(function (map) {
           map.classList.remove("active");
