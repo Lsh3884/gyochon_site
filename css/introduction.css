@@ -184,28 +184,27 @@
     width: 250px;
   }
   .family-1 img,
-.family-2 img,
-.family-3 img {
-  width: 400px;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 10px;
-}
-.family-1 h3,
-.family-2 h3,
-.family-3 h3 {
-  font-size: 35px;
-  margin: 10px;
-
-}
-.family-1 p,
-.family-2 p,
-.family-3 p {
-  font-size: 25px;
-  float: right;
-  margin: 10px;
-  line-height: 30px;
-}
+  .family-2 img,
+  .family-3 img {
+    width: 400px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  .family-1 h3,
+  .family-2 h3,
+  .family-3 h3 {
+    font-size: 35px;
+    margin: 10px;
+  }
+  .family-1 p,
+  .family-2 p,
+  .family-3 p {
+    font-size: 25px;
+    float: right;
+    margin: 10px;
+    line-height: 30px;
+  }
 }
 
 /* 890px 이하 */
@@ -230,6 +229,23 @@
   .content-img > img {
     width: 230px;
   }
+  .family-1 img,
+  .family-2 img,
+  .family-3 img {
+    width: 350px;
+  }
+  .family-1 h3,
+  .family-2 h3,
+  .family-3 h3 {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .family-1 p,
+  .family-2 p,
+  .family-3 p {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 /* 768px 이하 */
@@ -253,6 +269,23 @@
   }
   .content-img > img {
     width: 200px;
+  }
+  .family-1 img,
+  .family-2 img,
+  .family-3 img {
+    width: 300px;
+  }
+  .family-1 h3,
+  .family-2 h3,
+  .family-3 h3 {
+    font-size: 30px;
+    margin: 8px;
+  }
+  .family-1 p,
+  .family-2 p,
+  .family-3 p {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
@@ -282,6 +315,18 @@
   .content-img img {
     width: 550px;
   }
+  .family-1 img,
+  .family-2 img,
+  .family-3 img {
+    width: 280px;
+    margin-right: 20px;
+  }
+  .family-1 h3,
+  .family-2 h3,
+  .family-3 h3 {
+    font-size: 28px;
+    margin: 10px;
+  }
 }
 
 /* 590px 이하 */
@@ -309,6 +354,25 @@
   .introduction-button .introBt-3 h3 {
     font-size: 40px;
   }
+  .family-1 img,
+  .family-2 img,
+  .family-3 img {
+    width: 250px;
+    margin-right: 20px;
+  }
+  .family-1 h3,
+  .family-2 h3,
+  .family-3 h3 {
+    font-size: 25px;
+    margin: 10px;
+  }
+  .family-1 p,
+  .family-2 p,
+  .family-3 p {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 /* 490px 이하 */
@@ -330,6 +394,9 @@
   .introduction-button .introBt-3 h3 {
     font-size: 38px;
   }
+  .modal-content{
+    margin: 10px;
+  }
   .modal-content > p {
     font-size: 20px;
     line-height: 30px;
@@ -337,10 +404,29 @@
   .content-img img {
     width: 370px;
   }
+  .family-1 img,
+  .family-2 img,
+  .family-3 img {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .family-1 h3,
+  .family-2 h3,
+  .family-3 h3 {
+    font-size: 22px;
+    margin: 10px;
+  }
+  .family-1 p,
+  .family-2 p,
+  .family-3 p {
+    margin: 5px;
+    font-size: 17px;
+    line-height: 22px;
+  }
 }
 
-/* 390px 이하 */
-@media screen and (max-width: 390px) {
+/* 400px 이하 */
+@media screen and (max-width: 400px) {
   .introduction .title {
     font-size: 35px;
     padding-bottom: 20px;
@@ -358,10 +444,10 @@
   .introduction-button .introBt-3 h3 {
     font-size: 37px;
   }
-  .modal-content{
+  .modal-content {
     padding: 20px;
   }
-  .modal-content > h2{
+  .modal-content > h2 {
     font-size: 40px;
     margin: 10px 0 20px 0;
   }
@@ -371,6 +457,25 @@
   }
   .content-img img {
     width: 300px;
+  }
+  .family-1 img,
+  .family-2 img,
+  .family-3 img {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .family-1 h3,
+  .family-2 h3,
+  .family-3 h3 {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .family-1 p,
+  .family-2 p,
+  .family-3 p {
+    margin: 5px;
+    font-size: 15px;
+    line-height: 22px;
   }
 }
 
@@ -393,10 +498,10 @@
   .introduction-button .introBt-3 h3 {
     font-size: 30px;
   }
-  .modal-content{
+  .modal-content {
     padding: 15px;
   }
-  .modal-content > h2{
+  .modal-content > h2 {
     font-size: 36px;
     margin: 10px 0 20px 0;
   }
@@ -406,6 +511,25 @@
   }
   .content-img img {
     margin-top: 20px;
-    width: 250px;
+    width: 270px;
+  }
+  .family-1 img,
+  .family-2 img,
+  .family-3 img {
+    width: 180px;
+    margin-right: 10px;
+  }
+  .family-1 h3,
+  .family-2 h3,
+  .family-3 h3 {
+    font-size: 18px;
+    margin: 10px;
+  }
+  .family-1 p,
+  .family-2 p,
+  .family-3 p {
+    margin: 5px;
+    font-size: 15px;
+    line-height: 22px;
   }
 }
