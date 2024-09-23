@@ -217,4 +217,7 @@
   .bannerbtn > a > p {
     font-size: 17px;
   }
+  .question {
+    width: 400%;
+  }
 }
