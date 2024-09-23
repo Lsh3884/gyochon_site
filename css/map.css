@@ -1,21 +1,19 @@
 @charset "utf-8";
 .map {
+  width: 80%;
+ 
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 100px !important;
+  margin: auto;
 }
 .map-nav {
   width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 1.7rem;
   margin: auto;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   margin-top: 220px;
-
-}
-.map-nav li > a:hover {
-  border-bottom: 2px solid black;
-  padding-bottom: 15px;
 }
 .section {
   width: 90%;
@@ -43,6 +41,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  
 }
 .tabitem:first-child {
   display: block;
@@ -63,10 +62,7 @@
     margin-bottom: 50px;
   }
   
-  .map-nav li > a:hover {
-    border-bottom: 2px solid black;
-    padding-bottom: 15px;
-  }
+  
   .section {
     width: 90%;
     height: 100%;
@@ -93,7 +89,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: 50px auto;
-    padding: 0 20px;
+    font-size: 1.5rem;
   }
   .image-wrap {
     width: 100%;
@@ -115,19 +111,19 @@
   .map-nav {
     width: 80%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 10px ;
     padding: 1px;
-    margin: 40px auto;
+    margin: 65px auto;
   }
   .map-nav a{
-    font-size: 15px;
+    font-size: 25px;
     gap: 10px;
   }
   .image-wrap {
     width: 100%;
     margin: auto;
-    height: 170px;
+    height: 300px;
   }
   .image-wrap img {
     width: 100%;
