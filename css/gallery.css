@@ -70,22 +70,32 @@
   background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 999999;
 }
 
 /* 확대된 이미지 스타일링 */
 .overlay-img {
-  max-width: 90%;
-  max-height: 90%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #closeBtn {
   font-size: 20px;
   color: white;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  background-color: black;
 }
-
+.gallery-wrapper {
+  position: absolute;
+  display: block;
+  height: 50%;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* 반응형 */
 /* 990px 이하 */
 @media screen and (max-width: 990px) {
@@ -155,7 +165,7 @@
   }
   .img-container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 4px;
+    gap: 15px;
     width: 80%;
   }
 }
@@ -185,9 +195,15 @@
 
 /* 320px 이하 */
 @media screen and (max-width: 320px) {
+  .img-container {
+    width: 100%;
+    height: 100%; /* 고정된 높이 지정 */
+  }
   .img-container img {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    height: 100%; /* 높이를 100%로 설정 */
+    object-fit: cover; /* 이미지를 컨테이너에 맞게 자르기 */
+    display: block; /* 이미지를 블록 요소로 설정해서 여백을 제거 */
   }
   .gallery h2 {
     font-size: 30px;
