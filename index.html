@@ -131,6 +131,7 @@
   </head>
   <body>
 
+
     <!-- End Google Tag Manager (noscript) -->
     <!-- 모달창 -->
     <div class="modal">
@@ -387,7 +388,7 @@
           </div>
           <div class="introduction-button">
             <!-- 마을유래 섹션 -->
-            <div class="introBt-1">
+            <div class="introBt-1" onclick="openModal('modal-origin')">
               <h3>마을유래</h3>
               <h3 class="hover-txt">
                 마을유래 <br />
@@ -397,7 +398,7 @@
             </div>
 
             <!-- 최부자네 섹션 -->
-            <div class="introBt-2">
+            <div class="introBt-2" onclick="openModal('modal-family')">
               <h3>최부자네</h3>
               <h3 class="hover-txt">
                 최부자네 <br />
@@ -407,7 +408,7 @@
             </div>
 
             <!-- 문화유산 섹션 -->
-            <div class="introBt-3">
+            <div class="introBt-3" onclick="openModal('modal-heritage')">
               <h3>문화유산</h3>
               <h3 class="hover-txt">
                 문화유산 <br />
@@ -420,6 +421,41 @@
         </div>
         <!-- inner 끝 -->
       </section>
+
+      <!-- 모달 창들 -->
+      <div id="modal-origin" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-origin')">&times;</span>
+          <h2>마을유래</h2>
+          <p>
+            교촌마을 주변에는 삼국유사 속 이야기보따리가 곳곳에 숨겨져 있다. 김알지가 태어난 계림, 원효스님과 요석공주의 사랑을 이어준 문천교(蚊川橋)터, 김 유신이 살던 재매정, 월정교와 충담스님, 도화녀를 사랑한 진지왕, 선덕여왕이 만든 첨성대 등 수 많은 이야기 현장이 교촌과 남천을 따라 흩어져 있다.
+            <br />
+            경주교촌마을에는 최부자 고택을 중심으로 향교와 전통한옥이 많이 남아있으며, 가까운 곳에 월성, 월정교, 첨성대, 계림, 고분 등 소중한 신라유적이 있어 신라문화 속의 조선문화가 공존하는 특별한 곳이다.
+            <br />
+            경주교촌마을은 새롭게 복원 조성되어 문화유적의 원형을 잘 보존하면서도 보고 즐기는관광지가 될 수 있도록 힘을 쓰고 있다. 국내 최대 규모의 목조 교량인 월정교가 새롭게 복원되어 목조건축의 웅장함을 느낄 수 있고, 야간에는 화려한 조명으로 또 다른 볼거리를 제공해 관광객들이 꼭 찾는 야경코스가 되었다.
+          </p>
+          <img src="images/intro_modal1-1.JPG" alt="">
+          <img src="images/intro_modal1-2.JPG" alt="">
+          <img src="images/intro_modal1-3.JPG" alt="">
+        </div>
+      </div>
+
+      <div id="modal-family" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-family')">&times;</span>
+          <h2>최부자네</h2>
+          <p>이곳은 최부자네에 대한 설명입니다.</p>
+        </div>
+      </div>
+
+      <div id="modal-heritage" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-heritage')">&times;</span>
+          <h2>문화유산</h2>
+          <p>이곳은 교촌 마을의 문화유산에 대한 설명입니다.</p>
+        </div>
+      </div>
+
       <!-- 투어 가이드 -->
       <section class="guide">
         <div class="inner">
@@ -787,6 +823,25 @@
           $(".modal").css("display", "none");
         });
       });
+
+      // 모달 열기 함수
+      function openModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "block";
+      }
+
+      // 모달 닫기 함수
+      function closeModal(modalId) {
+        var modal = document.getElementById(modalId);
+        modal.style.display = "none";
+      }
+
+      // 모달 바깥을 클릭하면 모달 닫기
+      window.onclick = function (event) {
+        if (event.target.classList.contains("modal")) {
+          event.target.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>
