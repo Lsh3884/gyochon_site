@@ -210,7 +210,7 @@
 /*  햄버거바 누르면 오픈 되는 영역 */
 .mb-header-navi {
   padding: 20px 10px;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 60%;
