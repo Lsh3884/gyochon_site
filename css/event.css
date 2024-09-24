@@ -78,6 +78,7 @@
   cursor: pointer;
 }
 
+
 /* 반응형 */
 
 @media screen and (max-width: 990px) {
@@ -328,7 +329,18 @@
     left: 50%;
     transform: translate(-50%,-50%);
   }
-  
+  .closes {
+    position: absolute;
+    top: -105px !important;
+    left: -105px !important;
+    font-size: 20px !important;
+    cursor: pointer;
+    color: red;
+    z-index: 9999;
+  }
+  .closes:hover{
+    color: white;
+  }
 }
 /* 모달 창 스타일 */
 .modal-youtube {
@@ -336,14 +348,16 @@
   position: fixed;
   top: 50%;
   left: 50%;
+  height: 300px;
   transform: translate(-50%, -50%);
-  width: 60%;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
 .modal-youtube iframe{
   position: relative;
+  width:50vw;
+  height: 40vh;
 }
 /* 모달을 덮는 배경 */
 .modal-overlay {
@@ -360,8 +374,8 @@
 /* 닫기 버튼 스타일 */
 .closes {
   position: absolute;
-  top: 14;
-  right: -40px;
+  top: 14px;
+  left: 12px;
   font-size: 30px;
   cursor: pointer;
   color: red;
@@ -373,3 +387,4 @@
 .html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-showing, .html5-video-player.ended-mode{
   position: relative;
 }
+
