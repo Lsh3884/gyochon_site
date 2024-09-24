@@ -7,9 +7,7 @@
 .guide .inner {
   background: url("../images/background.png") no-repeat center;
   width: 100%;
-
   background-size: cover;
-  background-color: pink;
 }
 .guide .title {
   /* margin-top: 50px; */
@@ -18,7 +16,7 @@
   font-weight: 600;
 }
 .guide .title p {
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 400;
   padding-top: 10px;
 }
