@@ -73,6 +73,10 @@
   text-align: center;
   margin: 50px auto;
 }
+.fa-solid, .fas{
+  color: black !important;
+  cursor: pointer;
+}
 
 /* 반응형 */
 
@@ -240,20 +244,6 @@
     display: flex;
     justify-content: center;
     background-color: black;
-    width: 150px;
-    border-radius: 50px;
-    padding: 10px;
-    text-align: center;
-    margin: auto;
-    margin-top: 40px !important;
-    bottom: 0;
-    left: 0;
-    cursor: pointer;
-  }
-  .plus-show {
-    display: flex;
-    justify-content: center;
-    background-color: black;
     width: 200px;
     border-radius: 50px;
     padding: 5px;
@@ -262,20 +252,6 @@
     bottom: 0;
     left: 0;
     cursor: pointer;
-  }
-  .event .line {
-    max-width: 250px;
-    height: 2px;
-    background-color: gray;
-    text-align: center;
-    margin: 50px auto;
-  }
-  .event .line {
-    max-width: 350px;
-    height: 2px;
-    background-color: gray;
-    text-align: center;
-    margin: 40px auto;
   }
   .event .line {
     max-width: 220px;
@@ -287,10 +263,10 @@
 }
 @media screen and (max-width: 320px) {
   .event-title {
-    font-size: 2.5rem !important;
+    font-size: 30px !important;
     text-align: center;
-    margin-top: 70px !important;
-    margin-bottom: 70px !important;
+    margin-top: 55px !important;
+    margin-bottom: 55px !important;
   }
   .event-top {
     width: 90%;
@@ -337,26 +313,11 @@
     color: white;
     font-family: "Nanum Brush Script", cursive;
   }
-  .plus-show {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    width: 150px;
-    border-radius: 50px;
-    padding: 10px;
-    text-align: center;
-    margin: 70px auto;
-    margin-top: 70px !important;
-    bottom: 0;
-    left: 0;
-    cursor: pointer;
-    
-  }
   .event .line {
     max-width: 200px;
     height: 2px;
     background-color: gray;
     text-align: center;
-    margin:80px auto;
+    margin:60px auto;
   }
 }

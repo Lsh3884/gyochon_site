@@ -27,7 +27,7 @@
   margin-top: 220px;
 }
 .tour-title p {
-  font-size: 4.6rem;
+  font-size: 2.4rem;
   width: 100%;
   font-weight: bold;
   margin-bottom: 80px;
@@ -48,38 +48,6 @@
 .tour-course .inner {
   display: block;
   /* background-color: blue; */
-}
-.tour-course .swiper-button-next {
-  position: absolute;
-  border-style: none;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  top: 47%;
-  right: -20px;
-  font-weight: bold;
-  font-size: 30px;
-  z-index: 99;
-  background-color: transparent; /* 버튼 배경색을 투명으로 설정 */
-  border: none; /* 필요하다면 테두리도 없애기 */
-}
-.tour-course .swiper-button-prev {
-  position: absolute;
-  border-style: none;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  z-index: 99;
-  background-color: transparent; /* 버튼 배경색을 투명으로 설정 */
-  border: none; /* 필요하다면 테두리도 없애기 */
-}
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  display: none;
 }
 
 .good-info .good-info-list li {
@@ -223,12 +191,12 @@
     margin-bottom: 80px;
   }
   .tour-course .good {
-    width: 100%;
+ 
     height: 100%;
     text-align: center;
   }
   .tour-course .good img {
-    width: 100%;
+
     height: 320px !important;
     mix-blend-mode: multiply;
   }
@@ -236,48 +204,8 @@
     display: block;
     /* background-color: blue; */
   }
-  .tour-course .swiper-button-next {
-    position: absolute;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    top: 47% !important;
-    right: -13px;
-    font-size: 30px;
-    z-index: 99;
-  }
-  .tour-course .swiper-button-prev {
-    position: absolute;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    top: 50%;
-    left: 0;
-    font-size: 30px;
-    z-index: 99;
-  }
-  .tour-course .swiper-button-prev > i {
-    font-size: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .tour-course .swiper-button-next > i {
-    font-size: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .tour-course .swiper-button-prevt::after {
-    font-size: 15px;
-  }
-  .tour-course .swiper-button-nextt::after {
-    font-size: 15px;
-  }
+
+
   .tour-course .good-info .good-info-list li {
     line-height: 23px;
     margin-top: 30px;
@@ -335,7 +263,7 @@
     text-align: center;
   }
   .tour-course .good img {
-    width: 100%;
+
     height: 250px !important;
     mix-blend-mode: multiply;
   }
@@ -350,7 +278,7 @@
     height: 35px;
     display: inline-block;
     top: 47% !important;
-    right: -13px;
+    right: -30px;
     font-size: 30px;
     z-index: 99;
   }
@@ -361,19 +289,19 @@
     height: 35px;
     display: inline-block;
     top: 50%;
-    left: 0;
+    left: -16px;
     font-size: 30px;
     z-index: 99;
   }
   .tour-course .swiper-button-prev > i {
-    font-size: 20px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
   }
   .tour-course .swiper-button-next > i {
-    font-size: 20px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -412,9 +340,9 @@
     text-align: center;
     margin-bottom: 20px;
   }
-.swiper-slide swiper-slide-prev{
-  margin-right: 40px !important;
-}
+  .swiper-slide swiper-slide-prev {
+    margin-right: 40px !important;
+  }
   .tour-course .good-info-list li b {
     font-size: 1.4rem;
   }
@@ -431,13 +359,13 @@
     overflow: visible; /* 넘치는 텍스트 표시 */
   }
   .tour-title > h2 {
-    font-size: 2.6rem;
+    font-size: 30px;
     width: 100%;
     font-weight: bold;
     margin-top: 75px !important;
   }
   .tour-title p {
-    font-size: 1.4rem;
+    font-size: 23px;
     width: 100%;
     font-weight: bold;
     margin-bottom: 50px;
@@ -447,12 +375,10 @@
     height: 100%;
     text-align: center;
   }
-  .tour-course .swiper-slide {
-    width: 250px !important;
-  }
+
 
   .tour-course .good img {
-    width: 100%;
+
     height: 250px !important;
     mix-blend-mode: multiply;
   }
@@ -460,18 +386,17 @@
     display: block;
     /* background-color: blue; */
   }
- 
 
   .tour-course .swiper-button-prev > i {
-    font-size: 15px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
   }
   .tour-course .swiper-button-next > i {
-    font-size: 15px;
-    top: 50%;
+    font-size: 30px;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -502,7 +427,7 @@
     border-radius: 50px;
     padding: 10px;
     text-align: center;
-    margin: 80px auto;
+    margin: 60px auto;
     bottom: 0;
     left: 0;
     cursor: pointer;

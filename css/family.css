@@ -12,6 +12,7 @@
   line-height: 60px;
   font-family: "Nanum Brush Script", cursive;
   text-align: center;
+  margin-bottom: 30px;
 
   margin-top: 220px;
 }
@@ -38,11 +39,11 @@
   width: 40px;
   height: 40px;
   display: inline-block;
-  top: 50%;
-  right: -20px;
+  top: 42%;
+  right: -35px;
   font-weight: bold;
   font-size: 30px;
-  z-index: 99;
+  z-index: 999;
   background-color: transparent; /* 버튼 배경색을 투명으로 설정 */
   border: none; /* 필요하다면 테두리도 없애기 */
 }
@@ -52,10 +53,10 @@
   width: 40px;
   height: 40px;
   display: inline-block;
-  top: 50%;
-  left: -20px;
+  top: 42%;
+  left: -35px;
   font-size: 30px;
-  z-index: 99;
+  z-index: 999;
   background-color: transparent; /* 버튼 배경색을 투명으로 설정 */
   border: none; /* 필요하다면 테두리도 없애기 */
 }
@@ -109,7 +110,7 @@
     top: 50%;
     right: -16px;
     font-weight: bold;
-    font-size: 30px;
+
     z-index: 99;
   }
   .family-course .swiper-button-prevt {
@@ -118,20 +119,19 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 50%;
+    top: 40%;
     left: -16px;
-    font-size: 30px;
     z-index: 99;
   }
   .family-course .swiper-button-prevt > i {
-    font-size: 15px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
   }
   .family-course .swiper-button-nextt > i {
-    font-size: 15px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -185,8 +185,8 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 50%;
-    right: -16px;
+    top: 40%;
+    right: -30px;
     font-weight: bold;
     font-size: 30px;
     z-index: 99;
@@ -197,20 +197,20 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 50%;
-    left: -16px;
+    top: 40%;
+    left: -30px;
     font-size: 30px;
     z-index: 99;
   }
   .family-course .swiper-button-prevt > i {
-    font-size: 20px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
   }
   .family-course .swiper-button-nextt > i {
-    font-size: 20px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -250,7 +250,6 @@
   }
   .family-title h2 {
     font-weight: bold;
-    margin-bottom: 50px;
   }
   .family-course .good img {
     width: 100%;
@@ -281,14 +280,14 @@
     z-index: 99;
   }
   .family-course .swiper-button-prevt > i {
-    font-size: 20px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
   }
   .family-course .swiper-button-nextt > i {
-    font-size: 20px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -328,7 +327,6 @@
   }
   .family-title h2 {
     font-weight: bold;
-    margin-bottom: 50px;
   }
   .family-course .good img {
     width: 100%;
@@ -341,8 +339,8 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 50%;
-    right: -16px;
+    top: 40%;
+    right: -30px;
     font-weight: bold;
     font-size: 30px;
     z-index: 99;
@@ -353,20 +351,20 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 50%;
-    left: -16px;
+    top: 40%;
+    left: -30px;
     font-size: 30px;
     z-index: 99;
   }
   .family-course .swiper-button-prevt > i {
-    font-size: 20px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
   }
   .family-course .swiper-button-nextt > i {
-    font-size: 20px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -391,7 +389,6 @@
 }
 @media screen and (max-width: 320px) {
   .family-title {
-    font-size: 2.2rem;
     line-height: 40px;
     font-family: "Nanum Brush Script", cursive;
     text-align: center;
@@ -401,7 +398,11 @@
   }
   .family-title h2 {
     font-weight: bold;
-    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  .family-title p {
+    font-weight: bold;
+    font-size: 23px;
   }
   .good {
     width: 100%;
@@ -409,7 +410,7 @@
     text-align: center;
   }
   .family-course .good img {
-    width: 250px;
+
     height: 250px !important;
     mix-blend-mode: multiply;
   }
@@ -419,8 +420,8 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 50%;
-    right: -16px;
+    top: 40%;
+    right: -28px;
     font-weight: bold;
     font-size: 30px;
     z-index: 99;
@@ -431,7 +432,8 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 50%;
+    top: 40%;
+    right: -28px;
 
     font-size: 30px;
     z-index: 99;
@@ -453,21 +455,20 @@
   }
   .family-course .line {
     max-width: 300px;
-
     height: 2px;
     background-color: gray;
     text-align: center;
     margin: 100px auto;
   }
   .family-course .swiper-button-prevt > i {
-    font-size: 15px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
   }
   .family-course .swiper-button-nextt > i {
-    font-size: 15px;
+    font-size: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -482,7 +483,7 @@
     padding: 10px;
     text-align: center;
     margin: auto;
-    margin-top: 40px !important;
+    margin-top: 20px !important;
     bottom: 0;
     left: 0;
     cursor: pointer;
@@ -492,6 +493,6 @@
     height: 2px;
     background-color: gray;
     text-align: center;
-    margin: 80px auto;
+    margin: 60px auto;
   }
 }
