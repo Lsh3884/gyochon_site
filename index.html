@@ -92,7 +92,7 @@
   <body>
     <!-- End Google Tag Manager (noscript) -->
     <!-- 모달창 -->
-    <div class="modal">
+    <div class="modals">
       <div class="modal-img">
         <img src="images/popupPass.jpg" alt="프리패스" />
         <div class="passClose">
@@ -584,7 +584,7 @@
 
             <!-- 모달 유튜브 -->
             <div class="modal-youtube" id="youtubeModal">
-              <span class="close" id="closeModal">&times;</span>
+              <span class="closes" id="closeModal1">&times;</span>
               <iframe
                 width="620"
                 height="580"
@@ -854,7 +854,7 @@
       // x버튼누를시 모탈창 없애기
       $(function () {
         $(".passClose").click(function () {
-          $(".modal").css("display", "none");
+          $(".modals").css("display", "none");
         });
       });
 
@@ -872,18 +872,19 @@
 
       // 모달 바깥을 클릭하면 모달 닫기
       window.onclick = function (event) {
-        if (event.target.classList.contains("modal")) {
+        if (event.target.classList.contains("modals")) {
           event.target.style.display = "none";
         }
       };
       //신라오기 유튜브 모달
     </script>
+
     <script>
-      // 요소들 가져오기
+            //신라오기 유튜브 모달
       var modal = document.getElementById("youtubeModal");
       var overlay = document.getElementById("modalOverlay");
       var link = document.getElementById("youtube-link");
-      var closeModal = document.getElementById("closeModal");
+      var closeModals = document.getElementById("closeModal1");
 
       // 이미지 클릭 시 모달 열기
       link.addEventListener("click", function () {
@@ -892,7 +893,7 @@
       });
 
       // 닫기 버튼 클릭 시 모달 닫기
-      closeModal.addEventListener("click", function () {
+      closeModals.addEventListener("click", function () {
         modal.style.display = "none";
         overlay.style.display = "none";
       });
