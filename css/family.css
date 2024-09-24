@@ -12,13 +12,15 @@
   line-height: 60px;
   font-family: "Nanum Brush Script", cursive;
   text-align: center;
-  margin-bottom: 130px;
-  margin-top: 220px;
 
+  margin-top: 220px;
 }
 .family-title h2 {
   font-weight: bold;
-  margin-bottom: 90px;
+}
+.family-title p {
+  font-weight: bold;
+  font-size: 2.4rem;
 }
 .good {
   width: 100%;
@@ -41,17 +43,21 @@
   font-weight: bold;
   font-size: 30px;
   z-index: 99;
+  background-color: transparent; /* 버튼 배경색을 투명으로 설정 */
+  border: none; /* 필요하다면 테두리도 없애기 */
 }
 .family-course .swiper-button-prevt {
   position: absolute;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    top: 50%;
-    left: -20px;
-    font-size: 30px;
-    z-index: 99;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  top: 50%;
+  left: -20px;
+  font-size: 30px;
+  z-index: 99;
+  background-color: transparent; /* 버튼 배경색을 투명으로 설정 */
+  border: none; /* 필요하다면 테두리도 없애기 */
 }
 
 .good-info-list li b {
@@ -83,7 +89,7 @@
     font-weight: bold;
     margin-top: 100px;
   }
-  
+
   .good {
     width: 100%;
     height: 100%;
@@ -154,7 +160,6 @@
     line-height: 40px;
     font-family: "Nanum Brush Script", cursive;
     text-align: center;
-    margin-bottom: 10px !important;
     font-weight: bold;
     margin-top: 20px;
   }
@@ -165,7 +170,9 @@
   }
   .family-title h2 {
     font-weight: bold;
-    margin-bottom: 50px;
+  }
+  .family-title p {
+    font-size: 1.8rem;
   }
   .family-course .good img {
     width: 100%;
@@ -179,7 +186,7 @@
     height: 35px;
     display: inline-block;
     top: 50%;
-    right:-16px;
+    right: -16px;
     font-weight: bold;
     font-size: 30px;
     z-index: 99;
@@ -195,18 +202,18 @@
     font-size: 30px;
     z-index: 99;
   }
-  .family-course .swiper-button-prevt > i{
+  .family-course .swiper-button-prevt > i {
     font-size: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
-  .family-course .swiper-button-nextt > i{
+  .family-course .swiper-button-nextt > i {
     font-size: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
   .good-info-list li b {
@@ -257,7 +264,7 @@
     height: 35px;
     display: inline-block;
     top: 42%;
-    right:-16px;
+    right: -16px;
     font-weight: bold;
     font-size: 30px;
     z-index: 99;
@@ -273,18 +280,18 @@
     font-size: 30px;
     z-index: 99;
   }
-  .family-course .swiper-button-prevt > i{
+  .family-course .swiper-button-prevt > i {
     font-size: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
-  .family-course .swiper-button-nextt > i{
+  .family-course .swiper-button-nextt > i {
     font-size: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
   .good-info-list li b {
@@ -334,8 +341,8 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 42%;
-    right:-16px;
+    top: 50%;
+    right: -16px;
     font-weight: bold;
     font-size: 30px;
     z-index: 99;
@@ -346,23 +353,23 @@
     width: 35px;
     height: 35px;
     display: inline-block;
-    top: 42%;
+    top: 50%;
     left: -16px;
     font-size: 30px;
     z-index: 99;
   }
-  .family-course .swiper-button-prevt > i{
+  .family-course .swiper-button-prevt > i {
     font-size: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
-  .family-course .swiper-button-nextt > i{
+  .family-course .swiper-button-nextt > i {
     font-size: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
   .good-info-list li b {
@@ -391,7 +398,6 @@
     margin-bottom: 20px !important;
     font-weight: bold;
     margin-top: 20px;
-
   }
   .family-title h2 {
     font-weight: bold;
@@ -426,7 +432,7 @@
     height: 35px;
     display: inline-block;
     top: 50%;
-   
+
     font-size: 30px;
     z-index: 99;
   }
@@ -453,40 +459,39 @@
     text-align: center;
     margin: 100px auto;
   }
-  .family-course .swiper-button-prevt > i{
+  .family-course .swiper-button-prevt > i {
     font-size: 15px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
-  .family-course .swiper-button-nextt > i{
+  .family-course .swiper-button-nextt > i {
     font-size: 15px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
   }
-  .family-course .plus-show{
+  .family-course .plus-show {
     display: flex;
-        justify-content: center;
-        background-color: black;
-        width: 150px;
-        border-radius: 50px;
-        padding: 10px;
-        text-align: center;
-        margin: auto;
-        margin-top: 40px !important;
-        bottom: 0;
-        left: 0;
-        cursor: pointer;
+    justify-content: center;
+    background-color: black;
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px !important;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
   }
-  .family-course .line{
+  .family-course .line {
     max-width: 200px;
-        height: 2px;
-        background-color: gray;
-        text-align: center;
-        margin: 80px auto;
-        
+    height: 2px;
+    background-color: gray;
+    text-align: center;
+    margin: 80px auto;
   }
 }
