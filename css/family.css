@@ -12,9 +12,8 @@
   line-height: 60px;
   font-family: "Nanum Brush Script", cursive;
   text-align: center;
-  margin-bottom: 30px;
-
-  margin-top: 220px;
+  margin-bottom: 100px;
+  margin-top: 110px;
 }
 .family-title h2 {
   font-weight: bold;
@@ -75,7 +74,7 @@
   height: 2px;
   background-color: gray;
   text-align: center;
-  margin: 150px auto;
+  margin: 111px auto;
 }
 
 /* 반응형 */
