@@ -337,7 +337,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
+  width: 60%;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
@@ -358,7 +358,7 @@
 }
 
 /* 닫기 버튼 스타일 */
-.close {
+.closes {
   position: absolute;
   top: 14;
   right: -40px;
@@ -367,7 +367,7 @@
   color: red;
   z-index: 99999999;
 }
-.close:hover{
+.closes:hover{
   color: white;
 }
 .html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-showing, .html5-video-player.ended-mode{

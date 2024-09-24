@@ -584,7 +584,7 @@
 
             <!-- 모달 유튜브 -->
             <div class="modal-youtube" id="youtubeModal">
-              <span class="close" id="closeModal">&times;</span>
+              <span class="closes" id="closeModal1">&times;</span>
               <iframe
                 width="620"
                 height="580"
@@ -883,7 +883,7 @@
       var modal = document.getElementById("youtubeModal");
       var overlay = document.getElementById("modalOverlay");
       var link = document.getElementById("youtube-link");
-      var closeModal = document.getElementById("closeModal");
+      var closeModals = document.getElementById("closeModal1");
 
       // 이미지 클릭 시 모달 열기
       link.addEventListener("click", function () {
@@ -892,7 +892,7 @@
       });
 
       // 닫기 버튼 클릭 시 모달 닫기
-      closeModal.addEventListener("click", function () {
+      closeModals.addEventListener("click", function () {
         modal.style.display = "none";
         overlay.style.display = "none";
       });
