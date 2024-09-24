@@ -9,7 +9,9 @@
   /* font-family: "Nanum Brush Script", cursive; */
 }
 
-a{color: #333;}
+a {
+  color: #333;
+}
 
 .wrap {
   width: 100%;
@@ -28,6 +30,7 @@ a{color: #333;}
 .main-img img {
   width: 100%;
 }
+
 .main-img h2 {
   position: absolute;
   left: 50%;
@@ -68,16 +71,20 @@ a{color: #333;}
   transition: background-color 0.3s;
 }
 /* 가게 별점 */
- .intro-food h5{
-font-size: 30px;
-color: #ffb515;
-font-weight: 600;
-margin-bottom: 20px;
+.intro-food h5 {
+  font-size: 30px;
+  color: #ffb515;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
-.shop h3 , .cafe h3, .alcohol h3{
+.shop h3,
+.cafe h3,
+.alcohol h3 {
   font-weight: 600;
 }
-.shop li , .cafe li , .alcohol li{
+.shop li,
+.cafe li,
+.alcohol li {
   width: 100%;
   line-height: 40px;
   font-size: 27px;
@@ -546,9 +553,9 @@ li {
     height: auto;
     margin-bottom: 10px;
   }
-  .intro-food h5{
-font-size: 15px;
-}
+  .intro-food h5 {
+    font-size: 15px;
+  }
   .shop h3,
   .cafe-shop h3,
   .alcohol-shop h3 {
@@ -653,15 +660,16 @@ font-size: 15px;
     padding: 10px 30px;
     font-size: 15px;
   }
-  .intro-food h5{
+  .intro-food h5 {
     margin-bottom: 8px;
   }
 }
 
-
 /* 320px 이하 */
 @media (max-width: 320px) {
-  .shop, .cafe-shop, .alcohol-shop{
+  .shop,
+  .cafe-shop,
+  .alcohol-shop {
     width: calc(100% / 2);
   }
   .main-img h2 {
@@ -723,7 +731,7 @@ font-size: 15px;
     padding: 8px 20px;
     font-size: 12px;
   }
-  .intro-food h5{
+  .intro-food h5 {
     margin-bottom: 5px;
   }
 }
