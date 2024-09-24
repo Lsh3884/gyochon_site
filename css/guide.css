@@ -16,7 +16,7 @@
   font-weight: 600;
 }
 .guide .title p {
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 400;
   padding-top: 10px;
 }
@@ -188,7 +188,7 @@
     padding-top: 150px;
   }
   .guide .title p {
-    font-size: 50px;
+    font-size: 60px;
   }
   .inner > .HOTEL {
     padding: 100px 0 200px;
@@ -252,7 +252,7 @@
     padding-top: 100px;
   }
   .guide .title p {
-    font-size: 25px;
+    font-size: 45px;
   }
   .inner > .HOTEL {
     padding: 100px 0 150px;
@@ -300,7 +300,7 @@
     font-size: 40px;
   }
   .guide .title p {
-    font-size: 20px;
+    font-size: 30px;
   }
   .FOOD,
   .EXPERIENCE,
@@ -353,7 +353,8 @@
     font-size: 30px;
   }
   .guide .title p {
-    font-size: 15px;
+    font-size: 23px;
+    padding: 0px;
   }
   .guide .title h2 {
     padding-top: 70px;
