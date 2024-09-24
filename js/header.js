@@ -55,6 +55,14 @@ window.addEventListener("load", function () {
       }
     });
   });
+  const submenuLinks = document.querySelectorAll(".header-menu-submenu-mb a");
+
+  submenuLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      mbHeaderNavi.classList.remove("active");
+      toggleBodyScroll(false); // 스크롤 활성화
+    });
+  });
 
   // 창 크기 변경 시 메뉴 자동 닫기
   function handleResize() {
