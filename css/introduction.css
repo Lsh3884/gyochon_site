@@ -76,6 +76,18 @@
   font-weight: 600;
 }
 /* 모달 기본 스타일 */
+.modal > h3::after , h3 > span::after, .heritage-1 > h3::after,
+.heritage-2 > h3::after, #modal-origin > .modal-content > h2::after{
+  content: ''; /* 내용은 비워둠 */
+  display: inline-block; /* 인라인 요소로 만들기 */
+  width: 10px; /* 동그라미의 너비 */
+  height: 10px; /* 동그라미의 높이 */
+  background-color: rgb(255, 145, 0); /* 주황색으로 설정 */
+  border-radius: 50%; /* 동그라미로 만들기 */
+  margin-left: 10px; /* 글씨와 동그라미 사이의 간격 */
+  vertical-align: middle; /* 글자와 세로로 정렬 */
+}
+
 .modal {
   display: none; /* 기본적으로 숨김 */
   position: fixed;
@@ -573,4 +585,8 @@
     margin-bottom: 10px;
     line-height: 22px;
   }
+  h3 > span::after{
+  width: 7px; /* 동그라미의 너비 */
+  height: 7px; /* 동그라미의 높이 */
+}
 }
