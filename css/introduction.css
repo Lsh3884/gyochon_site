@@ -153,6 +153,13 @@
   font-weight: 700;
   margin: 20px;
 }
+.family-1 h3 > span,
+  .family-2 h3 > span,
+  .family-3 h3 > span{
+    font-size: 25px;
+    color: #333;
+  }
+
 .family-1 p,
 .family-2 p,
 .family-3 p {
@@ -483,6 +490,12 @@
     font-size: 20px;
     margin: 10px;
   }
+  .family-1 h3 > span,
+  .family-2 h3 > span,
+  .family-3 h3 > span{
+    font-size: 15px;
+    color: #333;
+  }
   .family-1 p,
   .family-2 p,
   .family-3 p {
@@ -537,6 +550,12 @@
   .family-3 h3 {
     font-size: 18px;
     margin: 10px;
+  }
+  .family-1 h3 > span,
+  .family-2 h3 > span,
+  .family-3 h3 > span{
+    font-size: 13px;
+    color: #333;
   }
   .family-1 p,
   .family-2 p,
