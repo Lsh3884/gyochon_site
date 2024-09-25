@@ -21,10 +21,9 @@
   gap: 15px;
   margin: auto;
   justify-content: center;
-  
 }
 .event-top img {
-  width:100%;
+  width: 100%;
   cursor: pointer;
 }
 .evetn-bottom {
@@ -73,11 +72,66 @@
   text-align: center;
   margin: 50px auto;
 }
-.fa-solid, .fas{
+.fa-solids,
+.fas {
   color: black !important;
   cursor: pointer;
 }
 
+/* 모달 창 스타일 */
+.modal-youtube {
+  display: none; /* 처음엔 숨김 */
+  position: fixed;
+  min-width: 280px;
+  width: 32.29vw;
+  height: 30.20vw;
+  min-height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+/* 모달을 덮는 배경 */
+.modal-overlay {
+  display: none; /* 처음엔 숨김 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 900;
+}
+/* 닫기 버튼 스타일 */
+.closes {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+  color: red;
+  z-index: 99999999;
+  font-weight: bold;
+}
+
+.html5-video-player:not(.ytp-transparent),
+.html5-video-player.unstarted-mode,
+.html5-video-player.ad-showing,
+.html5-video-player.ended-mode {
+  position: relative;
+}
+
+#youtubeModal iframe {
+  position: absolute;
+  min-width: 280px;
+  width: 32.29vw;
+  height: 30.20vw;
+  min-height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* 반응형 */
 
@@ -124,7 +178,6 @@
     text-align: center;
     margin: 50px auto;
   }
-  
 }
 @media screen and (max-width: 768px) {
   .event-title {
@@ -169,6 +222,7 @@
     text-align: center;
     margin: 30px auto;
   }
+ 
 }
 @media screen and (max-width: 560px) {
   .event-title {
@@ -240,7 +294,7 @@
     gap: 15px;
     margin: 20px auto;
     justify-content: center;
-}
+  }
   .plus-show {
     display: flex;
     justify-content: center;
@@ -319,17 +373,19 @@
     height: 2px;
     background-color: gray;
     text-align: center;
-    margin:60px auto;
-  }
-  #youtubeModal iframe{
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 60px auto;
   }
   .closes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+    z-index: 99999999;
+    font-weight: bold;
+  }
+  /* .closes {
     position: absolute;
     top: -105px !important;
     left: -105px !important;
@@ -338,53 +394,7 @@
     color: red;
     z-index: 9999;
   }
-  .closes:hover{
+  .closes:hover {
     color: white;
-  }
+  } */
 }
-/* 모달 창 스타일 */
-.modal-youtube {
-  display: none; /* 처음엔 숨김 */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  height: 300px;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-}
-.modal-youtube iframe{
-  position: relative;
-  width:50vw;
-  height: 40vh;
-}
-/* 모달을 덮는 배경 */
-.modal-overlay {
-  display: none; /* 처음엔 숨김 */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: 900;
-}
-
-/* 닫기 버튼 스타일 */
-.closes {
-  position: absolute;
-  top: 14px;
-  left: 12px;
-  font-size: 30px;
-  cursor: pointer;
-  color: red;
-  z-index: 99999999;
-}
-.closes:hover{
-  color: white;
-}
-.html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-showing, .html5-video-player.ended-mode{
-  position: relative;
-}
-
