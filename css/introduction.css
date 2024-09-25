@@ -89,6 +89,7 @@
 }
 
 .modal {
+  z-index: 9999999999999999999 !important;
   display: none; /* 기본적으로 숨김 */
   position: fixed;
   z-index: 1;
@@ -114,7 +115,7 @@
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: bold;
 }
 

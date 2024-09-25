@@ -89,8 +89,9 @@
   width: 150px;
   margin: auto;
 }
-.footer-logo > img {
+.footer-logo > a > img {
   width: 100%;
+  cursor: pointer;
 }
 /* 반응형 */
 @media screen and (max-width: 1300px) {
