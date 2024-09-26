@@ -66,6 +66,44 @@ a {
   cursor: pointer;
   z-index: 99999;
 }
+@media screen and (max-width: 415px) {
+  .modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8); /* 모달 배경색 설정 */
+  }
+  .modal-img {
+    position: relative !important;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 370px;
+    z-index: 9999;
+  }
+  .modal-img > img {
+    width: 100%;
+    height: 100%;
+  }
+  .passClose {
+    width: 10px;
+    height: 28px;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 99999;
+    cursor: pointer;
+  }
+  .passClose > p {
+    margin-left: -5px;
+  }
+}
 @media screen and (max-width: 320px) {
   .modal {
     width: 100%;
