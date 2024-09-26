@@ -161,7 +161,9 @@
   overflow: hidden;
   min-width: 220px;
 }
-
+.search{
+  cursor: pointer;
+}
 .mb-search {
   display: none;
 }
